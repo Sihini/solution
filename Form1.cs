@@ -106,6 +106,7 @@ namespace solution
 
         private void lecbtn1_Click(object sender, EventArgs e)
         {
+            openChildForm(new addLecturer());
             //..
             hideSubMenu();
         }
@@ -299,7 +300,7 @@ namespace solution
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
-
+            //code all
         }
 
 
@@ -308,5 +309,8 @@ namespace solution
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+       
+
     }
 }
