@@ -124,12 +124,14 @@ namespace solution
 
         private void stubtn1_Click(object sender, EventArgs e)
         {
+            openChildForm(new addStudent());
             //..
             hideSubMenu();
         }
 
         private void stubtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageStudent());
             //..
             hideSubMenu();
         }
@@ -221,12 +223,14 @@ namespace solution
 
         private void tag1_Click(object sender, EventArgs e)
         {
+            openChildForm(new addTag());
             //..
             hideSubMenu();
         }
 
         private void tag2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageTag());
             //..
             hideSubMenu();
         }
