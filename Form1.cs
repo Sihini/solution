@@ -113,6 +113,7 @@ namespace solution
 
         private void lecbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new mangeLecturer());
             //..
             hideSubMenu();
         }
