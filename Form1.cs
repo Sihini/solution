@@ -106,6 +106,7 @@ namespace solution
 
         private void lecbtn1_Click(object sender, EventArgs e)
         {
+            
             openChildForm(new addLecturer());
             //..
             hideSubMenu();
@@ -113,6 +114,7 @@ namespace solution
 
         private void lecbtn2_Click(object sender, EventArgs e)
         {
+
             openChildForm(new mangeLecturer());
             //..
             hideSubMenu();
