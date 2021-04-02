@@ -55,8 +55,12 @@ namespace solution
                 MessageBox.Show("New Lecturer is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //   GetStudentsRecord();
+               
 
             }
+            mangeLecturer frm = new mangeLecturer();//open Attendance management form
+            frm.Show();
+
         }
         private bool IsValid()
         {
@@ -92,7 +96,7 @@ namespace solution
                 MessageBox.Show("Building Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (txtbulin.Text == string.Empty)
+            else if (txtlevel.Text == string.Empty)
             {
                 MessageBox.Show("Level is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -105,6 +109,25 @@ namespace solution
             return true;
 
 
+        }
+
+       //  this.button1.Click += new System.EventHandler(this.button1_Click);
+
+        private void clearbtnlec_Click(object sender, EventArgs e)
+        {
+            ClearFormLect();
+
+        }
+
+        private void ClearFormLect()
+        {
+            txtlecname.Clear();
+            txtEmpid.Clear();
+            txtDepname.Clear();
+            txtrank.Clear();
+
+            txtlecname.Focus();
+            
         }
     }
 }

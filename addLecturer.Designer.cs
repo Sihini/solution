@@ -31,7 +31,7 @@ namespace solution
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lecSavebtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clearbtnlec = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.lecSavebtn);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.clearbtnlec);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -98,17 +98,18 @@ namespace solution
             this.lecSavebtn.UseVisualStyleBackColor = false;
             this.lecSavebtn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // clearbtnlec
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(607, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 44);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.clearbtnlec.BackColor = System.Drawing.Color.DarkOrange;
+            this.clearbtnlec.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clearbtnlec.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.clearbtnlec.Location = new System.Drawing.Point(607, 381);
+            this.clearbtnlec.Name = "clearbtnlec";
+            this.clearbtnlec.Size = new System.Drawing.Size(137, 44);
+            this.clearbtnlec.TabIndex = 18;
+            this.clearbtnlec.Text = "Clear";
+            this.clearbtnlec.UseVisualStyleBackColor = false;
+            this.clearbtnlec.Click += new System.EventHandler(this.clearbtnlec_Click);
             // 
             // button1
             // 
@@ -334,7 +335,7 @@ namespace solution
         private System.Windows.Forms.TextBox txtEmpid;
         private System.Windows.Forms.TextBox txtlecname;
         private System.Windows.Forms.Button lecSavebtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clearbtnlec;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
