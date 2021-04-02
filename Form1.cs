@@ -153,6 +153,7 @@ namespace solution
 
         private void subbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageSubjects());
             //..
             hideSubMenu();
         }
