@@ -233,7 +233,6 @@ namespace solution
             this.txtlevel.Name = "txtlevel";
             this.txtlevel.Size = new System.Drawing.Size(173, 31);
             this.txtlevel.TabIndex = 6;
-            this.txtlevel.Text = "1";
             // 
             // txtbulin
             // 
@@ -245,7 +244,6 @@ namespace solution
             this.txtbulin.Name = "txtbulin";
             this.txtbulin.Size = new System.Drawing.Size(173, 31);
             this.txtbulin.TabIndex = 5;
-            this.txtbulin.Text = "New building";
             // 
             // txtcent
             // 
@@ -261,7 +259,6 @@ namespace solution
             this.txtcent.Name = "txtcent";
             this.txtcent.Size = new System.Drawing.Size(173, 31);
             this.txtcent.TabIndex = 4;
-            this.txtcent.Text = "Malabe";
             // 
             // txtFacu
             // 
@@ -275,7 +272,6 @@ namespace solution
             this.txtFacu.Name = "txtFacu";
             this.txtFacu.Size = new System.Drawing.Size(173, 31);
             this.txtFacu.TabIndex = 3;
-            this.txtFacu.Text = "Computing";
             // 
             // txtDepname
             // 

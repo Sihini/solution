@@ -128,7 +128,12 @@ namespace solution
             txtEmpid.Clear();
             txtDepname.Clear();
             txtrank.Clear();
-           
+
+            //clearing combo box
+            txtcent.SelectedIndex = -1;
+            txtbulin.SelectedIndex = -1;
+            txtlevel.SelectedIndex = -1;
+
 
             txtlecname.Focus();
         }

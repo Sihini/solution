@@ -126,6 +126,12 @@ namespace solution
             txtDepname.Clear();
             txtrank.Clear();
 
+            //cpmbo box clear
+            txtFacu.SelectedIndex = -1;
+            txtcent.SelectedIndex = -1;
+            txtbulin.SelectedIndex = -1;
+            txtlevel.SelectedIndex = -1;
+
             txtlecname.Focus();
             
         }
