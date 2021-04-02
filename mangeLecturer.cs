@@ -19,6 +19,7 @@ namespace solution
 
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public int LecturerID;
+        int count = 0;
 
 
         private void LectrerMandataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -51,6 +52,7 @@ namespace solution
         private void mangeLecturer_Load(object sender, EventArgs e)
         {
             GetLecturerdata();
+          
         }
 
         private void GetLecturerdata()
@@ -98,7 +100,7 @@ namespace solution
 
             if (IsValid())
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO LectureTable VALUES (@Lecturname, @empID, @faculy, @Department, @center, @building, @level, @rank)", con);
+                SqlCommand cmd = new SqlCommand();
 
 
                 con.Open();
@@ -189,6 +191,41 @@ namespace solution
                 MessageBox.Show("Please select an Lecturer to update his information", "Select ?", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+        }
+
+
+        private void txtserachmangelec_TextChanged(object sender, EventArgs e)
+        {
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM LectureTable where LecturerName like'"+txtserachmangelec.Text + "%' OR EmployeeID LIKE'"+txtserachmangelec.Text+ "%' OR Faculty LIKE'"+txtserachmangelec.Text+ "%' OR Department LIKE'"+txtserachmangelec.Text+ "%' OR Center LIKE '"+txtserachmangelec.Text+ "%' OR Building LIKE '"+txtserachmangelec.Text+ "%' OR Levels LIKE '"+txtserachmangelec.Text+ "%' OR Rank LIKE '"+txtserachmangelec.Text+"%' ", con );
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            LectrerMandataGridView.DataSource = dt;
+
+
+        }
+
+        private void serachmanagelectBtn_Click(object sender, EventArgs e)
+        {
+           /* count = 0;
+            SqlCommand cmd = new SqlCommand();
+            DataTable dt = new DataTable();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from LectureTable where LecturerName='" + txtserachmangelec + "'OR EmployeeID ='" + txtserachmangelec + "'OR  Faculty ='" + txtserachmangelec + "' ";
+
+            con.Open();
+
+           
+            count = Convert.ToInt32(dt.Rows.Count.ToString());
+            con.Close();
+
+            LectrerMandataGridView.DataSource = dt;
+
+            if (count == 0)
+            {
+                MessageBox.Show("record not found");
+            }*/
         }
     }
 }

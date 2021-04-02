@@ -30,7 +30,7 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.serachMangeLecturer = new System.Windows.Forms.TextBox();
+            this.txtserachmangelec = new System.Windows.Forms.TextBox();
             this.lectManageDeleteBtn = new System.Windows.Forms.Button();
             this.clearMangeLectbtn = new System.Windows.Forms.Button();
             this.managelectupdatbtn = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.serachMangeLecturer);
+            this.panel1.Controls.Add(this.txtserachmangelec);
             this.panel1.Controls.Add(this.lectManageDeleteBtn);
             this.panel1.Controls.Add(this.clearMangeLectbtn);
             this.panel1.Controls.Add(this.managelectupdatbtn);
@@ -86,18 +86,19 @@ namespace solution
             this.panel1.Controls.Add(this.txtlecname);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.LectrerMandataGridView);
-            this.panel1.Location = new System.Drawing.Point(12, 44);
+            this.panel1.Location = new System.Drawing.Point(4, 64);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(959, 482);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // serachMangeLecturer
+            // txtserachmangelec
             // 
-            this.serachMangeLecturer.Location = new System.Drawing.Point(391, 31);
-            this.serachMangeLecturer.Name = "serachMangeLecturer";
-            this.serachMangeLecturer.Size = new System.Drawing.Size(266, 27);
-            this.serachMangeLecturer.TabIndex = 37;
+            this.txtserachmangelec.Location = new System.Drawing.Point(536, 27);
+            this.txtserachmangelec.Name = "txtserachmangelec";
+            this.txtserachmangelec.Size = new System.Drawing.Size(197, 27);
+            this.txtserachmangelec.TabIndex = 37;
+            this.txtserachmangelec.TextChanged += new System.EventHandler(this.txtserachmangelec_TextChanged);
             // 
             // lectManageDeleteBtn
             // 
@@ -143,12 +144,13 @@ namespace solution
             this.serachmanagelectBtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.serachmanagelectBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.serachmanagelectBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.serachmanagelectBtn.Location = new System.Drawing.Point(672, 20);
+            this.serachmanagelectBtn.Location = new System.Drawing.Point(766, 20);
             this.serachmanagelectBtn.Name = "serachmanagelectBtn";
             this.serachmanagelectBtn.Size = new System.Drawing.Size(137, 44);
             this.serachmanagelectBtn.TabIndex = 33;
             this.serachmanagelectBtn.Text = "Search";
             this.serachmanagelectBtn.UseVisualStyleBackColor = false;
+            this.serachmanagelectBtn.Click += new System.EventHandler(this.serachmanagelectBtn_Click);
             // 
             // label9
             // 
@@ -383,6 +385,6 @@ namespace solution
         private System.Windows.Forms.Button clearMangeLectbtn;
         private System.Windows.Forms.Button managelectupdatbtn;
         private System.Windows.Forms.Button serachmanagelectBtn;
-        private System.Windows.Forms.TextBox serachMangeLecturer;
+        private System.Windows.Forms.TextBox txtserachmangelec;
     }
 }
