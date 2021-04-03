@@ -165,12 +165,15 @@ namespace solution
 
         private void locbtn1_Click(object sender, EventArgs e)
         {
+
+            openChildForm(new addLocation());
             //..
             hideSubMenu();
         }
 
         private void locbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageLocation());
             //..
             hideSubMenu();
         }
