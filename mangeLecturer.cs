@@ -130,6 +130,7 @@ namespace solution
             txtrank.Clear();
 
             //clearing combo box
+            txtFacu.SelectedIndex = -1;
             txtcent.SelectedIndex = -1;
             txtbulin.SelectedIndex = -1;
             txtlevel.SelectedIndex = -1;

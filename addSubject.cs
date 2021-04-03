@@ -21,10 +21,15 @@ namespace solution
 
         private void addSubject_Load(object sender, EventArgs e)
         {
+           
 
 
 
+        }
 
+        private void GETManageSubject()
+        {
+           
         }
 
         private void Btnsujectadd_Click(object sender, EventArgs e)
@@ -38,17 +43,17 @@ namespace solution
                 {
                     semseter = "1st semeseter";
                 }
-                else
+                else if(addsubjectradiobtn2.Checked==true)
                 {
-                    semseter = "2nd semester";
+                    semseter = "2nd semeseter";
                 }
                 cmd.Parameters.AddWithValue("@offsemes", semseter);
                 cmd.Parameters.AddWithValue("@subname", txtsubName.Text);
                 cmd.Parameters.AddWithValue("@subcode", txtsubjecode.Text);
-                cmd.Parameters.AddWithValue("@nooflechours", txtNokecHourse.Text);
-                cmd.Parameters.AddWithValue("@nooftuthours", txtNooftuteHourse.Text);
-                cmd.Parameters.AddWithValue("@nooflabhours", txtNoofLabHourse.Text);
-                cmd.Parameters.AddWithValue("@noofevelhours", txtnoOfEvelphour.Text);
+                cmd.Parameters.AddWithValue("@nooflechours", txtNokecHourse.Value);
+                cmd.Parameters.AddWithValue("@nooftuthours", txtNooftuteHourse.Value);
+                cmd.Parameters.AddWithValue("@nooflabhours", txtNoofLabHourse.Value);
+                cmd.Parameters.AddWithValue("@noofevelhours", txtnoOfEvelphour.Value);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -84,24 +89,19 @@ namespace solution
 
             else if (txtsubjecode.Text == string.Empty)
             {
-                MessageBox.Show("Department Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Sunject code  is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (txtNokecHourse.Value !=0 )
-            {
-                MessageBox.Show("Subject Code Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-
-            }
+          
            
             else if (txtNokecHourse.Text == string.Empty)
             {
-                MessageBox.Show("Subject Code Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Selected to No of Lectures hourse", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else if (txtNooftuteHourse.Text == string.Empty)
             {
-                MessageBox.Show("Selected to No of Lecture hourse", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Selected to No of tute hourse", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else if (txtNoofLabHourse.Text == string.Empty)
@@ -126,13 +126,21 @@ namespace solution
         {
             txtsubName.Clear();
             txtsubjecode.Clear();
-            // clearing radio Button
+
+            //radio button
             addsubjectradiobtn1.Checked = false;
             addsubjectradiobtn2.Checked = false;
 
-            // clearing combobox
-            offyearsubadd.SelectedIndex = -1;
 
+            //numric value
+            txtNoofLabHourse.Value = 0;
+            txtNokecHourse.Value = 0;
+            txtnoOfEvelphour.Value = 0;
+            txtNooftuteHourse.Value = 0;
+
+
+            //clearing combo box
+            offyearsubadd.SelectedIndex = -1;
 
         }
     }
