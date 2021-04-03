@@ -146,12 +146,14 @@ namespace solution
 
         private void subbtn1_Click(object sender, EventArgs e)
         {
+            openChildForm(new addSubject());
             //..
             hideSubMenu();
         }
 
         private void subbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageSubjects());
             //..
             hideSubMenu();
         }
