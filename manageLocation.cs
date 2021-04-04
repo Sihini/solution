@@ -222,5 +222,10 @@ namespace solution
             adp.Fill(dt);
             LocationdataGridView.DataSource = dt;
         }
+
+        private void labradiobtn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

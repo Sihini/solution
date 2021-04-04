@@ -38,12 +38,12 @@ namespace solution
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtsearchlocation = new System.Windows.Forms.TextBox();
             this.clearlocationtbtn = new System.Windows.Forms.Button();
             this.deleteLocationbtn = new System.Windows.Forms.Button();
             this.manageLocationbtn = new System.Windows.Forms.Button();
-            this.txtsearchlocation = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.LocationdataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,26 +61,27 @@ namespace solution
             // 
             // txtcapacity
             // 
-            this.txtcapacity.Location = new System.Drawing.Point(565, 253);
+            this.txtcapacity.Location = new System.Drawing.Point(472, 294);
             this.txtcapacity.Name = "txtcapacity";
-            this.txtcapacity.Size = new System.Drawing.Size(179, 23);
+            this.txtcapacity.Size = new System.Drawing.Size(169, 23);
             this.txtcapacity.TabIndex = 26;
             // 
             // labradiobtn
             // 
             this.labradiobtn.AutoSize = true;
-            this.labradiobtn.Location = new System.Drawing.Point(565, 208);
+            this.labradiobtn.Location = new System.Drawing.Point(495, 255);
             this.labradiobtn.Name = "labradiobtn";
             this.labradiobtn.Size = new System.Drawing.Size(82, 19);
             this.labradiobtn.TabIndex = 25;
             this.labradiobtn.TabStop = true;
             this.labradiobtn.Text = "Laboratory";
             this.labradiobtn.UseVisualStyleBackColor = true;
+            this.labradiobtn.CheckedChanged += new System.EventHandler(this.labradiobtn_CheckedChanged);
             // 
             // lecturradiobtn
             // 
             this.lecturradiobtn.AutoSize = true;
-            this.lecturradiobtn.Location = new System.Drawing.Point(565, 183);
+            this.lecturradiobtn.Location = new System.Drawing.Point(495, 230);
             this.lecturradiobtn.Name = "lecturradiobtn";
             this.lecturradiobtn.Size = new System.Drawing.Size(92, 19);
             this.lecturradiobtn.TabIndex = 24;
@@ -90,63 +91,53 @@ namespace solution
             // 
             // txtroomname
             // 
-            this.txtroomname.Location = new System.Drawing.Point(194, 253);
+            this.txtroomname.Location = new System.Drawing.Point(169, 294);
             this.txtroomname.Name = "txtroomname";
-            this.txtroomname.Size = new System.Drawing.Size(192, 23);
+            this.txtroomname.Size = new System.Drawing.Size(169, 23);
             this.txtroomname.TabIndex = 23;
             // 
             // txtBuildingname
             // 
-            this.txtBuildingname.Location = new System.Drawing.Point(194, 179);
+            this.txtBuildingname.Location = new System.Drawing.Point(169, 228);
             this.txtBuildingname.Name = "txtBuildingname";
-            this.txtBuildingname.Size = new System.Drawing.Size(192, 23);
+            this.txtBuildingname.Size = new System.Drawing.Size(169, 23);
             this.txtBuildingname.TabIndex = 22;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(65, 257);
+            this.label4.Location = new System.Drawing.Point(10, 294);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 19);
+            this.label4.Size = new System.Drawing.Size(107, 19);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Lecturer Name";
+            this.label4.Text = "Room Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(411, 181);
+            this.label3.Location = new System.Drawing.Point(368, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 19);
+            this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Lecturer Name";
+            this.label3.Text = "Room Type";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(411, 257);
+            this.label2.Location = new System.Drawing.Point(368, 294);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 19);
+            this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Lecturer Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(65, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 19);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Lecturer Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.label2.Text = "Capacity";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(25)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtsearchlocation);
             this.panel1.Controls.Add(this.clearlocationtbtn);
             this.panel1.Controls.Add(this.deleteLocationbtn);
@@ -155,7 +146,6 @@ namespace solution
             this.panel1.Controls.Add(this.txtcapacity);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.labradiobtn);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lecturradiobtn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtroomname);
@@ -163,16 +153,25 @@ namespace solution
             this.panel1.Controls.Add(this.txtBuildingname);
             this.panel1.Location = new System.Drawing.Point(23, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 351);
+            this.panel1.Size = new System.Drawing.Size(860, 426);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtsearchlocation
+            // 
+            this.txtsearchlocation.Location = new System.Drawing.Point(598, 13);
+            this.txtsearchlocation.Name = "txtsearchlocation";
+            this.txtsearchlocation.PlaceholderText = "Search ";
+            this.txtsearchlocation.Size = new System.Drawing.Size(215, 23);
+            this.txtsearchlocation.TabIndex = 54;
+            this.txtsearchlocation.TextChanged += new System.EventHandler(this.txtsearchlocation_TextChanged);
             // 
             // clearlocationtbtn
             // 
             this.clearlocationtbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearlocationtbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearlocationtbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.clearlocationtbtn.Location = new System.Drawing.Point(520, 294);
+            this.clearlocationtbtn.Location = new System.Drawing.Point(696, 348);
             this.clearlocationtbtn.Name = "clearlocationtbtn";
             this.clearlocationtbtn.Size = new System.Drawing.Size(137, 44);
             this.clearlocationtbtn.TabIndex = 53;
@@ -185,7 +184,7 @@ namespace solution
             this.deleteLocationbtn.BackColor = System.Drawing.Color.Red;
             this.deleteLocationbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.deleteLocationbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.deleteLocationbtn.Location = new System.Drawing.Point(712, 305);
+            this.deleteLocationbtn.Location = new System.Drawing.Point(696, 280);
             this.deleteLocationbtn.Name = "deleteLocationbtn";
             this.deleteLocationbtn.Size = new System.Drawing.Size(137, 44);
             this.deleteLocationbtn.TabIndex = 52;
@@ -198,7 +197,7 @@ namespace solution
             this.manageLocationbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.manageLocationbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageLocationbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.manageLocationbtn.Location = new System.Drawing.Point(712, 172);
+            this.manageLocationbtn.Location = new System.Drawing.Point(696, 207);
             this.manageLocationbtn.Name = "manageLocationbtn";
             this.manageLocationbtn.Size = new System.Drawing.Size(137, 44);
             this.manageLocationbtn.TabIndex = 50;
@@ -206,13 +205,15 @@ namespace solution
             this.manageLocationbtn.UseVisualStyleBackColor = false;
             this.manageLocationbtn.Click += new System.EventHandler(this.manageLocationbtn_Click);
             // 
-            // txtsearchlocation
+            // label5
             // 
-            this.txtsearchlocation.Location = new System.Drawing.Point(580, 22);
-            this.txtsearchlocation.Name = "txtsearchlocation";
-            this.txtsearchlocation.Size = new System.Drawing.Size(215, 23);
-            this.txtsearchlocation.TabIndex = 54;
-            this.txtsearchlocation.TextChanged += new System.EventHandler(this.txtsearchlocation_TextChanged);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(10, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 19);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Building Name";
             // 
             // manageLocation
             // 
@@ -241,11 +242,11 @@ namespace solution
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button deleteLocationbtn;
         private System.Windows.Forms.Button manageLocationbtn;
         private System.Windows.Forms.Button clearlocationtbtn;
         private System.Windows.Forms.TextBox txtsearchlocation;
+        private System.Windows.Forms.Label label5;
     }
 }
