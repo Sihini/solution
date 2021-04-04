@@ -30,6 +30,7 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.wdClear = new System.Windows.Forms.Button();
             this.wdUpdate = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,12 +51,11 @@ namespace solution
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.checkboxpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHrs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownDays)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +77,24 @@ namespace solution
             this.panel1.Size = new System.Drawing.Size(771, 476);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Location = new System.Drawing.Point(423, 143);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(81, 27);
+            this.numericUpDown1.TabIndex = 43;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wdClear
             // 
@@ -264,7 +282,7 @@ namespace solution
             // 
             // upDownDays
             // 
-            this.upDownDays.Location = new System.Drawing.Point(235, 57);
+            this.upDownDays.Location = new System.Drawing.Point(235, 58);
             this.upDownDays.Maximum = new decimal(new int[] {
             7,
             0,
@@ -341,24 +359,6 @@ namespace solution
             this.label10.TabIndex = 43;
             this.label10.Text = "Working Days";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Increment = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Location = new System.Drawing.Point(423, 143);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(81, 27);
-            this.numericUpDown1.TabIndex = 43;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // workingDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -370,11 +370,11 @@ namespace solution
             this.Text = "workingDays";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.checkboxpanel.ResumeLayout(false);
             this.checkboxpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHrs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownDays)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
