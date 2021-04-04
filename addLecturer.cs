@@ -55,7 +55,8 @@ namespace solution
                 MessageBox.Show("New Lecturer is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //   GetStudentsRecord();
-               
+                ClearFormLect();
+
 
             }
             mangeLecturer frm = new mangeLecturer();//open Attendance management form
