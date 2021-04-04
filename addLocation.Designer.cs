@@ -41,12 +41,14 @@ namespace solution
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnsavelaction);
             this.panel1.Controls.Add(this.txtcapacity);
             this.panel1.Controls.Add(this.btnclearlocation);
@@ -60,7 +62,7 @@ namespace solution
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(24, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 521);
+            this.panel1.Size = new System.Drawing.Size(884, 444);
             this.panel1.TabIndex = 0;
             // 
             // btnsavelaction
@@ -68,7 +70,7 @@ namespace solution
             this.btnsavelaction.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnsavelaction.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsavelaction.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnsavelaction.Location = new System.Drawing.Point(729, 436);
+            this.btnsavelaction.Location = new System.Drawing.Point(721, 346);
             this.btnsavelaction.Name = "btnsavelaction";
             this.btnsavelaction.Size = new System.Drawing.Size(128, 44);
             this.btnsavelaction.TabIndex = 22;
@@ -88,7 +90,7 @@ namespace solution
             this.btnclearlocation.BackColor = System.Drawing.Color.DarkOrange;
             this.btnclearlocation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnclearlocation.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnclearlocation.Location = new System.Drawing.Point(552, 436);
+            this.btnclearlocation.Location = new System.Drawing.Point(530, 346);
             this.btnclearlocation.Name = "btnclearlocation";
             this.btnclearlocation.Size = new System.Drawing.Size(137, 44);
             this.btnclearlocation.TabIndex = 21;
@@ -99,7 +101,7 @@ namespace solution
             // labradiobtn
             // 
             this.labradiobtn.AutoSize = true;
-            this.labradiobtn.Location = new System.Drawing.Point(481, 175);
+            this.labradiobtn.Location = new System.Drawing.Point(422, 175);
             this.labradiobtn.Name = "labradiobtn";
             this.labradiobtn.Size = new System.Drawing.Size(113, 25);
             this.labradiobtn.TabIndex = 16;
@@ -110,7 +112,7 @@ namespace solution
             // lecturradiobtn
             // 
             this.lecturradiobtn.AutoSize = true;
-            this.lecturradiobtn.Location = new System.Drawing.Point(304, 175);
+            this.lecturradiobtn.Location = new System.Drawing.Point(289, 175);
             this.lecturradiobtn.Name = "lecturradiobtn";
             this.lecturradiobtn.Size = new System.Drawing.Size(124, 25);
             this.lecturradiobtn.TabIndex = 15;
@@ -127,6 +129,7 @@ namespace solution
             // 
             // txtBuildingname
             // 
+            this.txtBuildingname.BackColor = System.Drawing.SystemColors.Window;
             this.txtBuildingname.Location = new System.Drawing.Point(289, 77);
             this.txtBuildingname.Name = "txtBuildingname";
             this.txtBuildingname.Size = new System.Drawing.Size(246, 27);
@@ -138,9 +141,9 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(97, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 19);
+            this.label4.Size = new System.Drawing.Size(107, 19);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Lecturer Name";
+            this.label4.Text = "Room Name";
             // 
             // label3
             // 
@@ -148,9 +151,9 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(97, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 19);
+            this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Lecturer Name";
+            this.label3.Text = "Room Type";
             // 
             // label2
             // 
@@ -158,9 +161,9 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(97, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 19);
+            this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Lecturer Name";
+            this.label2.Text = "Capacity";
             // 
             // label1
             // 
@@ -168,9 +171,19 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(97, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 19);
+            this.label1.Size = new System.Drawing.Size(125, 19);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Lecturer Name";
+            this.label1.Text = "Building Name";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(97, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(205, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Add Rooms Building wise:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // addLocation
             // 
@@ -203,5 +216,6 @@ namespace solution
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnsavelaction;
         private System.Windows.Forms.Button btnclearlocation;
+        private System.Windows.Forms.Label label5;
     }
 }
