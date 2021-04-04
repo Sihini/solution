@@ -39,6 +39,7 @@ namespace solution
                 SqlCommand cmd = new SqlCommand("INSERT INTO SubjectTable VALUES (@offyear, @offsemes, @subname, @subcode, @nooflechours, @nooftuthours, @nooflabhours, @noofevelhours)", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@offyear", offyearsubadd.Text);
+             
                 if (addsubjectradiobtn1.Checked == true)
                 {
                     semseter = "1st semeseter";
