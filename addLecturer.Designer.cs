@@ -296,6 +296,7 @@ namespace solution
             this.txtlecname.Name = "txtlecname";
             this.txtlecname.Size = new System.Drawing.Size(173, 32);
             this.txtlecname.TabIndex = 0;
+            this.txtlecname.TextChanged += new System.EventHandler(this.txtlecname_TextChanged);
             // 
             // label10
             // 

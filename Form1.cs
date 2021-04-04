@@ -32,7 +32,6 @@ namespace solution
             Studentpanel.Visible = false;
             Subjectpanel.Visible = false;
             Locationpanel.Visible = false;
-            Workingdayspanel.Visible = false;
             Sessionpanel.Visible = false;
             Tagpanel.Visible = false;
             Timetablepanel.Visible = false;
@@ -49,8 +48,6 @@ namespace solution
                 Subjectpanel.Visible = false;
             if (Locationpanel.Visible == true)
                 Locationpanel.Visible = false;
-            if (Workingdayspanel.Visible == true)
-                Workingdayspanel.Visible = false;
             if (Sessionpanel.Visible == true)
                 Sessionpanel.Visible = false;
             if (Tagpanel.Visible == true)
@@ -173,7 +170,8 @@ namespace solution
 
         private void btnWorkingdays_Click(object sender, EventArgs e)
         {
-            showSubMenu(Workingdayspanel);
+            
+            openChildForm(new workingDays());
         }
 
         private void worbtn1_Click(object sender, EventArgs e)
@@ -315,7 +313,9 @@ namespace solution
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
+        private void iconpanel_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

@@ -106,5 +106,10 @@ namespace solution
 
 
         }
+
+        private void txtlecname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
