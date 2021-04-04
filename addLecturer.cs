@@ -13,6 +13,11 @@ namespace solution
         }
       
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        public string gid { get; set; }
+        public string mid { get; set; }
+
+        public string rid { get; set; }
+
         private void addLecturer_Load(object sender, EventArgs e)
         {
             GetLecturerRecord();
@@ -135,6 +140,23 @@ namespace solution
 
             txtlecname.Focus();
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            gid = (string)txtEmpid.Text;
+            mid = (string)txtlevel.Text;
+           
+
+            rid = gid +"."+ mid;
+            txtrank.Text = (rid);
+        }
+
+
+        private void txtrank_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
