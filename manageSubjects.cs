@@ -35,15 +35,16 @@ namespace solution
 
                 SubjectID = Convert.ToInt32(managesubjectview.SelectedRows[0].Cells[0].Value);
                 offyearsubadd.Text = managesubjectview.SelectedRows[0].Cells[1].Value.ToString();
-               /* if (addsubjectradiobtn1.Checked == true)
+                semseter = managesubjectview.SelectedRows[0].Cells[2].Value.ToString();
+                if (semseter == "1st semeseter")
                 {
-                    semseter = "1st semeseter";
+                    addsubjectradiobtn1.Checked = true;
                 }
-                else if (addsubjectradiobtn2.Checked == true)
+                else if (semseter == "2nd semeseter")
                 {
-                    semseter = "2nd semeseter";
-                }*/
-                addsubjectradiobtn1.Text = managesubjectview.SelectedRows[0].Cells[2].Value.ToString();
+                    addsubjectradiobtn2.Checked = true; 
+                }
+               
                 txtsubName.Text = managesubjectview.SelectedRows[0].Cells[3].Value.ToString();
                 txtsubjecode.Text = managesubjectview.SelectedRows[0].Cells[4].Value.ToString();
                 txtNokecHourse.Text = managesubjectview.SelectedRows[0].Cells[5].Value.ToString();
@@ -160,8 +161,17 @@ namespace solution
                 SqlCommand cmd = new SqlCommand("UPDATE SubjectTable  SET  OfferedYear=@offyear,OfferedSemester= @offsemester,SubjectName= @sybname,SubjectCode= @subcode,NoOfLectHours= @noofLec,NoOfTutHourse= @noofTute,NoOfLabHourse= @noofhours,NoOFEvaluHourse= @noofEvalu WHERE SubjectID =@Id", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@offyear", offyearsubadd.Text);
-                cmd.Parameters.AddWithValue("@offsemester", addsubjectradiobtn1.Text);
-              // cmd.Parameters.AddWithValue("@offsemester", addsubjectradiobtn2.Text);
+                
+                if (addsubjectradiobtn1.Checked == true)
+                {
+                    semseter = "1st semeseter";
+                }
+                else if (addsubjectradiobtn2.Checked == true)
+                {
+                    semseter = "2nd semeseter";
+                }
+                cmd.Parameters.AddWithValue("@offsemester", semseter);
+                // cmd.Parameters.AddWithValue("@offsemester", addsubjectradiobtn2.Text);
                 cmd.Parameters.AddWithValue("@sybname", txtsubName.Text);
                 cmd.Parameters.AddWithValue("@subcode", txtsubjecode.Text);
                 cmd.Parameters.AddWithValue("@noofLec", txtNokecHourse.Text);
