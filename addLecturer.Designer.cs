@@ -82,7 +82,7 @@ namespace solution
             this.panel1.Controls.Add(this.txtlecname);
             this.panel1.Location = new System.Drawing.Point(35, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 438);
+            this.panel1.Size = new System.Drawing.Size(1014, 438);
             this.panel1.TabIndex = 0;
             // 
             // lecSavebtn
@@ -300,18 +300,18 @@ namespace solution
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(326, 34);
+            this.label10.Location = new System.Drawing.Point(460, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(226, 35);
+            this.label10.Size = new System.Drawing.Size(210, 35);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Add Lecturer";
+            this.label10.Text = "Add Lecture";
             // 
             // addLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
