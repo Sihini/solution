@@ -21,6 +21,11 @@ namespace solution
         public int LecturerID;
         int count = 0;
 
+        public string gid { get; set; }
+        public string mid { get; set; }
+
+        public string rid { get; set; }
+
 
         private void LectrerMandataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -128,7 +133,13 @@ namespace solution
             txtEmpid.Clear();
             txtDepname.Clear();
             txtrank.Clear();
-           
+
+            //clearing combo box
+            txtFacu.SelectedIndex = -1;
+            txtcent.SelectedIndex = -1;
+            txtbulin.SelectedIndex = -1;
+            txtlevel.SelectedIndex = -1;
+
 
             txtlecname.Focus();
         }
@@ -228,8 +239,16 @@ namespace solution
             }*/
         }
 
-        private void txtlecname_TextChanged(object sender, EventArgs e)
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
+
+            gid = (string)txtEmpid.Text;
+            mid = (string)txtlevel.Text;
+
+
+            rid = mid + "." + gid;
+            txtrank.Text = (rid);
 
         }
     }

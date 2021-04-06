@@ -82,7 +82,7 @@ namespace solution
             this.panel1.Controls.Add(this.txtlecname);
             this.panel1.Location = new System.Drawing.Point(35, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 438);
+            this.panel1.Size = new System.Drawing.Size(1014, 438);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -123,6 +123,7 @@ namespace solution
             this.button1.TabIndex = 17;
             this.button1.Text = "Generate Rank";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -219,6 +220,7 @@ namespace solution
             this.txtrank.Name = "txtrank";
             this.txtrank.Size = new System.Drawing.Size(173, 37);
             this.txtrank.TabIndex = 7;
+            this.txtrank.TextChanged += new System.EventHandler(this.txtrank_TextChanged);
             // 
             // txtlevel
             // 
@@ -234,7 +236,6 @@ namespace solution
             this.txtlevel.Name = "txtlevel";
             this.txtlevel.Size = new System.Drawing.Size(173, 38);
             this.txtlevel.TabIndex = 6;
-            this.txtlevel.Text = "1";
             // 
             // txtbulin
             // 
@@ -246,7 +247,6 @@ namespace solution
             this.txtbulin.Name = "txtbulin";
             this.txtbulin.Size = new System.Drawing.Size(173, 38);
             this.txtbulin.TabIndex = 5;
-            this.txtbulin.Text = "New building";
             // 
             // txtcent
             // 
@@ -262,7 +262,6 @@ namespace solution
             this.txtcent.Name = "txtcent";
             this.txtcent.Size = new System.Drawing.Size(173, 38);
             this.txtcent.TabIndex = 4;
-            this.txtcent.Text = "Malabe";
             // 
             // txtFacu
             // 
@@ -276,7 +275,6 @@ namespace solution
             this.txtFacu.Name = "txtFacu";
             this.txtFacu.Size = new System.Drawing.Size(173, 38);
             this.txtFacu.TabIndex = 3;
-            this.txtFacu.Text = "Computing";
             // 
             // txtDepname
             // 
@@ -303,18 +301,20 @@ namespace solution
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(326, 34);
+            this.label10.Location = new System.Drawing.Point(460, 28);
             this.label10.Name = "label10";
+
             this.label10.Size = new System.Drawing.Size(269, 42);
+
             this.label10.TabIndex = 1;
-            this.label10.Text = "Add Lecturer";
+            this.label10.Text = "Add Lecture";
             // 
             // addLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

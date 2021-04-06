@@ -32,7 +32,6 @@ namespace solution
             Studentpanel.Visible = false;
             Subjectpanel.Visible = false;
             Locationpanel.Visible = false;
-            Workingdayspanel.Visible = false;
             Sessionpanel.Visible = false;
             Tagpanel.Visible = false;
             Timetablepanel.Visible = false;
@@ -49,8 +48,6 @@ namespace solution
                 Subjectpanel.Visible = false;
             if (Locationpanel.Visible == true)
                 Locationpanel.Visible = false;
-            if (Workingdayspanel.Visible == true)
-                Workingdayspanel.Visible = false;
             if (Sessionpanel.Visible == true)
                 Sessionpanel.Visible = false;
             if (Tagpanel.Visible == true)
@@ -146,12 +143,14 @@ namespace solution
 
         private void subbtn1_Click(object sender, EventArgs e)
         {
+            openChildForm(new addSubject());
             //..
             hideSubMenu();
         }
 
         private void subbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageSubjects());
             //..
             hideSubMenu();
         }
@@ -163,33 +162,24 @@ namespace solution
 
         private void locbtn1_Click(object sender, EventArgs e)
         {
+
+            openChildForm(new addLocation());
             //..
             hideSubMenu();
         }
 
         private void locbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new manageLocation());
             //..
             hideSubMenu();
         }
 
         private void btnWorkingdays_Click(object sender, EventArgs e)
         {
-            showSubMenu(Workingdayspanel);
+            
         }
-
-        private void worbtn1_Click(object sender, EventArgs e)
-        {
-            //..
-            hideSubMenu();
-        }
-
-        private void worbtn2_Click(object sender, EventArgs e)
-        {
-            //..
-            hideSubMenu();
-        }
-
+        
         private void btnSession_Click(object sender, EventArgs e)
         {
             showSubMenu(Sessionpanel);

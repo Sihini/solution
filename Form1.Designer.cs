@@ -48,9 +48,6 @@ namespace solution
             this.sesbtn2 = new System.Windows.Forms.Button();
             this.sesbtn1 = new System.Windows.Forms.Button();
             this.btnSession = new System.Windows.Forms.Button();
-            this.Workingdayspanel = new System.Windows.Forms.Panel();
-            this.worbtn2 = new System.Windows.Forms.Button();
-            this.worbtn1 = new System.Windows.Forms.Button();
             this.btnWorkingdays = new System.Windows.Forms.Button();
             this.Locationpanel = new System.Windows.Forms.Panel();
             this.locbtn2 = new System.Windows.Forms.Button();
@@ -82,7 +79,6 @@ namespace solution
             this.Timetablepanel.SuspendLayout();
             this.Tagpanel.SuspendLayout();
             this.Sessionpanel.SuspendLayout();
-            this.Workingdayspanel.SuspendLayout();
             this.Locationpanel.SuspendLayout();
             this.Subjectpanel.SuspendLayout();
             this.Studentpanel.SuspendLayout();
@@ -106,7 +102,6 @@ namespace solution
             this.dashboardpanel.Controls.Add(this.btnTag);
             this.dashboardpanel.Controls.Add(this.Sessionpanel);
             this.dashboardpanel.Controls.Add(this.btnSession);
-            this.dashboardpanel.Controls.Add(this.Workingdayspanel);
             this.dashboardpanel.Controls.Add(this.btnWorkingdays);
             this.dashboardpanel.Controls.Add(this.Locationpanel);
             this.dashboardpanel.Controls.Add(this.btnLocation);
@@ -127,9 +122,12 @@ namespace solution
             // 
             // panel2
             // 
+
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 1297);
+
+
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 0);
             this.panel2.TabIndex = 19;
@@ -142,7 +140,7 @@ namespace solution
             this.Timetablepanel.Controls.Add(this.timbtn1);
             this.Timetablepanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Timetablepanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Timetablepanel.Location = new System.Drawing.Point(0, 1192);
+            this.Timetablepanel.Location = new System.Drawing.Point(0, 1122);
             this.Timetablepanel.Name = "Timetablepanel";
             this.Timetablepanel.Size = new System.Drawing.Size(244, 105);
             this.Timetablepanel.TabIndex = 18;
@@ -210,8 +208,11 @@ namespace solution
             this.btnTimetable.FlatAppearance.BorderSize = 0;
             this.btnTimetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimetable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
             this.btnTimetable.ForeColor = System.Drawing.Color.Black;
             this.btnTimetable.Location = new System.Drawing.Point(0, 1147);
+
+
             this.btnTimetable.Name = "btnTimetable";
             this.btnTimetable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnTimetable.Size = new System.Drawing.Size(244, 45);
@@ -228,8 +229,10 @@ namespace solution
             this.btnStatistical.FlatAppearance.BorderSize = 0;
             this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistical.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
             this.btnStatistical.ForeColor = System.Drawing.Color.Black;
             this.btnStatistical.Location = new System.Drawing.Point(0, 1102);
+
             this.btnStatistical.Name = "btnStatistical";
             this.btnStatistical.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnStatistical.Size = new System.Drawing.Size(244, 45);
@@ -246,7 +249,7 @@ namespace solution
             this.Tagpanel.Controls.Add(this.tag1);
             this.Tagpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Tagpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tagpanel.Location = new System.Drawing.Point(0, 1032);
+            this.Tagpanel.Location = new System.Drawing.Point(0, 962);
             this.Tagpanel.Name = "Tagpanel";
             this.Tagpanel.Size = new System.Drawing.Size(244, 70);
             this.Tagpanel.TabIndex = 15;
@@ -296,8 +299,10 @@ namespace solution
             this.btnTag.FlatAppearance.BorderSize = 0;
             this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
             this.btnTag.ForeColor = System.Drawing.Color.Black;
             this.btnTag.Location = new System.Drawing.Point(0, 987);
+
             this.btnTag.Name = "btnTag";
             this.btnTag.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnTag.Size = new System.Drawing.Size(244, 45);
@@ -316,7 +321,7 @@ namespace solution
             this.Sessionpanel.Controls.Add(this.sesbtn1);
             this.Sessionpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Sessionpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sessionpanel.Location = new System.Drawing.Point(0, 847);
+            this.Sessionpanel.Location = new System.Drawing.Point(0, 777);
             this.Sessionpanel.Name = "Sessionpanel";
             this.Sessionpanel.Size = new System.Drawing.Size(244, 140);
             this.Sessionpanel.TabIndex = 13;
@@ -404,8 +409,10 @@ namespace solution
             this.btnSession.FlatAppearance.BorderSize = 0;
             this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
             this.btnSession.ForeColor = System.Drawing.Color.Black;
             this.btnSession.Location = new System.Drawing.Point(0, 802);
+
             this.btnSession.Name = "btnSession";
             this.btnSession.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnSession.Size = new System.Drawing.Size(244, 45);
@@ -415,6 +422,7 @@ namespace solution
             this.btnSession.UseVisualStyleBackColor = false;
             this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
             // 
+
             // Workingdayspanel
             // 
             this.Workingdayspanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
@@ -465,6 +473,7 @@ namespace solution
             this.worbtn1.UseVisualStyleBackColor = false;
             this.worbtn1.Click += new System.EventHandler(this.worbtn1_Click);
             // 
+
             // btnWorkingdays
             // 
             this.btnWorkingdays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -816,7 +825,9 @@ namespace solution
             this.panelbottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelbottom.Location = new System.Drawing.Point(270, 718);
             this.panelbottom.Name = "panelbottom";
+
             this.panelbottom.Size = new System.Drawing.Size(1186, 50);
+
             this.panelbottom.TabIndex = 1;
             // 
             // panelChildForm
@@ -828,7 +839,9 @@ namespace solution
             this.panelChildForm.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelChildForm.Location = new System.Drawing.Point(270, 32);
             this.panelChildForm.Name = "panelChildForm";
+
             this.panelChildForm.Size = new System.Drawing.Size(1186, 686);
+
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -841,7 +854,9 @@ namespace solution
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(270, 0);
             this.panel1.Name = "panel1";
+
             this.panel1.Size = new System.Drawing.Size(1186, 31);
+
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1__MouseDown);
@@ -853,7 +868,9 @@ namespace solution
             this.pictureBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+
             this.pictureBox3.Location = new System.Drawing.Point(1098, 6);
+
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -868,7 +885,9 @@ namespace solution
             this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+
             this.pictureBox2.Location = new System.Drawing.Point(1057, 6);
+
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -883,7 +902,9 @@ namespace solution
             this.pictureBox1.BackColor = System.Drawing.Color.Red;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+
             this.pictureBox1.Location = new System.Drawing.Point(1140, 6);
+
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -895,7 +916,9 @@ namespace solution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1456, 768);
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelbottom);
@@ -909,7 +932,6 @@ namespace solution
             this.Timetablepanel.ResumeLayout(false);
             this.Tagpanel.ResumeLayout(false);
             this.Sessionpanel.ResumeLayout(false);
-            this.Workingdayspanel.ResumeLayout(false);
             this.Locationpanel.ResumeLayout(false);
             this.Subjectpanel.ResumeLayout(false);
             this.Studentpanel.ResumeLayout(false);
@@ -946,9 +968,7 @@ namespace solution
         private System.Windows.Forms.Button sesbtn2;
         private System.Windows.Forms.Button sesbtn1;
         private System.Windows.Forms.Button btnSession;
-        private System.Windows.Forms.Panel Workingdayspanel;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button worbtn1;
         private System.Windows.Forms.Button btnWorkingdays;
         private System.Windows.Forms.Panel Locationpanel;
         private System.Windows.Forms.Button locbtn2;
@@ -968,7 +988,6 @@ namespace solution
         private System.Windows.Forms.Button btnStatistical;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bu;
-        private System.Windows.Forms.Button worbtn2;
         private System.Windows.Forms.Button es;
         private System.Windows.Forms.Panel panelbottom;
         private System.Windows.Forms.Panel panelChildForm;
