@@ -64,8 +64,7 @@ namespace solution
 
 
             }
-            mangeLecturer frm = new mangeLecturer();//open Attendance management form
-            frm.Show();
+           
 
         }
         private bool IsValid()

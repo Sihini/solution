@@ -51,7 +51,6 @@ namespace solution
             this.txtDepname = new System.Windows.Forms.TextBox();
             this.txtEmpid = new System.Windows.Forms.TextBox();
             this.txtlecname = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.LectrerMandataGridView = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -85,7 +84,6 @@ namespace solution
             this.panel1.Controls.Add(this.txtDepname);
             this.panel1.Controls.Add(this.txtEmpid);
             this.panel1.Controls.Add(this.txtlecname);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.LectrerMandataGridView);
             this.panel1.Location = new System.Drawing.Point(4, 64);
             this.panel1.Name = "panel1";
@@ -328,15 +326,6 @@ namespace solution
             this.txtlecname.Size = new System.Drawing.Size(173, 27);
             this.txtlecname.TabIndex = 17;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(21, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // LectrerMandataGridView
             // 
             this.LectrerMandataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -386,7 +375,6 @@ namespace solution
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView LectrerMandataGridView;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
