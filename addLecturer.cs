@@ -142,6 +142,7 @@ namespace solution
             
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -157,6 +158,7 @@ namespace solution
         private void txtrank_TextChanged(object sender, EventArgs e)
         {
            
+
         }
     }
 }

@@ -239,6 +239,7 @@ namespace solution
             }*/
         }
 
+
         private void button2_Click_1(object sender, EventArgs e)
         {
 
@@ -248,6 +249,7 @@ namespace solution
 
             rid = mid + "." + gid;
             txtrank.Text = (rid);
+
         }
     }
 }
