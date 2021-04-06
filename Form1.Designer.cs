@@ -425,55 +425,7 @@ namespace solution
 
             // Workingdayspanel
             // 
-            this.Workingdayspanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.Workingdayspanel.Controls.Add(this.worbtn2);
-            this.Workingdayspanel.Controls.Add(this.worbtn1);
-            this.Workingdayspanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Workingdayspanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Workingdayspanel.Location = new System.Drawing.Point(0, 732);
-            this.Workingdayspanel.Name = "Workingdayspanel";
-            this.Workingdayspanel.Size = new System.Drawing.Size(244, 70);
-            this.Workingdayspanel.TabIndex = 11;
-            // 
-            // worbtn2
-            // 
-            this.worbtn2.BackColor = System.Drawing.Color.LightCyan;
-            this.worbtn2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.worbtn2.FlatAppearance.BorderSize = 0;
-            this.worbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.worbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn2.ForeColor = System.Drawing.Color.DimGray;
-            this.worbtn2.Location = new System.Drawing.Point(0, 35);
-            this.worbtn2.Margin = new System.Windows.Forms.Padding(0);
-            this.worbtn2.Name = "worbtn2";
-            this.worbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn2.Size = new System.Drawing.Size(244, 35);
-            this.worbtn2.TabIndex = 1;
-            this.worbtn2.Text = "Manage Working Days";
-            this.worbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.worbtn2.UseVisualStyleBackColor = false;
-            this.worbtn2.Click += new System.EventHandler(this.worbtn2_Click);
-            // 
-            // worbtn1
-            // 
-            this.worbtn1.BackColor = System.Drawing.Color.LightCyan;
-            this.worbtn1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.worbtn1.FlatAppearance.BorderSize = 0;
-            this.worbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.worbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn1.ForeColor = System.Drawing.Color.DimGray;
-            this.worbtn1.Location = new System.Drawing.Point(0, 0);
-            this.worbtn1.Margin = new System.Windows.Forms.Padding(0);
-            this.worbtn1.Name = "worbtn1";
-            this.worbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn1.Size = new System.Drawing.Size(244, 35);
-            this.worbtn1.TabIndex = 0;
-            this.worbtn1.Text = "Add Working Days";
-            this.worbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.worbtn1.UseVisualStyleBackColor = false;
-            this.worbtn1.Click += new System.EventHandler(this.worbtn1_Click);
-            // 
-
+          
             // btnWorkingdays
             // 
             this.btnWorkingdays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
