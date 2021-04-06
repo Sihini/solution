@@ -21,6 +21,11 @@ namespace solution
         public int LecturerID;
         int count = 0;
 
+        public string gid { get; set; }
+        public string mid { get; set; }
+
+        public string rid { get; set; }
+
 
         private void LectrerMandataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -232,6 +237,17 @@ namespace solution
             {
                 MessageBox.Show("record not found");
             }*/
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            gid = (string)txtEmpid.Text;
+            mid = (string)txtlevel.Text;
+
+
+            rid = mid + "." + gid;
+            txtrank.Text = (rid);
         }
     }
 }

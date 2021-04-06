@@ -149,7 +149,7 @@ namespace solution
             mid = (string)txtlevel.Text;
            
 
-            rid = gid +"."+ mid;
+            rid = mid + "."+ gid;
             txtrank.Text = (rid);
         }
 

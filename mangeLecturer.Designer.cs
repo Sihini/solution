@@ -30,11 +30,11 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtserachmangelec = new System.Windows.Forms.TextBox();
             this.lectManageDeleteBtn = new System.Windows.Forms.Button();
             this.clearMangeLectbtn = new System.Windows.Forms.Button();
             this.managelectupdatbtn = new System.Windows.Forms.Button();
-            this.serachmanagelectBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@ namespace solution
             this.txtlecname = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.LectrerMandataGridView = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LectrerMandataGridView)).BeginInit();
             this.SuspendLayout();
@@ -63,11 +64,11 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.txtserachmangelec);
             this.panel1.Controls.Add(this.lectManageDeleteBtn);
             this.panel1.Controls.Add(this.clearMangeLectbtn);
             this.panel1.Controls.Add(this.managelectupdatbtn);
-            this.panel1.Controls.Add(this.serachmanagelectBtn);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -88,15 +89,30 @@ namespace solution
             this.panel1.Controls.Add(this.LectrerMandataGridView);
             this.panel1.Location = new System.Drawing.Point(4, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(959, 482);
+            this.panel1.Size = new System.Drawing.Size(1069, 535);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button2.Location = new System.Drawing.Point(687, 454);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 62);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Generate Rank";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // txtserachmangelec
             // 
-            this.txtserachmangelec.Location = new System.Drawing.Point(536, 27);
+            this.txtserachmangelec.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtserachmangelec.Location = new System.Drawing.Point(609, 27);
             this.txtserachmangelec.Name = "txtserachmangelec";
-            this.txtserachmangelec.Size = new System.Drawing.Size(197, 27);
+            this.txtserachmangelec.PlaceholderText = "Search ";
+            this.txtserachmangelec.Size = new System.Drawing.Size(333, 32);
             this.txtserachmangelec.TabIndex = 37;
             this.txtserachmangelec.TextChanged += new System.EventHandler(this.txtserachmangelec_TextChanged);
             // 
@@ -105,9 +121,9 @@ namespace solution
             this.lectManageDeleteBtn.BackColor = System.Drawing.Color.Red;
             this.lectManageDeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lectManageDeleteBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lectManageDeleteBtn.Location = new System.Drawing.Point(646, 430);
+            this.lectManageDeleteBtn.Location = new System.Drawing.Point(687, 404);
             this.lectManageDeleteBtn.Name = "lectManageDeleteBtn";
-            this.lectManageDeleteBtn.Size = new System.Drawing.Size(137, 44);
+            this.lectManageDeleteBtn.Size = new System.Drawing.Size(138, 44);
             this.lectManageDeleteBtn.TabIndex = 36;
             this.lectManageDeleteBtn.Text = "Delete";
             this.lectManageDeleteBtn.UseVisualStyleBackColor = false;
@@ -118,9 +134,9 @@ namespace solution
             this.clearMangeLectbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearMangeLectbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearMangeLectbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.clearMangeLectbtn.Location = new System.Drawing.Point(646, 361);
+            this.clearMangeLectbtn.Location = new System.Drawing.Point(687, 335);
             this.clearMangeLectbtn.Name = "clearMangeLectbtn";
-            this.clearMangeLectbtn.Size = new System.Drawing.Size(137, 44);
+            this.clearMangeLectbtn.Size = new System.Drawing.Size(138, 44);
             this.clearMangeLectbtn.TabIndex = 35;
             this.clearMangeLectbtn.Text = "Clear";
             this.clearMangeLectbtn.UseVisualStyleBackColor = false;
@@ -131,26 +147,13 @@ namespace solution
             this.managelectupdatbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.managelectupdatbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.managelectupdatbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.managelectupdatbtn.Location = new System.Drawing.Point(646, 297);
+            this.managelectupdatbtn.Location = new System.Drawing.Point(687, 271);
             this.managelectupdatbtn.Name = "managelectupdatbtn";
-            this.managelectupdatbtn.Size = new System.Drawing.Size(137, 44);
+            this.managelectupdatbtn.Size = new System.Drawing.Size(138, 44);
             this.managelectupdatbtn.TabIndex = 34;
             this.managelectupdatbtn.Text = "Update";
             this.managelectupdatbtn.UseVisualStyleBackColor = false;
             this.managelectupdatbtn.Click += new System.EventHandler(this.managelectupdatbtn_Click);
-            // 
-            // serachmanagelectBtn
-            // 
-            this.serachmanagelectBtn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.serachmanagelectBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.serachmanagelectBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.serachmanagelectBtn.Location = new System.Drawing.Point(766, 20);
-            this.serachmanagelectBtn.Name = "serachmanagelectBtn";
-            this.serachmanagelectBtn.Size = new System.Drawing.Size(137, 44);
-            this.serachmanagelectBtn.TabIndex = 33;
-            this.serachmanagelectBtn.Text = "Search";
-            this.serachmanagelectBtn.UseVisualStyleBackColor = false;
-            this.serachmanagelectBtn.Click += new System.EventHandler(this.serachmanagelectBtn_Click);
             // 
             // label9
             // 
@@ -334,17 +337,28 @@ namespace solution
             this.LectrerMandataGridView.RowHeadersWidth = 51;
             this.LectrerMandataGridView.RowTemplate.Height = 29;
             this.LectrerMandataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.LectrerMandataGridView.Size = new System.Drawing.Size(899, 159);
+            this.LectrerMandataGridView.Size = new System.Drawing.Size(916, 141);
             this.LectrerMandataGridView.TabIndex = 0;
             this.LectrerMandataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LectrerMandataGridView_CellContentClick);
             this.LectrerMandataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LectrerMandataGridView_CellContentClick);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(379, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(283, 35);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Manage Lectures";
             // 
             // mangeLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Name = "mangeLecturer";
             this.Text = "mangeLecturer";
@@ -353,6 +367,7 @@ namespace solution
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LectrerMandataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -380,7 +395,8 @@ namespace solution
         private System.Windows.Forms.Button lectManageDeleteBtn;
         private System.Windows.Forms.Button clearMangeLectbtn;
         private System.Windows.Forms.Button managelectupdatbtn;
-        private System.Windows.Forms.Button serachmanagelectBtn;
         private System.Windows.Forms.TextBox txtserachmangelec;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label10;
     }
 }

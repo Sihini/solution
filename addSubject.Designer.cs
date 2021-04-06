@@ -50,6 +50,7 @@ namespace solution
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtnoOfEvelphour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoofLabHourse)).BeginInit();
@@ -83,7 +84,7 @@ namespace solution
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(33, 89);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(879, 460);
+            this.panel1.Size = new System.Drawing.Size(1020, 460);
             this.panel1.TabIndex = 0;
             // 
             // addsubjectradiobtn2
@@ -289,11 +290,22 @@ namespace solution
             this.label1.Text = "Offered Year";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(397, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(205, 35);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Add Subject";
+            // 
             // addSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -307,6 +319,7 @@ namespace solution
             ((System.ComponentModel.ISupportInitialize)(this.txtNooftuteHourse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNokecHourse)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -333,5 +346,6 @@ namespace solution
         private System.Windows.Forms.Button btnclearsubectadd;
         private System.Windows.Forms.RadioButton addsubjectradiobtn2;
         private System.Windows.Forms.RadioButton addsubjectradiobtn1;
+        private System.Windows.Forms.Label label10;
     }
 }

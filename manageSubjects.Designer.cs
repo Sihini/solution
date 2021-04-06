@@ -52,6 +52,7 @@ namespace solution
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.managesubjectview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtnoOfEvelphour)).BeginInit();
@@ -85,17 +86,19 @@ namespace solution
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 88);
+            this.panel1.Location = new System.Drawing.Point(13, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(959, 539);
+            this.panel1.Size = new System.Drawing.Size(1028, 539);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtsearchsubjectmanage1
             // 
+            this.txtsearchsubjectmanage1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtsearchsubjectmanage1.Location = new System.Drawing.Point(436, 31);
             this.txtsearchsubjectmanage1.Name = "txtsearchsubjectmanage1";
-            this.txtsearchsubjectmanage1.Size = new System.Drawing.Size(329, 32);
+            this.txtsearchsubjectmanage1.PlaceholderText = "Search";
+            this.txtsearchsubjectmanage1.Size = new System.Drawing.Size(438, 32);
             this.txtsearchsubjectmanage1.TabIndex = 51;
             this.txtsearchsubjectmanage1.TextChanged += new System.EventHandler(this.txtsearchsubjectmanage1_TextChanged);
             // 
@@ -320,12 +323,23 @@ namespace solution
             this.label1.TabIndex = 29;
             this.label1.Text = "Offered Year";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(376, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(278, 35);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Manage Subjects";
+            // 
             // manageSubjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -340,6 +354,7 @@ namespace solution
             ((System.ComponentModel.ISupportInitialize)(this.txtNooftuteHourse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNokecHourse)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -368,5 +383,6 @@ namespace solution
         private System.Windows.Forms.Button clearSubjctbtn;
         private System.Windows.Forms.Button manageSubjectbtn;
         private System.Windows.Forms.TextBox txtsearchsubjectmanage1;
+        private System.Windows.Forms.Label label10;
     }
 }
