@@ -86,17 +86,19 @@ namespace solution
             this.panel1.Controls.Add(this.txtlecname);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.LectrerMandataGridView);
-            this.panel1.Location = new System.Drawing.Point(4, 64);
+            this.panel1.Location = new System.Drawing.Point(5, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(959, 482);
+            this.panel1.Size = new System.Drawing.Size(1199, 602);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtserachmangelec
             // 
-            this.txtserachmangelec.Location = new System.Drawing.Point(536, 27);
+            this.txtserachmangelec.Location = new System.Drawing.Point(670, 34);
+            this.txtserachmangelec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtserachmangelec.Name = "txtserachmangelec";
-            this.txtserachmangelec.Size = new System.Drawing.Size(197, 27);
+            this.txtserachmangelec.Size = new System.Drawing.Size(245, 31);
             this.txtserachmangelec.TabIndex = 37;
             this.txtserachmangelec.TextChanged += new System.EventHandler(this.txtserachmangelec_TextChanged);
             // 
@@ -105,9 +107,10 @@ namespace solution
             this.lectManageDeleteBtn.BackColor = System.Drawing.Color.Red;
             this.lectManageDeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lectManageDeleteBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lectManageDeleteBtn.Location = new System.Drawing.Point(646, 430);
+            this.lectManageDeleteBtn.Location = new System.Drawing.Point(808, 538);
+            this.lectManageDeleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lectManageDeleteBtn.Name = "lectManageDeleteBtn";
-            this.lectManageDeleteBtn.Size = new System.Drawing.Size(137, 44);
+            this.lectManageDeleteBtn.Size = new System.Drawing.Size(171, 55);
             this.lectManageDeleteBtn.TabIndex = 36;
             this.lectManageDeleteBtn.Text = "Delete";
             this.lectManageDeleteBtn.UseVisualStyleBackColor = false;
@@ -118,9 +121,10 @@ namespace solution
             this.clearMangeLectbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearMangeLectbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearMangeLectbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.clearMangeLectbtn.Location = new System.Drawing.Point(646, 361);
+            this.clearMangeLectbtn.Location = new System.Drawing.Point(808, 451);
+            this.clearMangeLectbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clearMangeLectbtn.Name = "clearMangeLectbtn";
-            this.clearMangeLectbtn.Size = new System.Drawing.Size(137, 44);
+            this.clearMangeLectbtn.Size = new System.Drawing.Size(171, 55);
             this.clearMangeLectbtn.TabIndex = 35;
             this.clearMangeLectbtn.Text = "Clear";
             this.clearMangeLectbtn.UseVisualStyleBackColor = false;
@@ -131,9 +135,10 @@ namespace solution
             this.managelectupdatbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.managelectupdatbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.managelectupdatbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.managelectupdatbtn.Location = new System.Drawing.Point(646, 297);
+            this.managelectupdatbtn.Location = new System.Drawing.Point(808, 371);
+            this.managelectupdatbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.managelectupdatbtn.Name = "managelectupdatbtn";
-            this.managelectupdatbtn.Size = new System.Drawing.Size(137, 44);
+            this.managelectupdatbtn.Size = new System.Drawing.Size(171, 55);
             this.managelectupdatbtn.TabIndex = 34;
             this.managelectupdatbtn.Text = "Update";
             this.managelectupdatbtn.UseVisualStyleBackColor = false;
@@ -144,9 +149,10 @@ namespace solution
             this.serachmanagelectBtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.serachmanagelectBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.serachmanagelectBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.serachmanagelectBtn.Location = new System.Drawing.Point(766, 20);
+            this.serachmanagelectBtn.Location = new System.Drawing.Point(958, 25);
+            this.serachmanagelectBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.serachmanagelectBtn.Name = "serachmanagelectBtn";
-            this.serachmanagelectBtn.Size = new System.Drawing.Size(137, 44);
+            this.serachmanagelectBtn.Size = new System.Drawing.Size(171, 55);
             this.serachmanagelectBtn.TabIndex = 33;
             this.serachmanagelectBtn.Text = "Search";
             this.serachmanagelectBtn.UseVisualStyleBackColor = false;
@@ -156,9 +162,10 @@ namespace solution
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(357, 454);
+            this.label9.Location = new System.Drawing.Point(446, 568);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 23);
+            this.label9.Size = new System.Drawing.Size(70, 28);
             this.label9.TabIndex = 32;
             this.label9.Text = "Rank";
             // 
@@ -166,9 +173,10 @@ namespace solution
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(357, 401);
+            this.label8.Location = new System.Drawing.Point(446, 501);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 23);
+            this.label8.Size = new System.Drawing.Size(72, 28);
             this.label8.TabIndex = 31;
             this.label8.Text = "Level";
             // 
@@ -176,9 +184,10 @@ namespace solution
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(357, 346);
+            this.label7.Location = new System.Drawing.Point(446, 432);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 23);
+            this.label7.Size = new System.Drawing.Size(104, 28);
             this.label7.TabIndex = 30;
             this.label7.Text = "Building";
             // 
@@ -186,9 +195,10 @@ namespace solution
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(357, 290);
+            this.label6.Location = new System.Drawing.Point(446, 362);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 23);
+            this.label6.Size = new System.Drawing.Size(90, 28);
             this.label6.TabIndex = 29;
             this.label6.Text = "Center";
             // 
@@ -196,9 +206,10 @@ namespace solution
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(9, 452);
+            this.label5.Location = new System.Drawing.Point(11, 565);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 23);
+            this.label5.Size = new System.Drawing.Size(150, 28);
             this.label5.TabIndex = 28;
             this.label5.Text = "Department";
             // 
@@ -206,9 +217,10 @@ namespace solution
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(9, 402);
+            this.label4.Location = new System.Drawing.Point(11, 502);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 23);
+            this.label4.Size = new System.Drawing.Size(96, 28);
             this.label4.TabIndex = 27;
             this.label4.Text = "Faculty";
             // 
@@ -216,9 +228,10 @@ namespace solution
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(9, 346);
+            this.label3.Location = new System.Drawing.Point(11, 432);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 23);
+            this.label3.Size = new System.Drawing.Size(159, 28);
             this.label3.TabIndex = 26;
             this.label3.Text = "Employee ID";
             // 
@@ -226,17 +239,19 @@ namespace solution
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(8, 289);
+            this.label1.Location = new System.Drawing.Point(10, 361);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 23);
+            this.label1.Size = new System.Drawing.Size(184, 28);
             this.label1.TabIndex = 25;
             this.label1.Text = "Lecturer Name";
             // 
             // txtrank
             // 
-            this.txtrank.Location = new System.Drawing.Point(450, 450);
+            this.txtrank.Location = new System.Drawing.Point(562, 562);
+            this.txtrank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtrank.Name = "txtrank";
-            this.txtrank.Size = new System.Drawing.Size(173, 27);
+            this.txtrank.Size = new System.Drawing.Size(215, 31);
             this.txtrank.TabIndex = 24;
             // 
             // txtlevel
@@ -249,9 +264,10 @@ namespace solution
             "4",
             "5",
             "6"});
-            this.txtlevel.Location = new System.Drawing.Point(450, 397);
+            this.txtlevel.Location = new System.Drawing.Point(562, 496);
+            this.txtlevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlevel.Name = "txtlevel";
-            this.txtlevel.Size = new System.Drawing.Size(173, 28);
+            this.txtlevel.Size = new System.Drawing.Size(215, 33);
             this.txtlevel.TabIndex = 23;
             this.txtlevel.Text = "1";
             // 
@@ -261,9 +277,10 @@ namespace solution
             this.txtbulin.Items.AddRange(new object[] {
             "New building",
             "D-block"});
-            this.txtbulin.Location = new System.Drawing.Point(450, 342);
+            this.txtbulin.Location = new System.Drawing.Point(562, 428);
+            this.txtbulin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbulin.Name = "txtbulin";
-            this.txtbulin.Size = new System.Drawing.Size(173, 28);
+            this.txtbulin.Size = new System.Drawing.Size(215, 33);
             this.txtbulin.TabIndex = 22;
             this.txtbulin.Text = "New building";
             // 
@@ -277,9 +294,10 @@ namespace solution
             "Kandy",
             "Kurunegala",
             "Jaffna"});
-            this.txtcent.Location = new System.Drawing.Point(450, 285);
+            this.txtcent.Location = new System.Drawing.Point(562, 356);
+            this.txtcent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcent.Name = "txtcent";
-            this.txtcent.Size = new System.Drawing.Size(173, 28);
+            this.txtcent.Size = new System.Drawing.Size(215, 33);
             this.txtcent.TabIndex = 21;
             this.txtcent.Text = "Malabe";
             // 
@@ -291,38 +309,44 @@ namespace solution
             "Engineering",
             "Business",
             "Humanties & Sciences"});
-            this.txtFacu.Location = new System.Drawing.Point(164, 398);
+            this.txtFacu.Location = new System.Drawing.Point(205, 498);
+            this.txtFacu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFacu.Name = "txtFacu";
-            this.txtFacu.Size = new System.Drawing.Size(173, 28);
+            this.txtFacu.Size = new System.Drawing.Size(215, 33);
             this.txtFacu.TabIndex = 20;
             this.txtFacu.Text = "Computing";
             // 
             // txtDepname
             // 
-            this.txtDepname.Location = new System.Drawing.Point(164, 451);
+            this.txtDepname.Location = new System.Drawing.Point(205, 564);
+            this.txtDepname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDepname.Name = "txtDepname";
-            this.txtDepname.Size = new System.Drawing.Size(173, 27);
+            this.txtDepname.Size = new System.Drawing.Size(215, 31);
             this.txtDepname.TabIndex = 19;
             // 
             // txtEmpid
             // 
-            this.txtEmpid.Location = new System.Drawing.Point(164, 342);
+            this.txtEmpid.Location = new System.Drawing.Point(205, 428);
+            this.txtEmpid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmpid.Name = "txtEmpid";
-            this.txtEmpid.Size = new System.Drawing.Size(173, 27);
+            this.txtEmpid.Size = new System.Drawing.Size(215, 31);
             this.txtEmpid.TabIndex = 18;
             // 
             // txtlecname
             // 
-            this.txtlecname.Location = new System.Drawing.Point(164, 285);
+            this.txtlecname.Location = new System.Drawing.Point(205, 356);
+            this.txtlecname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlecname.Name = "txtlecname";
-            this.txtlecname.Size = new System.Drawing.Size(173, 27);
+            this.txtlecname.Size = new System.Drawing.Size(215, 31);
             this.txtlecname.TabIndex = 17;
+            this.txtlecname.TextChanged += new System.EventHandler(this.txtlecname_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 13);
+            this.button1.Location = new System.Drawing.Point(26, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 29);
+            this.button1.Size = new System.Drawing.Size(86, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -333,23 +357,25 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LectrerMandataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LectrerMandataGridView.Location = new System.Drawing.Point(26, 78);
+            this.LectrerMandataGridView.Location = new System.Drawing.Point(32, 98);
+            this.LectrerMandataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LectrerMandataGridView.Name = "LectrerMandataGridView";
             this.LectrerMandataGridView.RowHeadersWidth = 51;
             this.LectrerMandataGridView.RowTemplate.Height = 29;
             this.LectrerMandataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.LectrerMandataGridView.Size = new System.Drawing.Size(899, 159);
+            this.LectrerMandataGridView.Size = new System.Drawing.Size(1124, 199);
             this.LectrerMandataGridView.TabIndex = 0;
             this.LectrerMandataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LectrerMandataGridView_CellContentClick);
             this.LectrerMandataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LectrerMandataGridView_CellContentClick);
             // 
             // mangeLecturer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1219, 799);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mangeLecturer";
             this.Text = "mangeLecturer";
             this.Load += new System.EventHandler(this.mangeLecturer_Load);

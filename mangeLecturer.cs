@@ -227,5 +227,10 @@ namespace solution
                 MessageBox.Show("record not found");
             }*/
         }
+
+        private void txtlecname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -127,10 +127,11 @@ namespace solution
             // 
             // panel2
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 1297);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 87);
+            this.panel2.Size = new System.Drawing.Size(244, 0);
             this.panel2.TabIndex = 19;
             // 
             // Timetablepanel
@@ -143,22 +144,22 @@ namespace solution
             this.Timetablepanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Timetablepanel.Location = new System.Drawing.Point(0, 1192);
             this.Timetablepanel.Name = "Timetablepanel";
-            this.Timetablepanel.Size = new System.Drawing.Size(249, 105);
+            this.Timetablepanel.Size = new System.Drawing.Size(244, 105);
             this.Timetablepanel.TabIndex = 18;
             // 
             // timbtn3
             // 
-            this.timbtn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.timbtn3.BackColor = System.Drawing.Color.LightCyan;
             this.timbtn3.Dock = System.Windows.Forms.DockStyle.Top;
             this.timbtn3.FlatAppearance.BorderSize = 0;
             this.timbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.timbtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.timbtn3.ForeColor = System.Drawing.Color.DarkGray;
+            this.timbtn3.ForeColor = System.Drawing.Color.DimGray;
             this.timbtn3.Location = new System.Drawing.Point(0, 70);
             this.timbtn3.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn3.Name = "timbtn3";
             this.timbtn3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn3.Size = new System.Drawing.Size(249, 35);
+            this.timbtn3.Size = new System.Drawing.Size(244, 35);
             this.timbtn3.TabIndex = 2;
             this.timbtn3.Text = "Location";
             this.timbtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,17 +167,17 @@ namespace solution
             // 
             // timbtn2
             // 
-            this.timbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.timbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.timbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.timbtn2.FlatAppearance.BorderSize = 0;
             this.timbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.timbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.timbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.timbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.timbtn2.Location = new System.Drawing.Point(0, 35);
             this.timbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn2.Name = "timbtn2";
             this.timbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn2.Size = new System.Drawing.Size(249, 35);
+            this.timbtn2.Size = new System.Drawing.Size(244, 35);
             this.timbtn2.TabIndex = 1;
             this.timbtn2.Text = "Student";
             this.timbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,17 +186,17 @@ namespace solution
             // 
             // timbtn1
             // 
-            this.timbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.timbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.timbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.timbtn1.FlatAppearance.BorderSize = 0;
             this.timbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.timbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.timbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.timbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.timbtn1.Location = new System.Drawing.Point(0, 0);
             this.timbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn1.Name = "timbtn1";
             this.timbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn1.Size = new System.Drawing.Size(249, 35);
+            this.timbtn1.Size = new System.Drawing.Size(244, 35);
             this.timbtn1.TabIndex = 0;
             this.timbtn1.Text = "Lecturer";
             this.timbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,36 +205,38 @@ namespace solution
             // 
             // btnTimetable
             // 
+            this.btnTimetable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTimetable.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTimetable.FlatAppearance.BorderSize = 0;
             this.btnTimetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimetable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTimetable.ForeColor = System.Drawing.Color.White;
+            this.btnTimetable.ForeColor = System.Drawing.Color.Black;
             this.btnTimetable.Location = new System.Drawing.Point(0, 1147);
             this.btnTimetable.Name = "btnTimetable";
             this.btnTimetable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnTimetable.Size = new System.Drawing.Size(249, 45);
+            this.btnTimetable.Size = new System.Drawing.Size(244, 45);
             this.btnTimetable.TabIndex = 17;
             this.btnTimetable.Text = "Timetable";
             this.btnTimetable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimetable.UseVisualStyleBackColor = true;
+            this.btnTimetable.UseVisualStyleBackColor = false;
             this.btnTimetable.Click += new System.EventHandler(this.btnTimetable_Click);
             // 
             // btnStatistical
             // 
+            this.btnStatistical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnStatistical.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStatistical.FlatAppearance.BorderSize = 0;
             this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistical.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnStatistical.ForeColor = System.Drawing.Color.White;
+            this.btnStatistical.ForeColor = System.Drawing.Color.Black;
             this.btnStatistical.Location = new System.Drawing.Point(0, 1102);
             this.btnStatistical.Name = "btnStatistical";
             this.btnStatistical.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnStatistical.Size = new System.Drawing.Size(249, 45);
+            this.btnStatistical.Size = new System.Drawing.Size(244, 45);
             this.btnStatistical.TabIndex = 16;
             this.btnStatistical.Text = "Statistical View";
             this.btnStatistical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistical.UseVisualStyleBackColor = true;
+            this.btnStatistical.UseVisualStyleBackColor = false;
             this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
             // 
             // Tagpanel
@@ -245,22 +248,22 @@ namespace solution
             this.Tagpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Tagpanel.Location = new System.Drawing.Point(0, 1032);
             this.Tagpanel.Name = "Tagpanel";
-            this.Tagpanel.Size = new System.Drawing.Size(249, 70);
+            this.Tagpanel.Size = new System.Drawing.Size(244, 70);
             this.Tagpanel.TabIndex = 15;
             // 
             // tag2
             // 
-            this.tag2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.tag2.BackColor = System.Drawing.Color.LightCyan;
             this.tag2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tag2.FlatAppearance.BorderSize = 0;
             this.tag2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tag2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tag2.ForeColor = System.Drawing.Color.DarkGray;
+            this.tag2.ForeColor = System.Drawing.Color.DimGray;
             this.tag2.Location = new System.Drawing.Point(0, 35);
             this.tag2.Margin = new System.Windows.Forms.Padding(0);
             this.tag2.Name = "tag2";
             this.tag2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.tag2.Size = new System.Drawing.Size(249, 35);
+            this.tag2.Size = new System.Drawing.Size(244, 35);
             this.tag2.TabIndex = 1;
             this.tag2.Text = "Manage Tags";
             this.tag2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,17 +272,17 @@ namespace solution
             // 
             // tag1
             // 
-            this.tag1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.tag1.BackColor = System.Drawing.Color.LightCyan;
             this.tag1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tag1.FlatAppearance.BorderSize = 0;
             this.tag1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tag1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tag1.ForeColor = System.Drawing.Color.DarkGray;
+            this.tag1.ForeColor = System.Drawing.Color.DimGray;
             this.tag1.Location = new System.Drawing.Point(0, 0);
             this.tag1.Margin = new System.Windows.Forms.Padding(0);
             this.tag1.Name = "tag1";
             this.tag1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.tag1.Size = new System.Drawing.Size(249, 35);
+            this.tag1.Size = new System.Drawing.Size(244, 35);
             this.tag1.TabIndex = 0;
             this.tag1.Text = "Add Tags";
             this.tag1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -288,19 +291,20 @@ namespace solution
             // 
             // btnTag
             // 
+            this.btnTag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTag.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTag.FlatAppearance.BorderSize = 0;
             this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTag.ForeColor = System.Drawing.Color.White;
+            this.btnTag.ForeColor = System.Drawing.Color.Black;
             this.btnTag.Location = new System.Drawing.Point(0, 987);
             this.btnTag.Name = "btnTag";
             this.btnTag.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnTag.Size = new System.Drawing.Size(249, 45);
+            this.btnTag.Size = new System.Drawing.Size(244, 45);
             this.btnTag.TabIndex = 14;
             this.btnTag.Text = "Tag";
             this.btnTag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTag.UseVisualStyleBackColor = true;
+            this.btnTag.UseVisualStyleBackColor = false;
             this.btnTag.Click += new System.EventHandler(this.btnTag_Click);
             // 
             // Sessionpanel
@@ -314,22 +318,22 @@ namespace solution
             this.Sessionpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Sessionpanel.Location = new System.Drawing.Point(0, 847);
             this.Sessionpanel.Name = "Sessionpanel";
-            this.Sessionpanel.Size = new System.Drawing.Size(249, 140);
+            this.Sessionpanel.Size = new System.Drawing.Size(244, 140);
             this.Sessionpanel.TabIndex = 13;
             // 
             // sesbtn4
             // 
-            this.sesbtn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.sesbtn4.BackColor = System.Drawing.Color.LightCyan;
             this.sesbtn4.Dock = System.Windows.Forms.DockStyle.Top;
             this.sesbtn4.FlatAppearance.BorderSize = 0;
             this.sesbtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sesbtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sesbtn4.ForeColor = System.Drawing.Color.DarkGray;
+            this.sesbtn4.ForeColor = System.Drawing.Color.DimGray;
             this.sesbtn4.Location = new System.Drawing.Point(0, 105);
             this.sesbtn4.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn4.Name = "sesbtn4";
             this.sesbtn4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn4.Size = new System.Drawing.Size(249, 35);
+            this.sesbtn4.Size = new System.Drawing.Size(244, 35);
             this.sesbtn4.TabIndex = 3;
             this.sesbtn4.Text = "Session Time Allocation";
             this.sesbtn4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -338,17 +342,17 @@ namespace solution
             // 
             // sesbtn3
             // 
-            this.sesbtn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.sesbtn3.BackColor = System.Drawing.Color.LightCyan;
             this.sesbtn3.Dock = System.Windows.Forms.DockStyle.Top;
             this.sesbtn3.FlatAppearance.BorderSize = 0;
             this.sesbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sesbtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sesbtn3.ForeColor = System.Drawing.Color.DarkGray;
+            this.sesbtn3.ForeColor = System.Drawing.Color.DimGray;
             this.sesbtn3.Location = new System.Drawing.Point(0, 70);
             this.sesbtn3.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn3.Name = "sesbtn3";
             this.sesbtn3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn3.Size = new System.Drawing.Size(249, 35);
+            this.sesbtn3.Size = new System.Drawing.Size(244, 35);
             this.sesbtn3.TabIndex = 2;
             this.sesbtn3.Text = "Manage Session Rooms";
             this.sesbtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -357,17 +361,17 @@ namespace solution
             // 
             // sesbtn2
             // 
-            this.sesbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.sesbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.sesbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.sesbtn2.FlatAppearance.BorderSize = 0;
             this.sesbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sesbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sesbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.sesbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.sesbtn2.Location = new System.Drawing.Point(0, 35);
             this.sesbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn2.Name = "sesbtn2";
             this.sesbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn2.Size = new System.Drawing.Size(249, 35);
+            this.sesbtn2.Size = new System.Drawing.Size(244, 35);
             this.sesbtn2.TabIndex = 1;
             this.sesbtn2.Text = "Manage Session";
             this.sesbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -376,17 +380,17 @@ namespace solution
             // 
             // sesbtn1
             // 
-            this.sesbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.sesbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.sesbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sesbtn1.FlatAppearance.BorderSize = 0;
             this.sesbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sesbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sesbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.sesbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.sesbtn1.Location = new System.Drawing.Point(0, 0);
             this.sesbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn1.Name = "sesbtn1";
             this.sesbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn1.Size = new System.Drawing.Size(249, 35);
+            this.sesbtn1.Size = new System.Drawing.Size(244, 35);
             this.sesbtn1.TabIndex = 0;
             this.sesbtn1.Text = "Add Session";
             this.sesbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -395,19 +399,20 @@ namespace solution
             // 
             // btnSession
             // 
+            this.btnSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSession.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSession.FlatAppearance.BorderSize = 0;
             this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSession.ForeColor = System.Drawing.Color.White;
+            this.btnSession.ForeColor = System.Drawing.Color.Black;
             this.btnSession.Location = new System.Drawing.Point(0, 802);
             this.btnSession.Name = "btnSession";
             this.btnSession.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSession.Size = new System.Drawing.Size(249, 45);
+            this.btnSession.Size = new System.Drawing.Size(244, 45);
             this.btnSession.TabIndex = 12;
             this.btnSession.Text = "Session";
             this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSession.UseVisualStyleBackColor = true;
+            this.btnSession.UseVisualStyleBackColor = false;
             this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
             // 
             // Workingdayspanel
@@ -419,22 +424,22 @@ namespace solution
             this.Workingdayspanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Workingdayspanel.Location = new System.Drawing.Point(0, 732);
             this.Workingdayspanel.Name = "Workingdayspanel";
-            this.Workingdayspanel.Size = new System.Drawing.Size(249, 70);
+            this.Workingdayspanel.Size = new System.Drawing.Size(244, 70);
             this.Workingdayspanel.TabIndex = 11;
             // 
             // worbtn2
             // 
-            this.worbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.worbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.worbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.worbtn2.FlatAppearance.BorderSize = 0;
             this.worbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.worbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.worbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.worbtn2.Location = new System.Drawing.Point(0, 35);
             this.worbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.worbtn2.Name = "worbtn2";
             this.worbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn2.Size = new System.Drawing.Size(249, 35);
+            this.worbtn2.Size = new System.Drawing.Size(244, 35);
             this.worbtn2.TabIndex = 1;
             this.worbtn2.Text = "Manage Working Days";
             this.worbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,17 +448,17 @@ namespace solution
             // 
             // worbtn1
             // 
-            this.worbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.worbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.worbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.worbtn1.FlatAppearance.BorderSize = 0;
             this.worbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.worbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.worbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.worbtn1.Location = new System.Drawing.Point(0, 0);
             this.worbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.worbtn1.Name = "worbtn1";
             this.worbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn1.Size = new System.Drawing.Size(249, 35);
+            this.worbtn1.Size = new System.Drawing.Size(244, 35);
             this.worbtn1.TabIndex = 0;
             this.worbtn1.Text = "Add Working Days";
             this.worbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -462,19 +467,20 @@ namespace solution
             // 
             // btnWorkingdays
             // 
+            this.btnWorkingdays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnWorkingdays.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnWorkingdays.FlatAppearance.BorderSize = 0;
             this.btnWorkingdays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWorkingdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnWorkingdays.ForeColor = System.Drawing.Color.White;
+            this.btnWorkingdays.ForeColor = System.Drawing.Color.Black;
             this.btnWorkingdays.Location = new System.Drawing.Point(0, 687);
             this.btnWorkingdays.Name = "btnWorkingdays";
             this.btnWorkingdays.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnWorkingdays.Size = new System.Drawing.Size(249, 45);
+            this.btnWorkingdays.Size = new System.Drawing.Size(244, 45);
             this.btnWorkingdays.TabIndex = 10;
             this.btnWorkingdays.Text = "Working Days";
             this.btnWorkingdays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWorkingdays.UseVisualStyleBackColor = true;
+            this.btnWorkingdays.UseVisualStyleBackColor = false;
             this.btnWorkingdays.Click += new System.EventHandler(this.btnWorkingdays_Click);
             // 
             // Locationpanel
@@ -486,22 +492,22 @@ namespace solution
             this.Locationpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Locationpanel.Location = new System.Drawing.Point(0, 617);
             this.Locationpanel.Name = "Locationpanel";
-            this.Locationpanel.Size = new System.Drawing.Size(249, 70);
+            this.Locationpanel.Size = new System.Drawing.Size(244, 70);
             this.Locationpanel.TabIndex = 9;
             // 
             // locbtn2
             // 
-            this.locbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.locbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.locbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.locbtn2.FlatAppearance.BorderSize = 0;
             this.locbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.locbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.locbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.locbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.locbtn2.Location = new System.Drawing.Point(0, 35);
             this.locbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.locbtn2.Name = "locbtn2";
             this.locbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.locbtn2.Size = new System.Drawing.Size(249, 35);
+            this.locbtn2.Size = new System.Drawing.Size(244, 35);
             this.locbtn2.TabIndex = 1;
             this.locbtn2.Text = "Manage Location";
             this.locbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -510,17 +516,17 @@ namespace solution
             // 
             // locbtn1
             // 
-            this.locbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.locbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.locbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.locbtn1.FlatAppearance.BorderSize = 0;
             this.locbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.locbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.locbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.locbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.locbtn1.Location = new System.Drawing.Point(0, 0);
             this.locbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.locbtn1.Name = "locbtn1";
             this.locbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.locbtn1.Size = new System.Drawing.Size(249, 35);
+            this.locbtn1.Size = new System.Drawing.Size(244, 35);
             this.locbtn1.TabIndex = 0;
             this.locbtn1.Text = "Add Location";
             this.locbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -529,19 +535,20 @@ namespace solution
             // 
             // btnLocation
             // 
+            this.btnLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnLocation.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLocation.FlatAppearance.BorderSize = 0;
             this.btnLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLocation.ForeColor = System.Drawing.Color.White;
+            this.btnLocation.ForeColor = System.Drawing.Color.Black;
             this.btnLocation.Location = new System.Drawing.Point(0, 572);
             this.btnLocation.Name = "btnLocation";
             this.btnLocation.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLocation.Size = new System.Drawing.Size(249, 45);
+            this.btnLocation.Size = new System.Drawing.Size(244, 45);
             this.btnLocation.TabIndex = 8;
             this.btnLocation.Text = "Location";
             this.btnLocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.UseVisualStyleBackColor = false;
             this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
             // 
             // Subjectpanel
@@ -553,22 +560,22 @@ namespace solution
             this.Subjectpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Subjectpanel.Location = new System.Drawing.Point(0, 502);
             this.Subjectpanel.Name = "Subjectpanel";
-            this.Subjectpanel.Size = new System.Drawing.Size(249, 70);
+            this.Subjectpanel.Size = new System.Drawing.Size(244, 70);
             this.Subjectpanel.TabIndex = 7;
             // 
             // subbtn2
             // 
-            this.subbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.subbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.subbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.subbtn2.FlatAppearance.BorderSize = 0;
             this.subbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.subbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.subbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.subbtn2.Location = new System.Drawing.Point(0, 35);
             this.subbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.subbtn2.Name = "subbtn2";
             this.subbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.subbtn2.Size = new System.Drawing.Size(249, 35);
+            this.subbtn2.Size = new System.Drawing.Size(244, 35);
             this.subbtn2.TabIndex = 1;
             this.subbtn2.Text = "Manage Subject";
             this.subbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -577,17 +584,17 @@ namespace solution
             // 
             // subbtn1
             // 
-            this.subbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.subbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.subbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.subbtn1.FlatAppearance.BorderSize = 0;
             this.subbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.subbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.subbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.subbtn1.Location = new System.Drawing.Point(0, 0);
             this.subbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.subbtn1.Name = "subbtn1";
             this.subbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.subbtn1.Size = new System.Drawing.Size(249, 35);
+            this.subbtn1.Size = new System.Drawing.Size(244, 35);
             this.subbtn1.TabIndex = 0;
             this.subbtn1.Text = "Add Subject";
             this.subbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -596,19 +603,20 @@ namespace solution
             // 
             // btnSubject
             // 
+            this.btnSubject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSubject.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubject.FlatAppearance.BorderSize = 0;
             this.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSubject.ForeColor = System.Drawing.Color.White;
+            this.btnSubject.ForeColor = System.Drawing.Color.Black;
             this.btnSubject.Location = new System.Drawing.Point(0, 457);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSubject.Size = new System.Drawing.Size(249, 45);
+            this.btnSubject.Size = new System.Drawing.Size(244, 45);
             this.btnSubject.TabIndex = 6;
             this.btnSubject.Text = "Subject";
             this.btnSubject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubject.UseVisualStyleBackColor = true;
+            this.btnSubject.UseVisualStyleBackColor = false;
             this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click);
             // 
             // Studentpanel
@@ -620,22 +628,22 @@ namespace solution
             this.Studentpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Studentpanel.Location = new System.Drawing.Point(0, 387);
             this.Studentpanel.Name = "Studentpanel";
-            this.Studentpanel.Size = new System.Drawing.Size(249, 70);
+            this.Studentpanel.Size = new System.Drawing.Size(244, 70);
             this.Studentpanel.TabIndex = 5;
             // 
             // stubtn2
             // 
-            this.stubtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.stubtn2.BackColor = System.Drawing.Color.LightCyan;
             this.stubtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.stubtn2.FlatAppearance.BorderSize = 0;
             this.stubtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stubtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.stubtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.stubtn2.ForeColor = System.Drawing.Color.DimGray;
             this.stubtn2.Location = new System.Drawing.Point(0, 35);
             this.stubtn2.Margin = new System.Windows.Forms.Padding(0);
             this.stubtn2.Name = "stubtn2";
             this.stubtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.stubtn2.Size = new System.Drawing.Size(249, 35);
+            this.stubtn2.Size = new System.Drawing.Size(244, 35);
             this.stubtn2.TabIndex = 1;
             this.stubtn2.Text = "Manage Student";
             this.stubtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -644,17 +652,17 @@ namespace solution
             // 
             // stubtn1
             // 
-            this.stubtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.stubtn1.BackColor = System.Drawing.Color.LightCyan;
             this.stubtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.stubtn1.FlatAppearance.BorderSize = 0;
             this.stubtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stubtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.stubtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.stubtn1.ForeColor = System.Drawing.Color.DimGray;
             this.stubtn1.Location = new System.Drawing.Point(0, 0);
             this.stubtn1.Margin = new System.Windows.Forms.Padding(0);
             this.stubtn1.Name = "stubtn1";
             this.stubtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.stubtn1.Size = new System.Drawing.Size(249, 35);
+            this.stubtn1.Size = new System.Drawing.Size(244, 35);
             this.stubtn1.TabIndex = 0;
             this.stubtn1.Text = "Add Student";
             this.stubtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -663,19 +671,20 @@ namespace solution
             // 
             // btnStudent
             // 
+            this.btnStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStudent.FlatAppearance.BorderSize = 0;
             this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.ForeColor = System.Drawing.Color.Black;
             this.btnStudent.Location = new System.Drawing.Point(0, 342);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnStudent.Size = new System.Drawing.Size(249, 45);
+            this.btnStudent.Size = new System.Drawing.Size(244, 45);
             this.btnStudent.TabIndex = 4;
             this.btnStudent.Text = "Student";
             this.btnStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.UseVisualStyleBackColor = false;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
             // Lecturerpanel
@@ -687,22 +696,22 @@ namespace solution
             this.Lecturerpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Lecturerpanel.Location = new System.Drawing.Point(0, 272);
             this.Lecturerpanel.Name = "Lecturerpanel";
-            this.Lecturerpanel.Size = new System.Drawing.Size(249, 70);
+            this.Lecturerpanel.Size = new System.Drawing.Size(244, 70);
             this.Lecturerpanel.TabIndex = 3;
             // 
             // lecbtn2
             // 
-            this.lecbtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.lecbtn2.BackColor = System.Drawing.Color.LightCyan;
             this.lecbtn2.Dock = System.Windows.Forms.DockStyle.Top;
             this.lecbtn2.FlatAppearance.BorderSize = 0;
             this.lecbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lecbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lecbtn2.ForeColor = System.Drawing.Color.DarkGray;
+            this.lecbtn2.ForeColor = System.Drawing.Color.DimGray;
             this.lecbtn2.Location = new System.Drawing.Point(0, 35);
             this.lecbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.lecbtn2.Name = "lecbtn2";
             this.lecbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.lecbtn2.Size = new System.Drawing.Size(249, 35);
+            this.lecbtn2.Size = new System.Drawing.Size(244, 35);
             this.lecbtn2.TabIndex = 1;
             this.lecbtn2.Text = "Manage Lecturer";
             this.lecbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -711,17 +720,17 @@ namespace solution
             // 
             // lecbtn1
             // 
-            this.lecbtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.lecbtn1.BackColor = System.Drawing.Color.LightCyan;
             this.lecbtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.lecbtn1.FlatAppearance.BorderSize = 0;
             this.lecbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lecbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lecbtn1.ForeColor = System.Drawing.Color.DarkGray;
+            this.lecbtn1.ForeColor = System.Drawing.Color.DimGray;
             this.lecbtn1.Location = new System.Drawing.Point(0, 0);
             this.lecbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.lecbtn1.Name = "lecbtn1";
             this.lecbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.lecbtn1.Size = new System.Drawing.Size(249, 35);
+            this.lecbtn1.Size = new System.Drawing.Size(244, 35);
             this.lecbtn1.TabIndex = 0;
             this.lecbtn1.Text = "Add Lecturer";
             this.lecbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -730,40 +739,43 @@ namespace solution
             // 
             // btnLecturer
             // 
+            this.btnLecturer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnLecturer.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLecturer.FlatAppearance.BorderSize = 0;
             this.btnLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLecturer.ForeColor = System.Drawing.Color.White;
+            this.btnLecturer.ForeColor = System.Drawing.Color.Black;
             this.btnLecturer.Location = new System.Drawing.Point(0, 227);
             this.btnLecturer.Name = "btnLecturer";
             this.btnLecturer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLecturer.Size = new System.Drawing.Size(249, 45);
+            this.btnLecturer.Size = new System.Drawing.Size(244, 45);
             this.btnLecturer.TabIndex = 2;
             this.btnLecturer.Text = "Lecturer";
             this.btnLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLecturer.UseVisualStyleBackColor = true;
+            this.btnLecturer.UseVisualStyleBackColor = false;
             this.btnLecturer.Click += new System.EventHandler(this.btnLecturer_Click);
             // 
             // btnhome
             // 
+            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnhome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnhome.FlatAppearance.BorderSize = 0;
             this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnhome.ForeColor = System.Drawing.Color.White;
+            this.btnhome.ForeColor = System.Drawing.Color.Black;
             this.btnhome.Location = new System.Drawing.Point(0, 182);
             this.btnhome.Name = "btnhome";
             this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnhome.Size = new System.Drawing.Size(249, 45);
+            this.btnhome.Size = new System.Drawing.Size(244, 45);
             this.btnhome.TabIndex = 1;
             this.btnhome.Text = "Home";
             this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.UseVisualStyleBackColor = false;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // logoutpanel
             // 
+            this.logoutpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.logoutpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logoutpanel.Controls.Add(this.logoutbtn);
             this.logoutpanel.Controls.Add(this.iconpanel);
@@ -771,7 +783,7 @@ namespace solution
             this.logoutpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.logoutpanel.Location = new System.Drawing.Point(0, 0);
             this.logoutpanel.Name = "logoutpanel";
-            this.logoutpanel.Size = new System.Drawing.Size(249, 182);
+            this.logoutpanel.Size = new System.Drawing.Size(244, 182);
             this.logoutpanel.TabIndex = 0;
             // 
             // logoutbtn
@@ -780,7 +792,7 @@ namespace solution
             this.logoutbtn.FlatAppearance.BorderSize = 0;
             this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logoutbtn.ForeColor = System.Drawing.Color.White;
+            this.logoutbtn.ForeColor = System.Drawing.Color.Black;
             this.logoutbtn.Location = new System.Drawing.Point(3, 3);
             this.logoutbtn.Name = "logoutbtn";
             this.logoutbtn.Size = new System.Drawing.Size(72, 26);
@@ -800,11 +812,11 @@ namespace solution
             // 
             // panelbottom
             // 
-            this.panelbottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panelbottom.BackColor = System.Drawing.Color.Turquoise;
             this.panelbottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelbottom.Location = new System.Drawing.Point(270, 718);
             this.panelbottom.Name = "panelbottom";
-            this.panelbottom.Size = new System.Drawing.Size(993, 50);
+            this.panelbottom.Size = new System.Drawing.Size(1186, 50);
             this.panelbottom.TabIndex = 1;
             // 
             // panelChildForm
@@ -812,22 +824,24 @@ namespace solution
             this.panelChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelChildForm.BackColor = System.Drawing.SystemColors.Window;
+            this.panelChildForm.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelChildForm.Location = new System.Drawing.Point(270, 32);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(993, 686);
+            this.panelChildForm.Size = new System.Drawing.Size(1186, 686);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Turquoise;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(270, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(993, 31);
+            this.panel1.Size = new System.Drawing.Size(1186, 31);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1__MouseDown);
@@ -839,7 +853,7 @@ namespace solution
             this.pictureBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(905, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(1098, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -854,7 +868,7 @@ namespace solution
             this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(864, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(1057, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -869,7 +883,7 @@ namespace solution
             this.pictureBox1.BackColor = System.Drawing.Color.Red;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(947, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(1140, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -879,9 +893,9 @@ namespace solution
             // 
             // AddWorkingDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1263, 768);
+            this.ClientSize = new System.Drawing.Size(1456, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelbottom);
