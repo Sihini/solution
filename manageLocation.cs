@@ -91,7 +91,17 @@ namespace solution
                      semseter = "2nd semeseter";
                  }*/
                 txtroomname.Text = LocationdataGridView.SelectedRows[0].Cells[2].Value.ToString();
-                lecturradiobtn.Text = LocationdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                if (roomtype =="Lecurer Hall")
+                {
+                    lecturradiobtn.Checked = true;
+                    roomtype = "Lecurer Hall";
+                }
+                else if (roomtype == "laboratory")
+                {
+                    labradiobtn.Checked = true;
+                   
+                }
+                roomtype= LocationdataGridView.SelectedRows[0].Cells[3].Value.ToString();
                 txtcapacity.Text = LocationdataGridView.SelectedRows[0].Cells[4].Value.ToString();
                
             }
@@ -159,8 +169,16 @@ namespace solution
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@buildingname", txtBuildingname.Text);
                 cmd.Parameters.AddWithValue("@roomname", txtroomname.Text);
-                // cmd.Parameters.AddWithValue("@offsemester", addsubjectradiobtn2.Text);
-                cmd.Parameters.AddWithValue("@roomtype", lecturradiobtn.Text);
+               
+                if (lecturradiobtn.Checked == true)
+                {
+                    roomtype = "Lecurer Hall";
+                }
+                else if (labradiobtn.Checked == true)
+                {
+                    roomtype = "laboratory";
+                }
+                cmd.Parameters.AddWithValue("@roomtype", roomtype);
                 cmd.Parameters.AddWithValue("@capacity", txtcapacity.Text);
 
                 cmd.Parameters.AddWithValue("@Id", this.LocationID);

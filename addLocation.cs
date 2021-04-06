@@ -30,8 +30,12 @@ namespace solution
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO LocationTable VALUES (@buildingname, @roomname, @roomtype, @capacity)", con);
                 cmd.CommandType = CommandType.Text;
+
+            /*Insert Building Name*/    
                 cmd.Parameters.AddWithValue("@buildingname", txtBuildingname.Text);
+            /*Insert Room Name*/
                 cmd.Parameters.AddWithValue("@roomname", txtroomname.Text);
+            /*Insert Room Type*/
                 if (lecturradiobtn.Checked == true)
                 {
                     roomtype = "Lecurer Hall";
@@ -41,6 +45,7 @@ namespace solution
                     roomtype = "laboratory";
                 }
                 cmd.Parameters.AddWithValue("@roomtype", roomtype);
+             /*Insert Capacity*/
                 cmd.Parameters.AddWithValue("@capacity", txtcapacity.Text);
                 
 

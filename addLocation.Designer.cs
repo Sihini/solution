@@ -30,6 +30,7 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnsavelaction = new System.Windows.Forms.Button();
             this.txtcapacity = new System.Windows.Forms.TextBox();
             this.btnclearlocation = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace solution
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,16 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 444);
             this.panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(97, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(205, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Add Rooms Building wise:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnsavelaction
             // 
@@ -174,16 +184,6 @@ namespace solution
             this.label1.Size = new System.Drawing.Size(125, 19);
             this.label1.TabIndex = 9;
             this.label1.Text = "Building Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(97, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 21);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Add Rooms Building wise:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // addLocation
             // 
