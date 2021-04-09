@@ -177,7 +177,7 @@ namespace solution
 
         private void btnWorkingdays_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new workingDays());
         }
         
         private void btnSession_Click(object sender, EventArgs e)
