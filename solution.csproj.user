@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="addLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="addLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="addStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="addSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="addTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="manageLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="managesessionnew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="manageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="manageSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="manageTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mangeLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="selectLandgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sessionadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="workingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
