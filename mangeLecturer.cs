@@ -17,7 +17,7 @@ namespace solution
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3CRQS4E;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public int LecturerID;
         int count = 0;
 
@@ -62,18 +62,24 @@ namespace solution
 
         private void GetLecturerdata()
         {
+            try
+            {
 
-            SqlCommand cmd = new SqlCommand("Select * from LectureTable ", con);
-            DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand("Select * from LectureTable ", con);
+                DataTable dt = new DataTable();
 
-            con.Open();
+                con.Open();
 
-            SqlDataReader sdr = cmd.ExecuteReader();
-            dt.Load(sdr);
-            con.Close();
+                SqlDataReader sdr = cmd.ExecuteReader();
+                dt.Load(sdr);
+                con.Close();
 
-            LectrerMandataGridView.DataSource = dt;
-
+                LectrerMandataGridView.DataSource = dt;
+            }
+            catch(Exception tt)
+            {
+                Console.WriteLine(tt.Message);
+            }
         }
 
      //   private void button1_Click(object sender, EventArgs e)

@@ -173,17 +173,7 @@ namespace solution
 
             // serachmanagelectBtn
             // 
-            this.serachmanagelectBtn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.serachmanagelectBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.serachmanagelectBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.serachmanagelectBtn.Location = new System.Drawing.Point(958, 25);
-            this.serachmanagelectBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.serachmanagelectBtn.Name = "serachmanagelectBtn";
-            this.serachmanagelectBtn.Size = new System.Drawing.Size(171, 55);
-            this.serachmanagelectBtn.TabIndex = 33;
-            this.serachmanagelectBtn.Text = "Search";
-            this.serachmanagelectBtn.UseVisualStyleBackColor = false;
-            this.serachmanagelectBtn.Click += new System.EventHandler(this.serachmanagelectBtn_Click);
+           
             // 
 
             // label9
@@ -363,7 +353,7 @@ namespace solution
             this.txtlecname.Name = "txtlecname";
             this.txtlecname.Size = new System.Drawing.Size(215, 31);
             this.txtlecname.TabIndex = 17;
-            this.txtlecname.TextChanged += new System.EventHandler(this.txtlecname_TextChanged);
+            
             // 
             // button1
             // 

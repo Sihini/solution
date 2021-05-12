@@ -111,5 +111,10 @@ namespace solution
         {
 
         }
+
+        private void lecturradiobtn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

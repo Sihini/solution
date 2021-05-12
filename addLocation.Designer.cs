@@ -129,6 +129,7 @@ namespace solution
             this.lecturradiobtn.TabStop = true;
             this.lecturradiobtn.Text = "Lecturer Hall";
             this.lecturradiobtn.UseVisualStyleBackColor = true;
+            this.lecturradiobtn.CheckedChanged += new System.EventHandler(this.lecturradiobtn_CheckedChanged);
             // 
             // txtroomname
             // 

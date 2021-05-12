@@ -230,8 +230,7 @@ namespace solution
 
         private void btnStatistical_Click(object sender, EventArgs e)
         {
-
-        }
+            openChildForm(new StaticalView());        }
 
         private void btnTimetable_Click(object sender, EventArgs e)
         {

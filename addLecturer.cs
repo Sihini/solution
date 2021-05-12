@@ -12,7 +12,7 @@ namespace solution
             InitializeComponent();
         }
       
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3CRQS4E;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public string gid { get; set; }
         public string mid { get; set; }
 
@@ -64,8 +64,7 @@ namespace solution
 
 
             }
-            mangeLecturer frm = new mangeLecturer();//open Attendance management form
-            frm.Show();
+            
 
         }
         private bool IsValid()

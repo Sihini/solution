@@ -21,7 +21,7 @@ namespace solution
             GETManageTag();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-FIL467M;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3CRQS4E;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public int tid;
         int count = 0;
 
@@ -169,6 +169,10 @@ namespace solution
 
             }
         }
-    
+
+        private void manageTag_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

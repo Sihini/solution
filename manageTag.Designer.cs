@@ -73,7 +73,7 @@ namespace solution
             // 
             this.TagSearch.Location = new System.Drawing.Point(636, 41);
             this.TagSearch.Name = "TagSearch";
-            this.TagSearch.Size = new System.Drawing.Size(229, 37);
+            this.TagSearch.Size = new System.Drawing.Size(229, 27);
             this.TagSearch.TabIndex = 25;
             this.TagSearch.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -137,21 +137,21 @@ namespace solution
             "Lab"});
             this.related_tag.Location = new System.Drawing.Point(392, 479);
             this.related_tag.Name = "related_tag";
-            this.related_tag.Size = new System.Drawing.Size(211, 38);
+            this.related_tag.Size = new System.Drawing.Size(211, 29);
             this.related_tag.TabIndex = 6;
             // 
             // t_name
             // 
             this.t_name.Location = new System.Drawing.Point(392, 360);
             this.t_name.Name = "t_name";
-            this.t_name.Size = new System.Drawing.Size(211, 37);
+            this.t_name.Size = new System.Drawing.Size(211, 27);
             this.t_name.TabIndex = 5;
             // 
             // t_code
             // 
             this.t_code.Location = new System.Drawing.Point(392, 417);
             this.t_code.Name = "t_code";
-            this.t_code.Size = new System.Drawing.Size(211, 37);
+            this.t_code.Size = new System.Drawing.Size(211, 27);
             this.t_code.TabIndex = 4;
             // 
             // label4
@@ -160,7 +160,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(192, 479);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 28);
+            this.label4.Size = new System.Drawing.Size(101, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Related Tag";
             // 
@@ -170,7 +170,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(192, 369);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 28);
+            this.label3.Size = new System.Drawing.Size(91, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tag Name";
             // 
@@ -180,7 +180,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(192, 422);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 28);
+            this.label2.Size = new System.Drawing.Size(85, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tag Code";
             // 
@@ -203,7 +203,7 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(514, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 42);
+            this.label1.Size = new System.Drawing.Size(166, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Manage Tag";
             // 
@@ -212,21 +212,22 @@ namespace solution
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(426, 233);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 33);
+            this.comboBox1.Size = new System.Drawing.Size(182, 23);
             this.comboBox1.TabIndex = 6;
             // 
             // manageTag
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1219, 799);
+            this.ClientSize = new System.Drawing.Size(1219, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "manageTag";
             this.Text = "manageTag";
+            this.Load += new System.EventHandler(this.manageTag_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TagdataGridView)).EndInit();
