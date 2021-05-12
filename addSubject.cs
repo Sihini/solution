@@ -145,5 +145,15 @@ namespace solution
             offyearsubadd.SelectedIndex = -1;
 
         }
+
+        private void txtNokecHourse_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

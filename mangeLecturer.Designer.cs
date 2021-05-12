@@ -325,6 +325,7 @@ namespace solution
             this.txtlecname.Name = "txtlecname";
             this.txtlecname.Size = new System.Drawing.Size(173, 27);
             this.txtlecname.TabIndex = 17;
+            this.txtlecname.TextChanged += new System.EventHandler(this.txtlecname_TextChanged);
             // 
             // LectrerMandataGridView
             // 

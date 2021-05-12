@@ -64,13 +64,14 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 444);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(97, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 21);
+            this.label5.Size = new System.Drawing.Size(256, 23);
             this.label5.TabIndex = 23;
             this.label5.Text = "Add Rooms Building wise:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -92,7 +93,7 @@ namespace solution
             // 
             this.txtcapacity.Location = new System.Drawing.Point(289, 217);
             this.txtcapacity.Name = "txtcapacity";
-            this.txtcapacity.Size = new System.Drawing.Size(246, 27);
+            this.txtcapacity.Size = new System.Drawing.Size(246, 32);
             this.txtcapacity.TabIndex = 17;
             // 
             // btnclearlocation
@@ -113,7 +114,7 @@ namespace solution
             this.labradiobtn.AutoSize = true;
             this.labradiobtn.Location = new System.Drawing.Point(422, 175);
             this.labradiobtn.Name = "labradiobtn";
-            this.labradiobtn.Size = new System.Drawing.Size(113, 25);
+            this.labradiobtn.Size = new System.Drawing.Size(138, 27);
             this.labradiobtn.TabIndex = 16;
             this.labradiobtn.TabStop = true;
             this.labradiobtn.Text = "Laboratory";
@@ -124,7 +125,7 @@ namespace solution
             this.lecturradiobtn.AutoSize = true;
             this.lecturradiobtn.Location = new System.Drawing.Point(289, 175);
             this.lecturradiobtn.Name = "lecturradiobtn";
-            this.lecturradiobtn.Size = new System.Drawing.Size(124, 25);
+            this.lecturradiobtn.Size = new System.Drawing.Size(154, 27);
             this.lecturradiobtn.TabIndex = 15;
             this.lecturradiobtn.TabStop = true;
             this.lecturradiobtn.Text = "Lecturer Hall";
@@ -134,7 +135,7 @@ namespace solution
             // 
             this.txtroomname.Location = new System.Drawing.Point(289, 121);
             this.txtroomname.Name = "txtroomname";
-            this.txtroomname.Size = new System.Drawing.Size(246, 27);
+            this.txtroomname.Size = new System.Drawing.Size(246, 32);
             this.txtroomname.TabIndex = 14;
             // 
             // txtBuildingname
@@ -142,7 +143,7 @@ namespace solution
             this.txtBuildingname.BackColor = System.Drawing.SystemColors.Window;
             this.txtBuildingname.Location = new System.Drawing.Point(289, 77);
             this.txtBuildingname.Name = "txtBuildingname";
-            this.txtBuildingname.Size = new System.Drawing.Size(246, 27);
+            this.txtBuildingname.Size = new System.Drawing.Size(246, 32);
             this.txtBuildingname.TabIndex = 13;
             // 
             // label4
@@ -151,7 +152,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(97, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 19);
+            this.label4.Size = new System.Drawing.Size(133, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Room Name";
             // 
@@ -161,7 +162,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(97, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 19);
+            this.label3.Size = new System.Drawing.Size(119, 23);
             this.label3.TabIndex = 11;
             this.label3.Text = "Room Type";
             // 
@@ -171,7 +172,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(97, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 19);
+            this.label2.Size = new System.Drawing.Size(101, 23);
             this.label2.TabIndex = 10;
             this.label2.Text = "Capacity";
             // 
@@ -181,13 +182,13 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(97, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 19);
+            this.label1.Size = new System.Drawing.Size(153, 23);
             this.label1.TabIndex = 9;
             this.label1.Text = "Building Name";
             // 
             // addLocation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 647);
             this.Controls.Add(this.panel1);

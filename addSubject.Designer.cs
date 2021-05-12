@@ -86,6 +86,7 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1020, 460);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // addsubjectradiobtn2
             // 
@@ -162,6 +163,7 @@ namespace solution
             this.txtNokecHourse.Name = "txtNokecHourse";
             this.txtNokecHourse.Size = new System.Drawing.Size(150, 32);
             this.txtNokecHourse.TabIndex = 21;
+            this.txtNokecHourse.ValueChanged += new System.EventHandler(this.txtNokecHourse_ValueChanged);
             // 
             // txtsubjecode
             // 

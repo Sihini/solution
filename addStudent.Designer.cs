@@ -73,12 +73,13 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(904, 438);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // sub_gno
             // 
             this.sub_gno.Location = new System.Drawing.Point(409, 258);
             this.sub_gno.Name = "sub_gno";
-            this.sub_gno.Size = new System.Drawing.Size(86, 37);
+            this.sub_gno.Size = new System.Drawing.Size(86, 32);
             this.sub_gno.TabIndex = 41;
             this.sub_gno.Value = new decimal(new int[] {
             1,
@@ -90,7 +91,7 @@ namespace solution
             // 
             this.g_no.Location = new System.Drawing.Point(409, 193);
             this.g_no.Name = "g_no";
-            this.g_no.Size = new System.Drawing.Size(86, 37);
+            this.g_no.Size = new System.Drawing.Size(86, 32);
             this.g_no.TabIndex = 40;
             this.g_no.Value = new decimal(new int[] {
             1,
@@ -150,14 +151,14 @@ namespace solution
             "IM"});
             this.programme.Location = new System.Drawing.Point(313, 122);
             this.programme.Name = "programme";
-            this.programme.Size = new System.Drawing.Size(194, 38);
+            this.programme.Size = new System.Drawing.Size(194, 31);
             this.programme.TabIndex = 9;
             // 
             // a_year
             // 
             this.a_year.Location = new System.Drawing.Point(316, 52);
             this.a_year.Name = "a_year";
-            this.a_year.Size = new System.Drawing.Size(195, 37);
+            this.a_year.Size = new System.Drawing.Size(195, 32);
             this.a_year.TabIndex = 8;
             this.a_year.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -165,14 +166,14 @@ namespace solution
             // 
             this.sub_gid.Location = new System.Drawing.Point(695, 130);
             this.sub_gid.Name = "sub_gid";
-            this.sub_gid.Size = new System.Drawing.Size(195, 37);
+            this.sub_gid.Size = new System.Drawing.Size(195, 32);
             this.sub_gid.TabIndex = 7;
             // 
             // g_id
             // 
             this.g_id.Location = new System.Drawing.Point(695, 52);
             this.g_id.Name = "g_id";
-            this.g_id.Size = new System.Drawing.Size(195, 37);
+            this.g_id.Size = new System.Drawing.Size(195, 32);
             this.g_id.TabIndex = 6;
             // 
             // label7
@@ -181,7 +182,7 @@ namespace solution
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(549, 132);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 23);
+            this.label7.Size = new System.Drawing.Size(117, 19);
             this.label7.TabIndex = 5;
             this.label7.Text = "Sub Group ID";
             // 
@@ -191,7 +192,7 @@ namespace solution
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(549, 55);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 23);
+            this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 4;
             this.label6.Text = "Group ID";
             // 
@@ -201,7 +202,7 @@ namespace solution
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(19, 272);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 23);
+            this.label5.Size = new System.Drawing.Size(124, 19);
             this.label5.TabIndex = 3;
             this.label5.Text = "Sub Group No";
             // 
@@ -211,7 +212,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(19, 207);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 23);
+            this.label4.Size = new System.Drawing.Size(89, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "Group No";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -222,7 +223,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(19, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 23);
+            this.label3.Size = new System.Drawing.Size(105, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "Programme";
             // 
@@ -232,7 +233,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(19, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 23);
+            this.label2.Size = new System.Drawing.Size(220, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Academic Year Semester";
             // 
@@ -242,13 +243,13 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(465, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 42);
+            this.label1.Size = new System.Drawing.Size(321, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Add Student Group";
             // 
             // addStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1219, 799);

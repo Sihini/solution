@@ -95,7 +95,7 @@ namespace solution
             // txtsearchsubjectmanage1
             // 
             this.txtsearchsubjectmanage1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtsearchsubjectmanage1.Location = new System.Drawing.Point(560, 27);
+            this.txtsearchsubjectmanage1.Location = new System.Drawing.Point(436, 31);
             this.txtsearchsubjectmanage1.Name = "txtsearchsubjectmanage1";
             this.txtsearchsubjectmanage1.PlaceholderText = "Search";
             this.txtsearchsubjectmanage1.Size = new System.Drawing.Size(438, 32);
@@ -149,7 +149,7 @@ namespace solution
             this.managesubjectview.RowHeadersWidth = 51;
             this.managesubjectview.RowTemplate.Height = 29;
             this.managesubjectview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.managesubjectview.Size = new System.Drawing.Size(982, 201);
+            this.managesubjectview.Size = new System.Drawing.Size(858, 201);
             this.managesubjectview.TabIndex = 46;
             this.managesubjectview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.managesubjectview_CellContentClick);
             this.managesubjectview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.managesubjectview_CellContentClick);
