@@ -57,6 +57,7 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(904, 438);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // SaveBtnTag
             // 
@@ -93,21 +94,21 @@ namespace solution
             "Lab"});
             this.related_tag.Location = new System.Drawing.Point(411, 245);
             this.related_tag.Name = "related_tag";
-            this.related_tag.Size = new System.Drawing.Size(256, 38);
+            this.related_tag.Size = new System.Drawing.Size(256, 31);
             this.related_tag.TabIndex = 5;
             // 
             // t_code
             // 
             this.t_code.Location = new System.Drawing.Point(411, 157);
             this.t_code.Name = "t_code";
-            this.t_code.Size = new System.Drawing.Size(256, 37);
+            this.t_code.Size = new System.Drawing.Size(256, 32);
             this.t_code.TabIndex = 4;
             // 
             // t_name
             // 
             this.t_name.Location = new System.Drawing.Point(411, 67);
             this.t_name.Name = "t_name";
-            this.t_name.Size = new System.Drawing.Size(256, 37);
+            this.t_name.Size = new System.Drawing.Size(256, 32);
             this.t_name.TabIndex = 3;
             this.t_name.TextChanged += new System.EventHandler(this.t_name_TextChanged);
             // 
@@ -117,7 +118,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(196, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 28);
+            this.label4.Size = new System.Drawing.Size(125, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Related Tag";
             // 
@@ -127,7 +128,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(196, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 28);
+            this.label3.Size = new System.Drawing.Size(105, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tag Code";
             // 
@@ -137,7 +138,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(196, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 28);
+            this.label2.Size = new System.Drawing.Size(110, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tag Name";
             // 
@@ -147,13 +148,13 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(558, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 42);
+            this.label1.Size = new System.Drawing.Size(145, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Add Tag";
             // 
             // addTag
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1219, 799);

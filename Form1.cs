@@ -187,12 +187,14 @@ namespace solution
 
         private void sesbtn1_Click(object sender, EventArgs e)
         {
+            openChildForm(new sessionadd());
             //..
             hideSubMenu();
         }
 
         private void sesbtn2_Click(object sender, EventArgs e)
         {
+            openChildForm(new managesessionnew());
             //..
             hideSubMenu();
         }

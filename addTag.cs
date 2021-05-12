@@ -16,7 +16,8 @@ namespace solution
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-FIL467M;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True"
+            );
 
         private void addTag_Load(object sender, EventArgs e)
         {
@@ -117,6 +118,11 @@ namespace solution
             }
             return true;
 
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

@@ -64,8 +64,7 @@ namespace solution
 
 
             }
-            mangeLecturer frm = new mangeLecturer();//open Attendance management form
-            frm.Show();
+           
 
         }
         private bool IsValid()
@@ -158,6 +157,16 @@ namespace solution
         private void txtrank_TextChanged(object sender, EventArgs e)
         {
            
+
+        }
+
+        private void txtlecname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
