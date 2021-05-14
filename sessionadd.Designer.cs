@@ -31,6 +31,7 @@ namespace solution
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.selecttags = new System.Windows.Forms.ComboBox();
             this.clearbtnsession = new System.Windows.Forms.Button();
@@ -53,7 +54,7 @@ namespace solution
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panelChildForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
@@ -68,6 +69,8 @@ namespace solution
             // 
             // panelChildForm
             // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelChildForm.Controls.Add(this.label10);
             this.panelChildForm.Controls.Add(this.button5);
             this.panelChildForm.Controls.Add(this.selecttags);
             this.panelChildForm.Controls.Add(this.clearbtnsession);
@@ -82,14 +85,27 @@ namespace solution
             this.panelChildForm.TabIndex = 16;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(338, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(204, 35);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Add Session";
+            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(766, 258);
+            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Location = new System.Drawing.Point(752, 251);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 29);
+            this.button5.Size = new System.Drawing.Size(136, 44);
             this.button5.TabIndex = 29;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "Next";
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // selecttags
@@ -161,21 +177,22 @@ namespace solution
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(780, 156);
+            this.button3.Location = new System.Drawing.Point(738, 156);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(304, 40);
+            this.button3.Size = new System.Drawing.Size(304, 41);
             this.button3.TabIndex = 15;
             this.button3.Text = "Select  Group And Subject";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Silver;
             this.button4.Location = new System.Drawing.Point(477, 156);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(265, 41);
             this.button4.TabIndex = 14;
             this.button4.Text = "Select Lecturer And  Tag";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -238,5 +255,6 @@ namespace solution
         private System.Windows.Forms.ComboBox selectLecturer;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
     }
 }
