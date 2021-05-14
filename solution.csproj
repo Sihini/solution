@@ -31,4 +31,10 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>C:\Users\Asus\Pictures\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
