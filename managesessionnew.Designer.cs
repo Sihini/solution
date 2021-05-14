@@ -30,6 +30,7 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.selectviewsession = new System.Windows.Forms.Button();
             this.selectdelete = new System.Windows.Forms.Button();
             this.selectclear = new System.Windows.Forms.Button();
             this.selectupdate = new System.Windows.Forms.Button();
@@ -60,6 +61,7 @@ namespace solution
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.selectviewsession);
             this.panel1.Controls.Add(this.selectdelete);
             this.panel1.Controls.Add(this.selectclear);
             this.panel1.Controls.Add(this.selectupdate);
@@ -83,18 +85,31 @@ namespace solution
             this.panel1.Controls.Add(this.selectlecgropsear);
             this.panel1.Controls.Add(this.sslecsel);
             this.panel1.Controls.Add(this.selectsession);
-            this.panel1.Location = new System.Drawing.Point(12, 33);
+            this.panel1.Location = new System.Drawing.Point(4, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1061, 583);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // selectviewsession
+            // 
+            this.selectviewsession.BackColor = System.Drawing.Color.LimeGreen;
+            this.selectviewsession.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selectviewsession.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.selectviewsession.Location = new System.Drawing.Point(799, 516);
+            this.selectviewsession.Name = "selectviewsession";
+            this.selectviewsession.Size = new System.Drawing.Size(137, 44);
+            this.selectviewsession.TabIndex = 59;
+            this.selectviewsession.Text = "View";
+            this.selectviewsession.UseVisualStyleBackColor = false;
+            this.selectviewsession.Click += new System.EventHandler(this.selectviewsession_Click);
             // 
             // selectdelete
             // 
             this.selectdelete.BackColor = System.Drawing.Color.Red;
             this.selectdelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectdelete.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectdelete.Location = new System.Drawing.Point(857, 457);
+            this.selectdelete.Location = new System.Drawing.Point(799, 459);
             this.selectdelete.Name = "selectdelete";
             this.selectdelete.Size = new System.Drawing.Size(137, 44);
             this.selectdelete.TabIndex = 58;
@@ -107,19 +122,20 @@ namespace solution
             this.selectclear.BackColor = System.Drawing.Color.DarkOrange;
             this.selectclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectclear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectclear.Location = new System.Drawing.Point(857, 388);
+            this.selectclear.Location = new System.Drawing.Point(799, 390);
             this.selectclear.Name = "selectclear";
             this.selectclear.Size = new System.Drawing.Size(137, 44);
             this.selectclear.TabIndex = 57;
             this.selectclear.Text = "Clear";
             this.selectclear.UseVisualStyleBackColor = false;
+            this.selectclear.Click += new System.EventHandler(this.selectclear_Click);
             // 
             // selectupdate
             // 
             this.selectupdate.BackColor = System.Drawing.Color.LimeGreen;
             this.selectupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectupdate.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectupdate.Location = new System.Drawing.Point(857, 324);
+            this.selectupdate.Location = new System.Drawing.Point(799, 326);
             this.selectupdate.Name = "selectupdate";
             this.selectupdate.Size = new System.Drawing.Size(137, 44);
             this.selectupdate.TabIndex = 56;
@@ -133,6 +149,7 @@ namespace solution
             this.sybjectname.Name = "sybjectname";
             this.sybjectname.Size = new System.Drawing.Size(142, 27);
             this.sybjectname.TabIndex = 55;
+            this.sybjectname.TextChanged += new System.EventHandler(this.sybjectname_TextChanged);
             // 
             // label7
             // 
@@ -158,6 +175,7 @@ namespace solution
             this.selectgroup.Name = "selectgroup";
             this.selectgroup.Size = new System.Drawing.Size(128, 28);
             this.selectgroup.TabIndex = 52;
+            this.selectgroup.SelectedIndexChanged += new System.EventHandler(this.selectgroup_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -186,6 +204,7 @@ namespace solution
             this.selectsubject.Name = "selectsubject";
             this.selectsubject.Size = new System.Drawing.Size(128, 28);
             this.selectsubject.TabIndex = 49;
+            this.selectsubject.SelectedIndexChanged += new System.EventHandler(this.selectsubject_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -276,20 +295,22 @@ namespace solution
             this.selectLecturer.Name = "selectLecturer";
             this.selectLecturer.Size = new System.Drawing.Size(173, 28);
             this.selectLecturer.TabIndex = 39;
+            this.selectLecturer.SelectedIndexChanged += new System.EventHandler(this.selectLecturer_SelectedIndexChanged);
             // 
             // selectlecgropsear
             // 
-            this.selectlecgropsear.Location = new System.Drawing.Point(580, 46);
+            this.selectlecgropsear.Location = new System.Drawing.Point(537, 46);
             this.selectlecgropsear.Name = "selectlecgropsear";
             this.selectlecgropsear.Size = new System.Drawing.Size(231, 27);
             this.selectlecgropsear.TabIndex = 38;
+            this.selectlecgropsear.TextChanged += new System.EventHandler(this.selectlecgropsear_TextChanged);
             // 
             // sslecsel
             // 
             this.sslecsel.BackColor = System.Drawing.Color.DodgerBlue;
             this.sslecsel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sslecsel.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.sslecsel.Location = new System.Drawing.Point(873, 35);
+            this.sslecsel.Location = new System.Drawing.Point(799, 35);
             this.sslecsel.Name = "sslecsel";
             this.sslecsel.Size = new System.Drawing.Size(137, 44);
             this.sslecsel.TabIndex = 22;
@@ -298,14 +319,17 @@ namespace solution
             // 
             // selectsession
             // 
+            this.selectsession.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.selectsession.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.selectsession.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.selectsession.Location = new System.Drawing.Point(29, 103);
+            this.selectsession.Location = new System.Drawing.Point(1, 103);
             this.selectsession.Name = "selectsession";
             this.selectsession.RowHeadersWidth = 62;
             this.selectsession.RowTemplate.Height = 33;
             this.selectsession.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.selectsession.Size = new System.Drawing.Size(965, 159);
+            this.selectsession.Size = new System.Drawing.Size(927, 159);
             this.selectsession.TabIndex = 0;
             this.selectsession.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectsession_CellContentClick);
             // 
@@ -313,7 +337,7 @@ namespace solution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 639);
+            this.ClientSize = new System.Drawing.Size(1134, 679);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "managesessionnew";
@@ -352,5 +376,6 @@ namespace solution
         private System.Windows.Forms.Button selectdelete;
         private System.Windows.Forms.Button selectclear;
         private System.Windows.Forms.Button selectupdate;
+        private System.Windows.Forms.Button selectviewsession;
     }
 }

@@ -102,6 +102,7 @@ namespace solution
             this.selectgroup.Name = "selectgroup";
             this.selectgroup.Size = new System.Drawing.Size(128, 28);
             this.selectgroup.TabIndex = 34;
+            this.selectgroup.SelectedIndexChanged += new System.EventHandler(this.selectgroup_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -169,6 +170,7 @@ namespace solution
             this.clearbtnsession.TabIndex = 28;
             this.clearbtnsession.Text = "Clear";
             this.clearbtnsession.UseVisualStyleBackColor = false;
+            this.clearbtnsession.Click += new System.EventHandler(this.clearbtnsession_Click);
             // 
             // label3
             // 

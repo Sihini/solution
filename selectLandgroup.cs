@@ -131,8 +131,8 @@ namespace solution
 
         private void addnext_Click(object sender, EventArgs e)
         {
-           /* if (LecturerID > 0)
-            {*/
+            if (IsValid())
+            {
                 SqlCommand cmd = new SqlCommand("UPDATE SessionTable SET  s_group=@s_group,sub_code= @sub_code,sub_name= @sub_name,noofstudent= @noofstudent,duration= @duration where s_id=(select TOP(1) s_id FROM SessionTable ORDER BY s_id DESC)", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@s_group", selectgroup.Text);
@@ -140,26 +140,52 @@ namespace solution
                 cmd.Parameters.AddWithValue("@sub_name", sybjectname.Text);
                 cmd.Parameters.AddWithValue("@noofstudent", noofstudent.Text);
                 cmd.Parameters.AddWithValue("@duration", duration.Text);
-              /*  cmd.Parameters.AddWithValue("@building", txtbulin.Text);
-                cmd.Parameters.AddWithValue("@level", txtlevel.Text);
-                cmd.Parameters.AddWithValue("@rank", txtrank.Text);
-                cmd.Parameters.AddWithValue("@ID", this.LecturerID);
-*/
+
+
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-            
-            MessageBox.Show("New Lecturer is Successfully Updated the database", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-               /* GetLecturerdata();
-                clearManageLectrerdetails();*/
-          /*  }
-            else
+
+                MessageBox.Show(" Successfully Inserted in the database", "INSERT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearFormLect();
+            }
+
+           
+        }
+
+        private bool IsValid()
+        {
+            if (selectgroup.Text == String.Empty)
             {
-                MessageBox.Show("Please select an Lecturer to update his information", "Select ?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Selecetd Group is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (selectsubject.Text == string.Empty)
+            {
+                MessageBox.Show("Selecetd Subject code is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
 
-            }*/
+            else if (sybjectname.Text == string.Empty)
+            {
+                MessageBox.Show("Selected Subeject Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (noofstudent.Text == string.Empty)
+            {
+                MessageBox.Show("No Of student is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (duration.Text == string.Empty)
+            {
+                MessageBox.Show(" Duration  is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+
+            return true;
         }
 
         private void selectLandgroup_Load(object sender, EventArgs e)
@@ -174,6 +200,32 @@ namespace solution
 
         private void sybjectname_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void selectgroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearbtnsession_Click(object sender, EventArgs e)
+        {
+            ClearFormLect();
+        }
+
+        private void ClearFormLect()
+        {
+
+            noofstudent.Clear();
+            duration.Clear();
+            sybjectname.Clear();
+
+            //cpmbo box clear
+            selectgroup.SelectedIndex = -1;
+            selectsubject.SelectedIndex = -1;
+
+
+            noofstudent.Focus();
 
         }
     }

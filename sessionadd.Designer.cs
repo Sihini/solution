@@ -62,8 +62,9 @@ namespace solution
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-384, -108);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1853, 854);
+            this.panel1.Size = new System.Drawing.Size(2468, 1218);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelChildForm
             // 
@@ -110,6 +111,7 @@ namespace solution
             this.clearbtnsession.TabIndex = 26;
             this.clearbtnsession.Text = "Clear";
             this.clearbtnsession.UseVisualStyleBackColor = false;
+            this.clearbtnsession.Click += new System.EventHandler(this.clearbtnsession_Click);
             // 
             // label3
             // 
@@ -155,6 +157,7 @@ namespace solution
             this.selectLecturer.Name = "selectLecturer";
             this.selectLecturer.Size = new System.Drawing.Size(173, 28);
             this.selectLecturer.TabIndex = 20;
+            this.selectLecturer.SelectedIndexChanged += new System.EventHandler(this.selectLecturer_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -205,7 +208,7 @@ namespace solution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 639);
+            this.ClientSize = new System.Drawing.Size(1700, 1003);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "sessionadd";
