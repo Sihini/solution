@@ -31,7 +31,7 @@ namespace solution
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.sessionviewdataGridView = new System.Windows.Forms.DataGridView();
-            this.exportsessionbtn = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sessionviewdataGridView)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +42,7 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.exportsessionbtn);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.sessionviewdataGridView);
             this.panel1.Location = new System.Drawing.Point(-2, 3);
             this.panel1.Name = "panel1";
@@ -65,18 +65,15 @@ namespace solution
             this.sessionviewdataGridView.TabIndex = 0;
             this.sessionviewdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sessionviewdataGridView_CellContentClick);
             // 
-            // exportsessionbtn
+            // label10
             // 
-            this.exportsessionbtn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.exportsessionbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exportsessionbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.exportsessionbtn.Location = new System.Drawing.Point(839, 38);
-            this.exportsessionbtn.Name = "exportsessionbtn";
-            this.exportsessionbtn.Size = new System.Drawing.Size(137, 44);
-            this.exportsessionbtn.TabIndex = 27;
-            this.exportsessionbtn.Text = "Export";
-            this.exportsessionbtn.UseVisualStyleBackColor = false;
-            this.exportsessionbtn.Click += new System.EventHandler(this.exportsessionbtn_Click);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(297, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(273, 35);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "View All Session";
             // 
             // sessionView
             // 
@@ -89,6 +86,7 @@ namespace solution
             this.Text = "sessionView";
             this.Load += new System.EventHandler(this.sessionView_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sessionviewdataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -98,6 +96,6 @@ namespace solution
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView sessionviewdataGridView;
-        private System.Windows.Forms.Button exportsessionbtn;
+        private System.Windows.Forms.Label label10;
     }
 }

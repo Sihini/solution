@@ -354,5 +354,10 @@ namespace solution
         {
             openChildForm(new sessionView());
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

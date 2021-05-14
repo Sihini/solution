@@ -44,11 +44,13 @@ namespace solution
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.duration = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupSubject.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupSubject
             // 
+            this.groupSubject.Controls.Add(this.label10);
             this.groupSubject.Controls.Add(this.sybjectname);
             this.groupSubject.Controls.Add(this.label7);
             this.groupSubject.Controls.Add(this.noofstudent);
@@ -209,6 +211,16 @@ namespace solution
             this.duration.Size = new System.Drawing.Size(142, 27);
             this.duration.TabIndex = 21;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(293, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(204, 35);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Add Session";
+            // 
             // selectLandgroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,5 +254,6 @@ namespace solution
         private System.Windows.Forms.TextBox duration;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox sybjectname;
+        private System.Windows.Forms.Label label10;
     }
 }
