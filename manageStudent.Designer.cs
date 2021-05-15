@@ -78,7 +78,7 @@ namespace solution
             this.panel1.Controls.Add(this.UpdateBtnStd);
             this.panel1.Controls.Add(this.SearchBtnStd);
             this.panel1.Controls.Add(this.StudentdataGridView);
-            this.panel1.Location = new System.Drawing.Point(35, 97);
+            this.panel1.Location = new System.Drawing.Point(25, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1172, 602);
             this.panel1.TabIndex = 0;

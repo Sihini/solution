@@ -64,10 +64,10 @@ namespace solution
                 {
 
 
-                    SqlCommand cmd = new SqlCommand("INSERT INTO StudentTable VALUES (@program, @a_year_sem, @g_no, @sub_gno, @g_id, @sub_gid)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO StudentTable VALUES (@a_year_sem, @program, @g_no, @sub_gno, @g_id, @sub_gid)", con);
                     cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@program", programme.Text);
                     cmd.Parameters.AddWithValue("@a_year_sem", a_year.Text);
+                    cmd.Parameters.AddWithValue("@program", programme.Text);
                     cmd.Parameters.AddWithValue("@g_no", g_no.Text);
                     cmd.Parameters.AddWithValue("@sub_gno", sub_gno.Text);
                     cmd.Parameters.AddWithValue("@g_id", g_id.Text);
@@ -150,10 +150,7 @@ namespace solution
             sub_gno.Value = 1;
         }
 
-        private void addStudent_Load_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void stdGenId_Click(object sender, EventArgs e)
         {
@@ -168,5 +165,7 @@ namespace solution
             zidr = gid + "." + mid + "." + sid+ "."+rid;
             sub_gid.Text = (zidr);
         }
+
+       
     }
 }

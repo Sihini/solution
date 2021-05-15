@@ -73,6 +73,7 @@ namespace solution
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(904, 438);
             this.panel1.TabIndex = 0;
+           // this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // sub_gno
             // 
@@ -258,7 +259,7 @@ namespace solution
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "addStudent";
             this.Text = "addStudent";
-            this.Load += new System.EventHandler(this.addStudent_Load_1);
+            //this.Load += new System.EventHandler(this.addStudent_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sub_gno)).EndInit();
