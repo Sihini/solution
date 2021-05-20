@@ -12,7 +12,13 @@ namespace solution
             InitializeComponent();
         }
       
+        
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        public string gid { get; set; }
+        public string mid { get; set; }
+
+        public string rid { get; set; }
+
         private void addLecturer_Load(object sender, EventArgs e)
         {
             GetLecturerRecord();
@@ -55,11 +61,11 @@ namespace solution
                 MessageBox.Show("New Lecturer is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //   GetStudentsRecord();
-               
+                ClearFormLect();
+
 
             }
-            mangeLecturer frm = new mangeLecturer();//open Attendance management form
-            frm.Show();
+           
 
         }
         private bool IsValid()
@@ -126,8 +132,38 @@ namespace solution
             txtDepname.Clear();
             txtrank.Clear();
 
+            //cpmbo box clear
+            txtFacu.SelectedIndex = -1;
+            txtcent.SelectedIndex = -1;
+            txtbulin.SelectedIndex = -1;
+            txtlevel.SelectedIndex = -1;
+
             txtlecname.Focus();
             
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            gid = (string)txtEmpid.Text;
+            mid = (string)txtlevel.Text;
+           
+
+            rid = mid + "."+ gid;
+            txtrank.Text = (rid);
+        }
+
+
+        private void txtrank_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void txtlecname_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

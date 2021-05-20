@@ -48,9 +48,6 @@ namespace solution
             this.sesbtn2 = new System.Windows.Forms.Button();
             this.sesbtn1 = new System.Windows.Forms.Button();
             this.btnSession = new System.Windows.Forms.Button();
-            this.Workingdayspanel = new System.Windows.Forms.Panel();
-            this.worbtn2 = new System.Windows.Forms.Button();
-            this.worbtn1 = new System.Windows.Forms.Button();
             this.btnWorkingdays = new System.Windows.Forms.Button();
             this.Locationpanel = new System.Windows.Forms.Panel();
             this.locbtn2 = new System.Windows.Forms.Button();
@@ -82,7 +79,6 @@ namespace solution
             this.Timetablepanel.SuspendLayout();
             this.Tagpanel.SuspendLayout();
             this.Sessionpanel.SuspendLayout();
-            this.Workingdayspanel.SuspendLayout();
             this.Locationpanel.SuspendLayout();
             this.Subjectpanel.SuspendLayout();
             this.Studentpanel.SuspendLayout();
@@ -106,7 +102,6 @@ namespace solution
             this.dashboardpanel.Controls.Add(this.btnTag);
             this.dashboardpanel.Controls.Add(this.Sessionpanel);
             this.dashboardpanel.Controls.Add(this.btnSession);
-            this.dashboardpanel.Controls.Add(this.Workingdayspanel);
             this.dashboardpanel.Controls.Add(this.btnWorkingdays);
             this.dashboardpanel.Controls.Add(this.Locationpanel);
             this.dashboardpanel.Controls.Add(this.btnLocation);
@@ -129,9 +124,9 @@ namespace solution
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 1297);
+            this.panel2.Location = new System.Drawing.Point(0, 1227);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 0);
+            this.panel2.Size = new System.Drawing.Size(249, 0);
             this.panel2.TabIndex = 19;
             // 
             // Timetablepanel
@@ -142,9 +137,9 @@ namespace solution
             this.Timetablepanel.Controls.Add(this.timbtn1);
             this.Timetablepanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Timetablepanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Timetablepanel.Location = new System.Drawing.Point(0, 1192);
+            this.Timetablepanel.Location = new System.Drawing.Point(0, 1122);
             this.Timetablepanel.Name = "Timetablepanel";
-            this.Timetablepanel.Size = new System.Drawing.Size(244, 105);
+            this.Timetablepanel.Size = new System.Drawing.Size(249, 105);
             this.Timetablepanel.TabIndex = 18;
             // 
             // timbtn3
@@ -159,7 +154,7 @@ namespace solution
             this.timbtn3.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn3.Name = "timbtn3";
             this.timbtn3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn3.Size = new System.Drawing.Size(244, 35);
+            this.timbtn3.Size = new System.Drawing.Size(249, 35);
             this.timbtn3.TabIndex = 2;
             this.timbtn3.Text = "Location";
             this.timbtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,7 +172,7 @@ namespace solution
             this.timbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn2.Name = "timbtn2";
             this.timbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn2.Size = new System.Drawing.Size(244, 35);
+            this.timbtn2.Size = new System.Drawing.Size(249, 35);
             this.timbtn2.TabIndex = 1;
             this.timbtn2.Text = "Student";
             this.timbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +191,7 @@ namespace solution
             this.timbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.timbtn1.Name = "timbtn1";
             this.timbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.timbtn1.Size = new System.Drawing.Size(244, 35);
+            this.timbtn1.Size = new System.Drawing.Size(249, 35);
             this.timbtn1.TabIndex = 0;
             this.timbtn1.Text = "Lecturer";
             this.timbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,10 +206,10 @@ namespace solution
             this.btnTimetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimetable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTimetable.ForeColor = System.Drawing.Color.Black;
-            this.btnTimetable.Location = new System.Drawing.Point(0, 1147);
+            this.btnTimetable.Location = new System.Drawing.Point(0, 1077);
             this.btnTimetable.Name = "btnTimetable";
             this.btnTimetable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnTimetable.Size = new System.Drawing.Size(244, 45);
+            this.btnTimetable.Size = new System.Drawing.Size(249, 45);
             this.btnTimetable.TabIndex = 17;
             this.btnTimetable.Text = "Timetable";
             this.btnTimetable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,10 +224,10 @@ namespace solution
             this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistical.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnStatistical.ForeColor = System.Drawing.Color.Black;
-            this.btnStatistical.Location = new System.Drawing.Point(0, 1102);
+            this.btnStatistical.Location = new System.Drawing.Point(0, 1032);
             this.btnStatistical.Name = "btnStatistical";
             this.btnStatistical.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnStatistical.Size = new System.Drawing.Size(244, 45);
+            this.btnStatistical.Size = new System.Drawing.Size(249, 45);
             this.btnStatistical.TabIndex = 16;
             this.btnStatistical.Text = "Statistical View";
             this.btnStatistical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,9 +241,9 @@ namespace solution
             this.Tagpanel.Controls.Add(this.tag1);
             this.Tagpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Tagpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tagpanel.Location = new System.Drawing.Point(0, 1032);
+            this.Tagpanel.Location = new System.Drawing.Point(0, 962);
             this.Tagpanel.Name = "Tagpanel";
-            this.Tagpanel.Size = new System.Drawing.Size(244, 70);
+            this.Tagpanel.Size = new System.Drawing.Size(249, 70);
             this.Tagpanel.TabIndex = 15;
             // 
             // tag2
@@ -263,7 +258,7 @@ namespace solution
             this.tag2.Margin = new System.Windows.Forms.Padding(0);
             this.tag2.Name = "tag2";
             this.tag2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.tag2.Size = new System.Drawing.Size(244, 35);
+            this.tag2.Size = new System.Drawing.Size(249, 35);
             this.tag2.TabIndex = 1;
             this.tag2.Text = "Manage Tags";
             this.tag2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,7 +277,7 @@ namespace solution
             this.tag1.Margin = new System.Windows.Forms.Padding(0);
             this.tag1.Name = "tag1";
             this.tag1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.tag1.Size = new System.Drawing.Size(244, 35);
+            this.tag1.Size = new System.Drawing.Size(249, 35);
             this.tag1.TabIndex = 0;
             this.tag1.Text = "Add Tags";
             this.tag1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -297,10 +292,10 @@ namespace solution
             this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTag.ForeColor = System.Drawing.Color.Black;
-            this.btnTag.Location = new System.Drawing.Point(0, 987);
+            this.btnTag.Location = new System.Drawing.Point(0, 917);
             this.btnTag.Name = "btnTag";
             this.btnTag.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnTag.Size = new System.Drawing.Size(244, 45);
+            this.btnTag.Size = new System.Drawing.Size(249, 45);
             this.btnTag.TabIndex = 14;
             this.btnTag.Text = "Tag";
             this.btnTag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,9 +311,9 @@ namespace solution
             this.Sessionpanel.Controls.Add(this.sesbtn1);
             this.Sessionpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Sessionpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sessionpanel.Location = new System.Drawing.Point(0, 847);
+            this.Sessionpanel.Location = new System.Drawing.Point(0, 777);
             this.Sessionpanel.Name = "Sessionpanel";
-            this.Sessionpanel.Size = new System.Drawing.Size(244, 140);
+            this.Sessionpanel.Size = new System.Drawing.Size(249, 140);
             this.Sessionpanel.TabIndex = 13;
             // 
             // sesbtn4
@@ -333,7 +328,7 @@ namespace solution
             this.sesbtn4.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn4.Name = "sesbtn4";
             this.sesbtn4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn4.Size = new System.Drawing.Size(244, 35);
+            this.sesbtn4.Size = new System.Drawing.Size(249, 35);
             this.sesbtn4.TabIndex = 3;
             this.sesbtn4.Text = "Session Time Allocation";
             this.sesbtn4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,7 +347,7 @@ namespace solution
             this.sesbtn3.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn3.Name = "sesbtn3";
             this.sesbtn3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn3.Size = new System.Drawing.Size(244, 35);
+            this.sesbtn3.Size = new System.Drawing.Size(249, 35);
             this.sesbtn3.TabIndex = 2;
             this.sesbtn3.Text = "Manage Session Rooms";
             this.sesbtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -371,7 +366,7 @@ namespace solution
             this.sesbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn2.Name = "sesbtn2";
             this.sesbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn2.Size = new System.Drawing.Size(244, 35);
+            this.sesbtn2.Size = new System.Drawing.Size(249, 35);
             this.sesbtn2.TabIndex = 1;
             this.sesbtn2.Text = "Manage Session";
             this.sesbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -390,7 +385,7 @@ namespace solution
             this.sesbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.sesbtn1.Name = "sesbtn1";
             this.sesbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.sesbtn1.Size = new System.Drawing.Size(244, 35);
+            this.sesbtn1.Size = new System.Drawing.Size(249, 35);
             this.sesbtn1.TabIndex = 0;
             this.sesbtn1.Text = "Add Session";
             this.sesbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -405,65 +400,15 @@ namespace solution
             this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSession.ForeColor = System.Drawing.Color.Black;
-            this.btnSession.Location = new System.Drawing.Point(0, 802);
+            this.btnSession.Location = new System.Drawing.Point(0, 732);
             this.btnSession.Name = "btnSession";
             this.btnSession.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSession.Size = new System.Drawing.Size(244, 45);
+            this.btnSession.Size = new System.Drawing.Size(249, 45);
             this.btnSession.TabIndex = 12;
             this.btnSession.Text = "Session";
             this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSession.UseVisualStyleBackColor = false;
             this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
-            // 
-            // Workingdayspanel
-            // 
-            this.Workingdayspanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.Workingdayspanel.Controls.Add(this.worbtn2);
-            this.Workingdayspanel.Controls.Add(this.worbtn1);
-            this.Workingdayspanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Workingdayspanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Workingdayspanel.Location = new System.Drawing.Point(0, 732);
-            this.Workingdayspanel.Name = "Workingdayspanel";
-            this.Workingdayspanel.Size = new System.Drawing.Size(244, 70);
-            this.Workingdayspanel.TabIndex = 11;
-            // 
-            // worbtn2
-            // 
-            this.worbtn2.BackColor = System.Drawing.Color.LightCyan;
-            this.worbtn2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.worbtn2.FlatAppearance.BorderSize = 0;
-            this.worbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.worbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn2.ForeColor = System.Drawing.Color.DimGray;
-            this.worbtn2.Location = new System.Drawing.Point(0, 35);
-            this.worbtn2.Margin = new System.Windows.Forms.Padding(0);
-            this.worbtn2.Name = "worbtn2";
-            this.worbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn2.Size = new System.Drawing.Size(244, 35);
-            this.worbtn2.TabIndex = 1;
-            this.worbtn2.Text = "Manage Working Days";
-            this.worbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.worbtn2.UseVisualStyleBackColor = false;
-            this.worbtn2.Click += new System.EventHandler(this.worbtn2_Click);
-            // 
-            // worbtn1
-            // 
-            this.worbtn1.BackColor = System.Drawing.Color.LightCyan;
-            this.worbtn1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.worbtn1.FlatAppearance.BorderSize = 0;
-            this.worbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.worbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.worbtn1.ForeColor = System.Drawing.Color.DimGray;
-            this.worbtn1.Location = new System.Drawing.Point(0, 0);
-            this.worbtn1.Margin = new System.Windows.Forms.Padding(0);
-            this.worbtn1.Name = "worbtn1";
-            this.worbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.worbtn1.Size = new System.Drawing.Size(244, 35);
-            this.worbtn1.TabIndex = 0;
-            this.worbtn1.Text = "Add Working Days";
-            this.worbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.worbtn1.UseVisualStyleBackColor = false;
-            this.worbtn1.Click += new System.EventHandler(this.worbtn1_Click);
             // 
             // btnWorkingdays
             // 
@@ -476,7 +421,7 @@ namespace solution
             this.btnWorkingdays.Location = new System.Drawing.Point(0, 687);
             this.btnWorkingdays.Name = "btnWorkingdays";
             this.btnWorkingdays.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnWorkingdays.Size = new System.Drawing.Size(244, 45);
+            this.btnWorkingdays.Size = new System.Drawing.Size(249, 45);
             this.btnWorkingdays.TabIndex = 10;
             this.btnWorkingdays.Text = "Working Days";
             this.btnWorkingdays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -492,7 +437,7 @@ namespace solution
             this.Locationpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Locationpanel.Location = new System.Drawing.Point(0, 617);
             this.Locationpanel.Name = "Locationpanel";
-            this.Locationpanel.Size = new System.Drawing.Size(244, 70);
+            this.Locationpanel.Size = new System.Drawing.Size(249, 70);
             this.Locationpanel.TabIndex = 9;
             // 
             // locbtn2
@@ -507,7 +452,7 @@ namespace solution
             this.locbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.locbtn2.Name = "locbtn2";
             this.locbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.locbtn2.Size = new System.Drawing.Size(244, 35);
+            this.locbtn2.Size = new System.Drawing.Size(249, 35);
             this.locbtn2.TabIndex = 1;
             this.locbtn2.Text = "Manage Location";
             this.locbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -526,7 +471,7 @@ namespace solution
             this.locbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.locbtn1.Name = "locbtn1";
             this.locbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.locbtn1.Size = new System.Drawing.Size(244, 35);
+            this.locbtn1.Size = new System.Drawing.Size(249, 35);
             this.locbtn1.TabIndex = 0;
             this.locbtn1.Text = "Add Location";
             this.locbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,7 +489,7 @@ namespace solution
             this.btnLocation.Location = new System.Drawing.Point(0, 572);
             this.btnLocation.Name = "btnLocation";
             this.btnLocation.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLocation.Size = new System.Drawing.Size(244, 45);
+            this.btnLocation.Size = new System.Drawing.Size(249, 45);
             this.btnLocation.TabIndex = 8;
             this.btnLocation.Text = "Location";
             this.btnLocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -560,7 +505,7 @@ namespace solution
             this.Subjectpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Subjectpanel.Location = new System.Drawing.Point(0, 502);
             this.Subjectpanel.Name = "Subjectpanel";
-            this.Subjectpanel.Size = new System.Drawing.Size(244, 70);
+            this.Subjectpanel.Size = new System.Drawing.Size(249, 70);
             this.Subjectpanel.TabIndex = 7;
             // 
             // subbtn2
@@ -575,7 +520,7 @@ namespace solution
             this.subbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.subbtn2.Name = "subbtn2";
             this.subbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.subbtn2.Size = new System.Drawing.Size(244, 35);
+            this.subbtn2.Size = new System.Drawing.Size(249, 35);
             this.subbtn2.TabIndex = 1;
             this.subbtn2.Text = "Manage Subject";
             this.subbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -594,7 +539,7 @@ namespace solution
             this.subbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.subbtn1.Name = "subbtn1";
             this.subbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.subbtn1.Size = new System.Drawing.Size(244, 35);
+            this.subbtn1.Size = new System.Drawing.Size(249, 35);
             this.subbtn1.TabIndex = 0;
             this.subbtn1.Text = "Add Subject";
             this.subbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -612,7 +557,7 @@ namespace solution
             this.btnSubject.Location = new System.Drawing.Point(0, 457);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSubject.Size = new System.Drawing.Size(244, 45);
+            this.btnSubject.Size = new System.Drawing.Size(249, 45);
             this.btnSubject.TabIndex = 6;
             this.btnSubject.Text = "Subject";
             this.btnSubject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -628,7 +573,7 @@ namespace solution
             this.Studentpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Studentpanel.Location = new System.Drawing.Point(0, 387);
             this.Studentpanel.Name = "Studentpanel";
-            this.Studentpanel.Size = new System.Drawing.Size(244, 70);
+            this.Studentpanel.Size = new System.Drawing.Size(249, 70);
             this.Studentpanel.TabIndex = 5;
             // 
             // stubtn2
@@ -643,7 +588,7 @@ namespace solution
             this.stubtn2.Margin = new System.Windows.Forms.Padding(0);
             this.stubtn2.Name = "stubtn2";
             this.stubtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.stubtn2.Size = new System.Drawing.Size(244, 35);
+            this.stubtn2.Size = new System.Drawing.Size(249, 35);
             this.stubtn2.TabIndex = 1;
             this.stubtn2.Text = "Manage Student";
             this.stubtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -662,7 +607,7 @@ namespace solution
             this.stubtn1.Margin = new System.Windows.Forms.Padding(0);
             this.stubtn1.Name = "stubtn1";
             this.stubtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.stubtn1.Size = new System.Drawing.Size(244, 35);
+            this.stubtn1.Size = new System.Drawing.Size(249, 35);
             this.stubtn1.TabIndex = 0;
             this.stubtn1.Text = "Add Student";
             this.stubtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -680,7 +625,7 @@ namespace solution
             this.btnStudent.Location = new System.Drawing.Point(0, 342);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnStudent.Size = new System.Drawing.Size(244, 45);
+            this.btnStudent.Size = new System.Drawing.Size(249, 45);
             this.btnStudent.TabIndex = 4;
             this.btnStudent.Text = "Student";
             this.btnStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -696,7 +641,7 @@ namespace solution
             this.Lecturerpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Lecturerpanel.Location = new System.Drawing.Point(0, 272);
             this.Lecturerpanel.Name = "Lecturerpanel";
-            this.Lecturerpanel.Size = new System.Drawing.Size(244, 70);
+            this.Lecturerpanel.Size = new System.Drawing.Size(249, 70);
             this.Lecturerpanel.TabIndex = 3;
             // 
             // lecbtn2
@@ -711,7 +656,7 @@ namespace solution
             this.lecbtn2.Margin = new System.Windows.Forms.Padding(0);
             this.lecbtn2.Name = "lecbtn2";
             this.lecbtn2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.lecbtn2.Size = new System.Drawing.Size(244, 35);
+            this.lecbtn2.Size = new System.Drawing.Size(249, 35);
             this.lecbtn2.TabIndex = 1;
             this.lecbtn2.Text = "Manage Lecturer";
             this.lecbtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -730,7 +675,7 @@ namespace solution
             this.lecbtn1.Margin = new System.Windows.Forms.Padding(0);
             this.lecbtn1.Name = "lecbtn1";
             this.lecbtn1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.lecbtn1.Size = new System.Drawing.Size(244, 35);
+            this.lecbtn1.Size = new System.Drawing.Size(249, 35);
             this.lecbtn1.TabIndex = 0;
             this.lecbtn1.Text = "Add Lecturer";
             this.lecbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -748,7 +693,7 @@ namespace solution
             this.btnLecturer.Location = new System.Drawing.Point(0, 227);
             this.btnLecturer.Name = "btnLecturer";
             this.btnLecturer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnLecturer.Size = new System.Drawing.Size(244, 45);
+            this.btnLecturer.Size = new System.Drawing.Size(249, 45);
             this.btnLecturer.TabIndex = 2;
             this.btnLecturer.Text = "Lecturer";
             this.btnLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -766,7 +711,7 @@ namespace solution
             this.btnhome.Location = new System.Drawing.Point(0, 182);
             this.btnhome.Name = "btnhome";
             this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnhome.Size = new System.Drawing.Size(244, 45);
+            this.btnhome.Size = new System.Drawing.Size(249, 45);
             this.btnhome.TabIndex = 1;
             this.btnhome.Text = "Home";
             this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -783,7 +728,7 @@ namespace solution
             this.logoutpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.logoutpanel.Location = new System.Drawing.Point(0, 0);
             this.logoutpanel.Name = "logoutpanel";
-            this.logoutpanel.Size = new System.Drawing.Size(244, 182);
+            this.logoutpanel.Size = new System.Drawing.Size(249, 182);
             this.logoutpanel.TabIndex = 0;
             // 
             // logoutbtn
@@ -893,7 +838,7 @@ namespace solution
             // 
             // AddWorkingDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1456, 768);
             this.Controls.Add(this.panel1);
@@ -909,7 +854,6 @@ namespace solution
             this.Timetablepanel.ResumeLayout(false);
             this.Tagpanel.ResumeLayout(false);
             this.Sessionpanel.ResumeLayout(false);
-            this.Workingdayspanel.ResumeLayout(false);
             this.Locationpanel.ResumeLayout(false);
             this.Subjectpanel.ResumeLayout(false);
             this.Studentpanel.ResumeLayout(false);
@@ -946,9 +890,7 @@ namespace solution
         private System.Windows.Forms.Button sesbtn2;
         private System.Windows.Forms.Button sesbtn1;
         private System.Windows.Forms.Button btnSession;
-        private System.Windows.Forms.Panel Workingdayspanel;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button worbtn1;
         private System.Windows.Forms.Button btnWorkingdays;
         private System.Windows.Forms.Panel Locationpanel;
         private System.Windows.Forms.Button locbtn2;
@@ -968,7 +910,6 @@ namespace solution
         private System.Windows.Forms.Button btnStatistical;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bu;
-        private System.Windows.Forms.Button worbtn2;
         private System.Windows.Forms.Button es;
         private System.Windows.Forms.Panel panelbottom;
         private System.Windows.Forms.Panel panelChildForm;

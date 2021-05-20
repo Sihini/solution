@@ -81,7 +81,7 @@ namespace solution
 
 
                     MessageBox.Show("New Student is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    
                     //   GetStudentsRecord();
                 }
                 catch(Exception ey)
@@ -90,9 +90,9 @@ namespace solution
                 }
 
             }
-            manageStudent frm = new manageStudent();//open Attendance management form
-            frm.Show();
-
+            //manageStudent frm = new manageStudent();//open Attendance management form
+            //frm.Show();
+            openChildForm(new manageStudent());
         }
 
         private bool IsValid()
@@ -166,6 +166,31 @@ namespace solution
             sub_gid.Text = (zidr);
         }
 
-       
+        private void addStudent_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.None;
+            stdpanel.Controls.Add(childForm);
+            stdpanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

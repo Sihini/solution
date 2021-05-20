@@ -82,7 +82,7 @@ namespace solution
             this.panel1.Controls.Add(this.txtlecname);
             this.panel1.Location = new System.Drawing.Point(35, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 438);
+            this.panel1.Size = new System.Drawing.Size(1014, 438);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -123,6 +123,7 @@ namespace solution
             this.button1.TabIndex = 17;
             this.button1.Text = "Generate Rank";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -130,7 +131,7 @@ namespace solution
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(486, 269);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 28);
+            this.label9.Size = new System.Drawing.Size(59, 23);
             this.label9.TabIndex = 16;
             this.label9.Text = "Rank";
             // 
@@ -140,7 +141,7 @@ namespace solution
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(486, 216);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 28);
+            this.label8.Size = new System.Drawing.Size(61, 23);
             this.label8.TabIndex = 15;
             this.label8.Text = "Level";
             // 
@@ -150,7 +151,7 @@ namespace solution
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(486, 161);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 28);
+            this.label7.Size = new System.Drawing.Size(87, 23);
             this.label7.TabIndex = 14;
             this.label7.Text = "Building";
             // 
@@ -160,7 +161,7 @@ namespace solution
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(486, 105);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 28);
+            this.label6.Size = new System.Drawing.Size(76, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Center";
             // 
@@ -170,7 +171,7 @@ namespace solution
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(36, 267);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 28);
+            this.label5.Size = new System.Drawing.Size(125, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Department";
             // 
@@ -180,7 +181,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(36, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 28);
+            this.label4.Size = new System.Drawing.Size(81, 23);
             this.label4.TabIndex = 11;
             this.label4.Text = "Faculty";
             // 
@@ -190,7 +191,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(36, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 28);
+            this.label3.Size = new System.Drawing.Size(134, 23);
             this.label3.TabIndex = 10;
             this.label3.Text = "Employee ID";
             // 
@@ -200,7 +201,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(36, 162);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 28);
+            this.label2.Size = new System.Drawing.Size(0, 23);
             this.label2.TabIndex = 9;
             // 
             // label1
@@ -209,7 +210,7 @@ namespace solution
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(35, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 28);
+            this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 8;
             this.label1.Text = "Lecturer Name";
             // 
@@ -217,8 +218,9 @@ namespace solution
             // 
             this.txtrank.Location = new System.Drawing.Point(640, 267);
             this.txtrank.Name = "txtrank";
-            this.txtrank.Size = new System.Drawing.Size(173, 37);
+            this.txtrank.Size = new System.Drawing.Size(173, 32);
             this.txtrank.TabIndex = 7;
+            this.txtrank.TextChanged += new System.EventHandler(this.txtrank_TextChanged);
             // 
             // txtlevel
             // 
@@ -232,9 +234,8 @@ namespace solution
             "6"});
             this.txtlevel.Location = new System.Drawing.Point(640, 214);
             this.txtlevel.Name = "txtlevel";
-            this.txtlevel.Size = new System.Drawing.Size(173, 38);
+            this.txtlevel.Size = new System.Drawing.Size(173, 31);
             this.txtlevel.TabIndex = 6;
-            this.txtlevel.Text = "1";
             // 
             // txtbulin
             // 
@@ -244,9 +245,8 @@ namespace solution
             "D-block"});
             this.txtbulin.Location = new System.Drawing.Point(640, 159);
             this.txtbulin.Name = "txtbulin";
-            this.txtbulin.Size = new System.Drawing.Size(173, 38);
+            this.txtbulin.Size = new System.Drawing.Size(173, 31);
             this.txtbulin.TabIndex = 5;
-            this.txtbulin.Text = "New building";
             // 
             // txtcent
             // 
@@ -260,9 +260,8 @@ namespace solution
             "Jaffna"});
             this.txtcent.Location = new System.Drawing.Point(640, 102);
             this.txtcent.Name = "txtcent";
-            this.txtcent.Size = new System.Drawing.Size(173, 38);
+            this.txtcent.Size = new System.Drawing.Size(173, 31);
             this.txtcent.TabIndex = 4;
-            this.txtcent.Text = "Malabe";
             // 
             // txtFacu
             // 
@@ -274,47 +273,47 @@ namespace solution
             "Humanties & Sciences"});
             this.txtFacu.Location = new System.Drawing.Point(191, 213);
             this.txtFacu.Name = "txtFacu";
-            this.txtFacu.Size = new System.Drawing.Size(173, 38);
+            this.txtFacu.Size = new System.Drawing.Size(173, 31);
             this.txtFacu.TabIndex = 3;
-            this.txtFacu.Text = "Computing";
             // 
             // txtDepname
             // 
             this.txtDepname.Location = new System.Drawing.Point(191, 266);
             this.txtDepname.Name = "txtDepname";
-            this.txtDepname.Size = new System.Drawing.Size(173, 37);
+            this.txtDepname.Size = new System.Drawing.Size(173, 32);
             this.txtDepname.TabIndex = 2;
             // 
             // txtEmpid
             // 
             this.txtEmpid.Location = new System.Drawing.Point(191, 157);
             this.txtEmpid.Name = "txtEmpid";
-            this.txtEmpid.Size = new System.Drawing.Size(173, 37);
+            this.txtEmpid.Size = new System.Drawing.Size(173, 32);
             this.txtEmpid.TabIndex = 1;
             // 
             // txtlecname
             // 
             this.txtlecname.Location = new System.Drawing.Point(191, 100);
             this.txtlecname.Name = "txtlecname";
-            this.txtlecname.Size = new System.Drawing.Size(173, 37);
+            this.txtlecname.Size = new System.Drawing.Size(173, 32);
             this.txtlecname.TabIndex = 0;
+            this.txtlecname.TextChanged += new System.EventHandler(this.txtlecname_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(326, 34);
+            this.label10.Location = new System.Drawing.Point(460, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(269, 42);
+            this.label10.Size = new System.Drawing.Size(210, 35);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Add Lecturer";
+            this.label10.Text = "Add Lecture";
             // 
             // addLecturer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(975, 639);
+            this.ClientSize = new System.Drawing.Size(1085, 639);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
