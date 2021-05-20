@@ -64,6 +64,8 @@ namespace solution
             this.SaveBtnTag.BackColor = System.Drawing.Color.DodgerBlue;
             this.SaveBtnTag.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SaveBtnTag.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.SaveBtnTag.Image = global::solution.Properties.Resources.save1;
+            this.SaveBtnTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SaveBtnTag.Location = new System.Drawing.Point(447, 360);
             this.SaveBtnTag.Name = "SaveBtnTag";
             this.SaveBtnTag.Size = new System.Drawing.Size(128, 44);
@@ -77,6 +79,8 @@ namespace solution
             this.ClearBtnTag.BackColor = System.Drawing.Color.DarkOrange;
             this.ClearBtnTag.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearBtnTag.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.ClearBtnTag.Image = global::solution.Properties.Resources.clear;
+            this.ClearBtnTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearBtnTag.Location = new System.Drawing.Point(600, 360);
             this.ClearBtnTag.Name = "ClearBtnTag";
             this.ClearBtnTag.Size = new System.Drawing.Size(137, 44);

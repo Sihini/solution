@@ -104,6 +104,8 @@ namespace solution
             this.stdGenId.BackColor = System.Drawing.Color.DarkOrange;
             this.stdGenId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.stdGenId.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.stdGenId.Image = global::solution.Properties.Resources.generate;
+            this.stdGenId.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.stdGenId.Location = new System.Drawing.Point(648, 195);
             this.stdGenId.Name = "stdGenId";
             this.stdGenId.Size = new System.Drawing.Size(214, 44);
@@ -117,6 +119,8 @@ namespace solution
             this.saveBtnStd.BackColor = System.Drawing.Color.DodgerBlue;
             this.saveBtnStd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.saveBtnStd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.saveBtnStd.Image = global::solution.Properties.Resources.save1;
+            this.saveBtnStd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saveBtnStd.Location = new System.Drawing.Point(325, 364);
             this.saveBtnStd.Name = "saveBtnStd";
             this.saveBtnStd.Size = new System.Drawing.Size(128, 44);
@@ -130,6 +134,8 @@ namespace solution
             this.clearBtnStd.BackColor = System.Drawing.Color.DarkOrange;
             this.clearBtnStd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearBtnStd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.clearBtnStd.Image = global::solution.Properties.Resources.clear;
+            this.clearBtnStd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clearBtnStd.Location = new System.Drawing.Point(487, 364);
             this.clearBtnStd.Name = "clearBtnStd";
             this.clearBtnStd.Size = new System.Drawing.Size(137, 44);
