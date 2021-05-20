@@ -100,6 +100,8 @@ namespace solution
             this.button5.BackColor = System.Drawing.Color.RoyalBlue;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Image = global::solution.Properties.Resources.next;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(752, 251);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 44);
@@ -121,6 +123,8 @@ namespace solution
             this.clearbtnsession.BackColor = System.Drawing.Color.DarkOrange;
             this.clearbtnsession.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearbtnsession.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.clearbtnsession.Image = global::solution.Properties.Resources.clear;
+            this.clearbtnsession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clearbtnsession.Location = new System.Drawing.Point(562, 251);
             this.clearbtnsession.Name = "clearbtnsession";
             this.clearbtnsession.Size = new System.Drawing.Size(137, 44);

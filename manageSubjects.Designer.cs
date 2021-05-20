@@ -107,6 +107,8 @@ namespace solution
             this.deleteSubjectbtn.BackColor = System.Drawing.Color.Red;
             this.deleteSubjectbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.deleteSubjectbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.deleteSubjectbtn.Image = global::solution.Properties.Resources.delete;
+            this.deleteSubjectbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteSubjectbtn.Location = new System.Drawing.Point(804, 445);
             this.deleteSubjectbtn.Name = "deleteSubjectbtn";
             this.deleteSubjectbtn.Size = new System.Drawing.Size(137, 44);
@@ -120,6 +122,8 @@ namespace solution
             this.clearSubjctbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearSubjctbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearSubjctbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.clearSubjctbtn.Image = global::solution.Properties.Resources.clear;
+            this.clearSubjctbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clearSubjctbtn.Location = new System.Drawing.Point(804, 376);
             this.clearSubjctbtn.Name = "clearSubjctbtn";
             this.clearSubjctbtn.Size = new System.Drawing.Size(137, 44);
@@ -133,6 +137,8 @@ namespace solution
             this.manageSubjectbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.manageSubjectbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageSubjectbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.manageSubjectbtn.Image = global::solution.Properties.Resources.update;
+            this.manageSubjectbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.manageSubjectbtn.Location = new System.Drawing.Point(804, 312);
             this.manageSubjectbtn.Name = "manageSubjectbtn";
             this.manageSubjectbtn.Size = new System.Drawing.Size(137, 44);
