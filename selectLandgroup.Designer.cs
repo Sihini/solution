@@ -50,6 +50,7 @@ namespace solution
             // 
             // groupSubject
             // 
+            this.groupSubject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupSubject.Controls.Add(this.label10);
             this.groupSubject.Controls.Add(this.sybjectname);
             this.groupSubject.Controls.Add(this.label7);
@@ -65,7 +66,7 @@ namespace solution
             this.groupSubject.Controls.Add(this.label1);
             this.groupSubject.Controls.Add(this.label6);
             this.groupSubject.Controls.Add(this.duration);
-            this.groupSubject.Location = new System.Drawing.Point(-11, 0);
+            this.groupSubject.Location = new System.Drawing.Point(3, 0);
             this.groupSubject.Name = "groupSubject";
             this.groupSubject.Size = new System.Drawing.Size(866, 349);
             this.groupSubject.TabIndex = 15;
