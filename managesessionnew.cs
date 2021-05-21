@@ -19,6 +19,7 @@ namespace solution
             fillcomboxes();
             fillselectsubject();
         }
+
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public int s_id;
         int count = 0;
@@ -29,6 +30,7 @@ namespace solution
 
         public void fillselectsubject()
         {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from SubjectTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -178,7 +180,9 @@ namespace solution
 
         public void filltagcombox()
         {
+
             SqlConnection cons = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+
             string sqli = "SELECT * from TagTable ";
             SqlCommand cmds = new SqlCommand(sqli, cons);
             SqlDataReader myreaders;
@@ -204,6 +208,7 @@ namespace solution
 
         public void fillcombox()
         {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from LectureTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -235,6 +240,7 @@ namespace solution
 
         public void fillcomboxes()
         {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from StudentTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -266,6 +272,7 @@ namespace solution
 
         private void selectsubject_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from SubjectTable where SubjectCode ='" + selectsubject.Text + "';";
             SqlCommand cmd = new SqlCommand(sql, con);

@@ -16,7 +16,11 @@ namespace solution
             InitializeComponent();
         }
 
+
+        // SqlConnection con = new SqlConnection("Data Source=DESKTOP-FIL467M;Initial Catalog=ITPMSOLUTION;Integrated Security=True"
+
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True"
+
             );
 
         private void addTag_Load(object sender, EventArgs e)
@@ -60,7 +64,7 @@ namespace solution
             t_name.Clear();
             t_code.Clear();
             related_tag.SelectedIndex = -1;
-           
+
         }
 
         private void SaveBtnTag_Click(object sender, EventArgs e)
@@ -94,8 +98,9 @@ namespace solution
                 }
 
             }
-            manageTag frm = new manageTag();//open Attendance management form
-            frm.Show();
+            //manageTag frm = new manageTag();//open Attendance management form
+            //frm.Show();
+            openChildForm(new manageTag());
         }
 
         private bool IsValid()
@@ -121,9 +126,37 @@ namespace solution
 
         }
 
+
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.None;
+            tagpanel.Controls.Add(childForm);
+            tagpanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_code_TextChanged(object sender, EventArgs e)
+        {
+        }
+       
+        }
     }
-}

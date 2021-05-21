@@ -98,8 +98,10 @@ namespace solution
             this.button2.BackColor = System.Drawing.Color.DarkOrange;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Image = global::solution.Properties.Resources.generate;
+
+         //   this.button2.Image = global::solution.Properties.Resources.generate;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.button2.Location = new System.Drawing.Point(732, 500);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -128,8 +130,10 @@ namespace solution
             this.lectManageDeleteBtn.BackColor = System.Drawing.Color.Red;
             this.lectManageDeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lectManageDeleteBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lectManageDeleteBtn.Image = global::solution.Properties.Resources.delete;
+
+        //    this.lectManageDeleteBtn.Image = global::solution.Properties.Resources.delete;
             this.lectManageDeleteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.lectManageDeleteBtn.Location = new System.Drawing.Point(769, 448);
             this.lectManageDeleteBtn.Name = "lectManageDeleteBtn";
             this.lectManageDeleteBtn.Size = new System.Drawing.Size(137, 44);
@@ -145,8 +149,10 @@ namespace solution
             this.clearMangeLectbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearMangeLectbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearMangeLectbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.clearMangeLectbtn.Image = global::solution.Properties.Resources.clear;
+
+         //  this.clearMangeLectbtn.Image = global::solution.Properties.Resources.clear;
             this.clearMangeLectbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.clearMangeLectbtn.Location = new System.Drawing.Point(769, 379);
             this.clearMangeLectbtn.Name = "clearMangeLectbtn";
             this.clearMangeLectbtn.Size = new System.Drawing.Size(137, 44);
@@ -162,8 +168,10 @@ namespace solution
             this.managelectupdatbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.managelectupdatbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.managelectupdatbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+
             this.managelectupdatbtn.Image = global::solution.Properties.Resources.update;
             this.managelectupdatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.managelectupdatbtn.Location = new System.Drawing.Point(769, 315);
             this.managelectupdatbtn.Name = "managelectupdatbtn";
             this.managelectupdatbtn.Size = new System.Drawing.Size(137, 44);

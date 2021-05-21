@@ -19,7 +19,9 @@ namespace solution
             fillsesioniD();
 
         }
+
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
+
         private Form activeForm = null;
 
         private void openChildForm(Form childForm)
@@ -118,8 +120,10 @@ namespace solution
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
-          //  openChildForm(new  consecutiveSt());
+
+            //openChildForm(new parallelSt());
+         
+
         }
 
         private void selectLecturersession_SelectedIndexChanged(object sender, EventArgs e)
@@ -238,5 +242,22 @@ namespace solution
         {
 
         }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+              //openChildForm(new  consecutiveSt());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+           // openChildForm(new nonOverlappingSt());
+        }
+
+        private void sessionavalibale_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

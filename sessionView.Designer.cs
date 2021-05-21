@@ -30,24 +30,22 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.sessionviewdataGridView = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sessionviewdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.sessionviewdataGridView);
+           
             this.panel1.Location = new System.Drawing.Point(-2, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1048, 610);
             this.panel1.TabIndex = 1;
+
             // 
             // sessionviewdataGridView
             // 
@@ -56,11 +54,14 @@ namespace solution
             this.sessionviewdataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.sessionviewdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sessionviewdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+
             this.sessionviewdataGridView.Location = new System.Drawing.Point(4, 106);
+
             this.sessionviewdataGridView.Name = "sessionviewdataGridView";
             this.sessionviewdataGridView.ReadOnly = true;
             this.sessionviewdataGridView.RowHeadersWidth = 51;
             this.sessionviewdataGridView.RowTemplate.Height = 29;
+
             this.sessionviewdataGridView.Size = new System.Drawing.Size(925, 504);
             this.sessionviewdataGridView.TabIndex = 0;
             this.sessionviewdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sessionviewdataGridView_CellContentClick);
@@ -82,6 +83,7 @@ namespace solution
             this.ClientSize = new System.Drawing.Size(1058, 625);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+
             this.Name = "sessionView";
             this.Text = "sessionView";
             this.Load += new System.EventHandler(this.sessionView_Load);

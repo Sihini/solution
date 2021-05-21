@@ -106,8 +106,10 @@ namespace solution
             this.selectviewsession.BackColor = System.Drawing.Color.RoyalBlue;
             this.selectviewsession.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectviewsession.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectviewsession.Image = global::solution.Properties.Resources.view;
+
+           // this.selectviewsession.Image = global::solution.Properties.Resources.view;
             this.selectviewsession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.selectviewsession.Location = new System.Drawing.Point(799, 516);
             this.selectviewsession.Name = "selectviewsession";
             this.selectviewsession.Size = new System.Drawing.Size(137, 44);
@@ -121,8 +123,10 @@ namespace solution
             this.selectdelete.BackColor = System.Drawing.Color.Red;
             this.selectdelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectdelete.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectdelete.Image = global::solution.Properties.Resources.delete;
+
+           // this.selectdelete.Image = global::solution.Properties.Resources.delete;
             this.selectdelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.selectdelete.Location = new System.Drawing.Point(799, 459);
             this.selectdelete.Name = "selectdelete";
             this.selectdelete.Size = new System.Drawing.Size(137, 44);
@@ -136,8 +140,9 @@ namespace solution
             this.selectclear.BackColor = System.Drawing.Color.DarkOrange;
             this.selectclear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectclear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectclear.Image = global::solution.Properties.Resources.clear;
+           // this.selectclear.Image = global::solution.Properties.Resources.clear;
             this.selectclear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.selectclear.Location = new System.Drawing.Point(799, 390);
             this.selectclear.Name = "selectclear";
             this.selectclear.Size = new System.Drawing.Size(137, 44);
@@ -151,8 +156,10 @@ namespace solution
             this.selectupdate.BackColor = System.Drawing.Color.LimeGreen;
             this.selectupdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectupdate.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.selectupdate.Image = global::solution.Properties.Resources.update;
+
+          //  this.selectupdate.Image = global::solution.Properties.Resources.update;
             this.selectupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.selectupdate.Location = new System.Drawing.Point(799, 326);
             this.selectupdate.Name = "selectupdate";
             this.selectupdate.Size = new System.Drawing.Size(137, 44);

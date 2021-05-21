@@ -66,7 +66,9 @@ namespace solution
             this.txtcapacity.Location = new System.Drawing.Point(674, 490);
             this.txtcapacity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtcapacity.Name = "txtcapacity";
+
             this.txtcapacity.Size = new System.Drawing.Size(241, 27);
+
             this.txtcapacity.TabIndex = 26;
             // 
             // labradiobtn
@@ -75,7 +77,9 @@ namespace solution
             this.labradiobtn.Location = new System.Drawing.Point(708, 425);
             this.labradiobtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labradiobtn.Name = "labradiobtn";
+
             this.labradiobtn.Size = new System.Drawing.Size(102, 24);
+
             this.labradiobtn.TabIndex = 25;
             this.labradiobtn.TabStop = true;
             this.labradiobtn.Text = "Laboratory";
@@ -88,7 +92,9 @@ namespace solution
             this.lecturradiobtn.Location = new System.Drawing.Point(708, 384);
             this.lecturradiobtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lecturradiobtn.Name = "lecturradiobtn";
+
             this.lecturradiobtn.Size = new System.Drawing.Size(114, 24);
+
             this.lecturradiobtn.TabIndex = 24;
             this.lecturradiobtn.TabStop = true;
             this.lecturradiobtn.Text = "Lecturer Hall";
@@ -99,7 +105,9 @@ namespace solution
             this.txtroomname.Location = new System.Drawing.Point(241, 490);
             this.txtroomname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtroomname.Name = "txtroomname";
+
             this.txtroomname.Size = new System.Drawing.Size(241, 27);
+
             this.txtroomname.TabIndex = 23;
             // 
             // txtBuildingname
@@ -107,7 +115,9 @@ namespace solution
             this.txtBuildingname.Location = new System.Drawing.Point(241, 380);
             this.txtBuildingname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBuildingname.Name = "txtBuildingname";
+
             this.txtBuildingname.Size = new System.Drawing.Size(241, 27);
+
             this.txtBuildingname.TabIndex = 22;
             // 
             // label4
@@ -181,7 +191,9 @@ namespace solution
             this.txtsearchlocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtsearchlocation.Name = "txtsearchlocation";
             this.txtsearchlocation.PlaceholderText = "Search ";
+
             this.txtsearchlocation.Size = new System.Drawing.Size(306, 27);
+
             this.txtsearchlocation.TabIndex = 54;
             this.txtsearchlocation.TextChanged += new System.EventHandler(this.txtsearchlocation_TextChanged);
             // 
@@ -190,8 +202,10 @@ namespace solution
             this.clearlocationtbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.clearlocationtbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearlocationtbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+
             this.clearlocationtbtn.Image = global::solution.Properties.Resources.clear;
             this.clearlocationtbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.clearlocationtbtn.Location = new System.Drawing.Point(994, 580);
             this.clearlocationtbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.clearlocationtbtn.Name = "clearlocationtbtn";
@@ -206,8 +220,10 @@ namespace solution
             this.deleteLocationbtn.BackColor = System.Drawing.Color.Red;
             this.deleteLocationbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.deleteLocationbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.deleteLocationbtn.Image = global::solution.Properties.Resources.delete;
+
+         //   this.deleteLocationbtn.Image = global::solution.Properties.Resources.delete;
             this.deleteLocationbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.deleteLocationbtn.Location = new System.Drawing.Point(994, 466);
             this.deleteLocationbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deleteLocationbtn.Name = "deleteLocationbtn";
@@ -222,8 +238,10 @@ namespace solution
             this.manageLocationbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.manageLocationbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.manageLocationbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.manageLocationbtn.Image = global::solution.Properties.Resources.update;
+
+          //  this.manageLocationbtn.Image = global::solution.Properties.Resources.update;
             this.manageLocationbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.manageLocationbtn.Location = new System.Drawing.Point(994, 345);
             this.manageLocationbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.manageLocationbtn.Name = "manageLocationbtn";
