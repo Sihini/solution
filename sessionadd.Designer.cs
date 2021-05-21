@@ -68,7 +68,11 @@ namespace solution
             this.panel1.Size = new System.Drawing.Size(2468, 1218);
             
             this.panel1.TabIndex = 2;
+
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
            // this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // panelChildForm
             // 

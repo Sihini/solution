@@ -11,16 +11,13 @@ namespace solution
 {
     public partial class SessionTimeAllocation1 : Form
     {
-        public SessionTimeAllocation1()
-        {
-            InitializeComponent();
-            fillsesiontimeallo();
-            fillsesiontimeGroupid();
-            fillsesioniD();
 
+<<<<<<< HEAD
+=======
         }
 
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
 
         private Form activeForm = null;
 
@@ -32,39 +29,43 @@ namespace solution
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.None;
-            sessionavalibale.Controls.Add(childForm);
-            sessionavalibale.Tag = childForm;
+            timeAllocationsubpannel.Controls.Add(childForm);
+            timeAllocationsubpannel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+
+
+        public SessionTimeAllocation1()
         {
+            InitializeComponent();
+         /*   fillsesiontimeallo();
+            fillsesiontimeGroupid();
+            fillsesioniD();*/
 
         }
+        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
+       
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void SessionTimeAllocation1_Load(object sender, EventArgs e)
         {
 
         }
-
+/*
         private void button1_Click(object sender, EventArgs e)
         {
             if (IsValid())
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO STnotAvailable VALUES (@selec_lec, @selec_group, @selec_sub, @selec_ID, @sele_time)", con);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@selec_lec", selectLecturersession.Text);
-                cmd.Parameters.AddWithValue("@selec_group", selectgroupsession.Text);
-                cmd.Parameters.AddWithValue("@selec_sub", selectGroupsubsesesion.Text);
-                cmd.Parameters.AddWithValue("@selec_ID", selectsessionID.Text);
-                cmd.Parameters.AddWithValue("@sele_time", timesessionnot.Text);
+                cmd.Parameters.AddWithValue("@selec_lec", lecturerComboBox.Text);
+                cmd.Parameters.AddWithValue("@selec_group", groupComboBox.Text);
+                cmd.Parameters.AddWithValue("@selec_sub", subgroupComboBox.Text);
+                cmd.Parameters.AddWithValue("@selec_ID", sessionComboBox.Text);
+                cmd.Parameters.AddWithValue("@sele_time", timeTextBox.Text);
               
 
                 con.Open();
@@ -80,32 +81,32 @@ namespace solution
             }
             //  openChildForm(new selectLandgroup());
         }
-
-        private bool IsValid()
+*/
+   /*     private bool IsValid()
         {
-            if (selectLecturersession.Text == String.Empty)
+            if (lecturerComboBox.Text == String.Empty)
             {
                 MessageBox.Show("selected lecturer", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (selectgroupsession.Text == string.Empty)
+            else if (groupComboBox.Text == string.Empty)
             {
                 MessageBox.Show("Employee ID is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-            else if (selectGroupsubsesesion.Text == string.Empty)
+            else if (subgroupComboBox.Text == string.Empty)
             {
                 MessageBox.Show("Faculty Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-            else if (selectsessionID.Text == string.Empty)
+            else if (sessionComboBox.Text == string.Empty)
             {
                 MessageBox.Show("Department Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (timesessionnot.Text == string.Empty)
+            else if (timeTextBox.Text == string.Empty)
             {
                 MessageBox.Show("Center Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -113,6 +114,8 @@ namespace solution
             return true;
         }
 
+<<<<<<< HEAD
+=======
         private void button2_Click(object sender, EventArgs e)
         {
             openChildForm(new SessionTimeAllocation2());
@@ -130,6 +133,7 @@ namespace solution
         {
 
         }
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
         public void fillsesiontimeallo()
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
@@ -143,7 +147,7 @@ namespace solution
                 while (myreader.Read())
                 {
                     string sname = myreader.GetString(1);
-                    selectLecturersession.Items.Add(sname);
+                    lecturerComboBox.Items.Add(sname);
 
 
                 }
@@ -159,28 +163,7 @@ namespace solution
 
         public void fillsesiontimeGroupid()
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
-            string sql = "SELECT * from StudentTable ";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            SqlDataReader myreader;
-            try
-            {
-                con.Open();
-                myreader = cmd.ExecuteReader();
-                while (myreader.Read())
-                {
-                    string sname = myreader.GetString(3);
-                    selectgroupsession.Items.Add(sname);
-
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
+            
         }
 
 
@@ -197,7 +180,7 @@ namespace solution
                 while (myreader.Read())
                 {
                     string sname = myreader.GetString(4);
-                    selectGroupsubsesesion.Items.Add(sname);
+                    subgroupComboBox.Items.Add(sname);
 
 
                 }
@@ -225,7 +208,7 @@ namespace solution
                 while (myreader.Read())
                 {
                     string sname = myreader.GetString(1);
-                    selectsessionID.Items.Add(sname);
+                    sessionComboBox.Items.Add(sname);
 
 
                 }
@@ -238,11 +221,42 @@ namespace solution
             }
         }
 
-        private void selectGroupsesion_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void stNotAvailableSubmitbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+*/
+       
+
+        private void stConsecutivebtn_Click(object sender, EventArgs e)
+        {
+            //  openChildForm(new  consecutiveSt());
+        }
+
+        private void stParallelbtn_Click(object sender, EventArgs e)
         {
 
         }
 
+<<<<<<< HEAD
+        private void stNonOverlappingbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stNotAvailablebtn_Click(object sender, EventArgs e)
+        {
+            //openChildForm(new SessionTimeAllocation1());
+        }
+
+        private void stNotAvailablebtn_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new NotTimeAvailable1());
+        }
+
+        private void timeAllocationsubpannel_Paint(object sender, PaintEventArgs e)
+=======
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -255,9 +269,36 @@ namespace solution
         }
 
         private void sessionavalibale_Paint(object sender, PaintEventArgs e)
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
         {
 
         }
 
+<<<<<<< HEAD
+
+        /*
+                private void groupComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
+                {
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
+                    string sql = "SELECT * from StudentTable ";
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    SqlDataReader myreader;
+                    try
+                    {
+                        con.Open();
+                        myreader = cmd.ExecuteReader();
+                        while (myreader.Read())
+                        {
+                            string sname = myreader.GetString(3);
+                            groupComboBox.Items.Add(sname);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }*/
+=======
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
     }
 }

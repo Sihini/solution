@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+<<<<<<< HEAD
+=======
 using System.Data.SqlClient;
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -11,6 +14,11 @@ namespace solution
 {
     public partial class ManageSessionRooms : Form
     {
+<<<<<<< HEAD
+        public ManageSessionRooms()
+        {
+            InitializeComponent();
+=======
 
 
         private Form activeForm = null;
@@ -121,12 +129,17 @@ namespace solution
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
         }
 
         private void ManageSessionRooms_Load(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
+    }
+}
+=======
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -305,3 +318,4 @@ namespace solution
     }
     }
 
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29

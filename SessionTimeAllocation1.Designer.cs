@@ -29,31 +29,18 @@ namespace solution
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.sessionavalibale = new System.Windows.Forms.Panel();
-            this.timesessionnot = new System.Windows.Forms.TextBox();
-            this.selectsessionID = new System.Windows.Forms.ComboBox();
-            this.selectGroupsubsesesion = new System.Windows.Forms.ComboBox();
-            this.selectgroupsession = new System.Windows.Forms.ComboBox();
-            this.selectLecturersession = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sessionviewnotavi = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.wdClear = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.sessionavalibale.SuspendLayout();
+            this.sessionTimeAllocationpanel = new System.Windows.Forms.Panel();
+            this.timeAllocationsubpannel = new System.Windows.Forms.Panel();
+            this.stNotAvailablebtn = new System.Windows.Forms.Button();
+            this.stNonOverlappingbtn = new System.Windows.Forms.Button();
+            this.stParallelbtn = new System.Windows.Forms.Button();
+            this.stConsecutivebtn = new System.Windows.Forms.Button();
+            this.sessionTimeAllocationpanel.SuspendLayout();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
+=======
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -321,6 +308,7 @@ namespace solution
             this.button3.UseVisualStyleBackColor = false;
 
             // 
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
             // label7
             // 
             this.label7.AutoSize = true;
@@ -334,48 +322,102 @@ namespace solution
             this.label7.TabIndex = 3;
             this.label7.Text = "Sessions and Not Available Time Allocations";
             // 
+            // sessionTimeAllocationpanel
+            // 
+            this.sessionTimeAllocationpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sessionTimeAllocationpanel.Controls.Add(this.stNotAvailablebtn);
+            this.sessionTimeAllocationpanel.Controls.Add(this.timeAllocationsubpannel);
+            this.sessionTimeAllocationpanel.Controls.Add(this.stNonOverlappingbtn);
+            this.sessionTimeAllocationpanel.Controls.Add(this.stParallelbtn);
+            this.sessionTimeAllocationpanel.Controls.Add(this.stConsecutivebtn);
+            this.sessionTimeAllocationpanel.Location = new System.Drawing.Point(82, 164);
+            this.sessionTimeAllocationpanel.Name = "sessionTimeAllocationpanel";
+            this.sessionTimeAllocationpanel.Size = new System.Drawing.Size(794, 438);
+            this.sessionTimeAllocationpanel.TabIndex = 30;
+            // 
+            // timeAllocationsubpannel
+            // 
+            this.timeAllocationsubpannel.Location = new System.Drawing.Point(12, 56);
+            this.timeAllocationsubpannel.Name = "timeAllocationsubpannel";
+            this.timeAllocationsubpannel.Size = new System.Drawing.Size(770, 359);
+            this.timeAllocationsubpannel.TabIndex = 29;
+            this.timeAllocationsubpannel.Paint += new System.Windows.Forms.PaintEventHandler(this.timeAllocationsubpannel_Paint);
+            // 
+            // stNotAvailablebtn
+            // 
+            this.stNotAvailablebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.stNotAvailablebtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.stNotAvailablebtn.Location = new System.Drawing.Point(353, 4);
+            this.stNotAvailablebtn.Name = "stNotAvailablebtn";
+            this.stNotAvailablebtn.Size = new System.Drawing.Size(171, 29);
+            this.stNotAvailablebtn.TabIndex = 32;
+            this.stNotAvailablebtn.Text = "Not Available Times";
+            this.stNotAvailablebtn.UseVisualStyleBackColor = false;
+            this.stNotAvailablebtn.Click += new System.EventHandler(this.stNotAvailablebtn_Click_1);
+            // 
+            // stNonOverlappingbtn
+            // 
+            this.stNonOverlappingbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.stNonOverlappingbtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.stNonOverlappingbtn.Location = new System.Drawing.Point(202, 4);
+            this.stNonOverlappingbtn.Name = "stNonOverlappingbtn";
+            this.stNonOverlappingbtn.Size = new System.Drawing.Size(149, 29);
+            this.stNonOverlappingbtn.TabIndex = 31;
+            this.stNonOverlappingbtn.Text = "Non Overlapping";
+            this.stNonOverlappingbtn.UseVisualStyleBackColor = false;
+            // 
+            // stParallelbtn
+            // 
+            this.stParallelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.stParallelbtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.stParallelbtn.Location = new System.Drawing.Point(120, 4);
+            this.stParallelbtn.Name = "stParallelbtn";
+            this.stParallelbtn.Size = new System.Drawing.Size(80, 29);
+            this.stParallelbtn.TabIndex = 30;
+            this.stParallelbtn.Text = "Parallel";
+            this.stParallelbtn.UseVisualStyleBackColor = false;
+            // 
+            // stConsecutivebtn
+            // 
+            this.stConsecutivebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.stConsecutivebtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.stConsecutivebtn.Location = new System.Drawing.Point(5, 4);
+            this.stConsecutivebtn.Name = "stConsecutivebtn";
+            this.stConsecutivebtn.Size = new System.Drawing.Size(112, 29);
+            this.stConsecutivebtn.TabIndex = 29;
+            this.stConsecutivebtn.Text = "Consecutive";
+            this.stConsecutivebtn.UseVisualStyleBackColor = false;
+            // 
             // SessionTimeAllocation1
             // 
 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 639);
+            this.Controls.Add(this.sessionTimeAllocationpanel);
             this.Controls.Add(this.label7);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.panel1);
 
+>>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
             this.Name = "SessionTimeAllocation1";
             this.Text = "SessionTimeAllocation1";
             this.Load += new System.EventHandler(this.SessionTimeAllocation1_Load);
-            this.panel1.ResumeLayout(false);
-            this.sessionavalibale.ResumeLayout(false);
-            this.sessionavalibale.PerformLayout();
+            this.sessionTimeAllocationpanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel sessionavalibale;
-        private System.Windows.Forms.TextBox timesessionnot;
-        private System.Windows.Forms.ComboBox selectsessionID;
-        private System.Windows.Forms.ComboBox selectGroupsubsesesion;
-        private System.Windows.Forms.ComboBox selectgroupsession;
-        private System.Windows.Forms.ComboBox selectLecturersession;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button sessionviewnotavi;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button wdClear;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel sessionTime;
+        private System.Windows.Forms.Panel sessionTimeAllocationpanel;
+        private System.Windows.Forms.Panel timeAllocationsubpannel;
+        private System.Windows.Forms.Button stNotAvailablebtn;
+        private System.Windows.Forms.Button stNonOverlappingbtn;
+        private System.Windows.Forms.Button stParallelbtn;
+        private System.Windows.Forms.Button stConsecutivebtn;
     }
 }
