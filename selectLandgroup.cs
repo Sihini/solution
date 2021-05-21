@@ -18,7 +18,7 @@ namespace solution
             fillselectsubject();
         }
 
-        
+
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
 
         private Form activeForm = null;
@@ -39,7 +39,7 @@ namespace solution
         }
         private void selectsubject_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from SubjectTable where SubjectCode ='"+ selectsubject.Text +"';";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -66,7 +66,7 @@ namespace solution
 
         public void fillcombox()
         {
-            
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from StudentTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -92,7 +92,7 @@ namespace solution
         }
         public void fillselectsubject()
         {
-            
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from SubjectTable ";
             SqlCommand cmd = new SqlCommand(sql, con);

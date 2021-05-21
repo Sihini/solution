@@ -20,8 +20,8 @@ namespace solution
 
         }
 
-        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-FIL467M;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
+
         private Form activeForm = null;
 
         private void openChildForm(Form childForm)
@@ -120,8 +120,10 @@ namespace solution
 
         private void button4_Click(object sender, EventArgs e)
         {
-            openChildForm(new parallelSt());
+
+            //openChildForm(new parallelSt());
          
+
         }
 
         private void selectLecturersession_SelectedIndexChanged(object sender, EventArgs e)
@@ -241,6 +243,7 @@ namespace solution
 
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
               //openChildForm(new  consecutiveSt());
@@ -255,5 +258,6 @@ namespace solution
         {
 
         }
+
     }
 }

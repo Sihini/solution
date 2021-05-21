@@ -28,6 +28,8 @@ namespace solution
         public string rid { get; set; }
 
 
+
+
         private void LectrerMandataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

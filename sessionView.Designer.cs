@@ -30,37 +30,22 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+
             this.sessionviewdataGridView = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sessionviewdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.sessionviewdataGridView);
-            this.panel1.Location = new System.Drawing.Point(-2, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+           
+            this.panel1.Location = new System.Drawing.Point(-2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1310, 762);
+            this.panel1.Size = new System.Drawing.Size(1048, 610);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(371, 48);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(325, 42);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "View All Session";
+
             // 
             // sessionviewdataGridView
             // 
@@ -69,24 +54,36 @@ namespace solution
             this.sessionviewdataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.sessionviewdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sessionviewdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sessionviewdataGridView.Location = new System.Drawing.Point(5, 132);
-            this.sessionviewdataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
+            this.sessionviewdataGridView.Location = new System.Drawing.Point(4, 106);
+
             this.sessionviewdataGridView.Name = "sessionviewdataGridView";
             this.sessionviewdataGridView.ReadOnly = true;
             this.sessionviewdataGridView.RowHeadersWidth = 51;
             this.sessionviewdataGridView.RowTemplate.Height = 29;
-            this.sessionviewdataGridView.Size = new System.Drawing.Size(1156, 630);
+
+            this.sessionviewdataGridView.Size = new System.Drawing.Size(925, 504);
             this.sessionviewdataGridView.TabIndex = 0;
             this.sessionviewdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sessionviewdataGridView_CellContentClick);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(297, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(273, 35);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "View All Session";
+            // 
             // sessionView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1322, 781);
+            this.ClientSize = new System.Drawing.Size(1058, 625);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.Name = "sessionView";
             this.Text = "sessionView";
             this.Load += new System.EventHandler(this.sessionView_Load);

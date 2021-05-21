@@ -16,7 +16,7 @@ namespace solution
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
-        
+
 
         private void sessionviewdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -48,9 +48,11 @@ namespace solution
 
         }
 
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
     }
 }

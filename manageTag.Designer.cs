@@ -82,6 +82,8 @@ namespace solution
             this.DeleteBtnTag.BackColor = System.Drawing.Color.Red;
             this.DeleteBtnTag.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DeleteBtnTag.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DeleteBtnTag.Image = global::solution.Properties.Resources.delete;
+            this.DeleteBtnTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteBtnTag.Location = new System.Drawing.Point(776, 460);
             this.DeleteBtnTag.Name = "DeleteBtnTag";
             this.DeleteBtnTag.Size = new System.Drawing.Size(137, 44);
@@ -95,6 +97,8 @@ namespace solution
             this.ClearBtnManageTag.BackColor = System.Drawing.Color.DarkOrange;
             this.ClearBtnManageTag.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearBtnManageTag.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.ClearBtnManageTag.Image = global::solution.Properties.Resources.clear;
+            this.ClearBtnManageTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearBtnManageTag.Location = new System.Drawing.Point(776, 410);
             this.ClearBtnManageTag.Name = "ClearBtnManageTag";
             this.ClearBtnManageTag.Size = new System.Drawing.Size(137, 44);
@@ -108,6 +112,8 @@ namespace solution
             this.UpdateBtnTag.BackColor = System.Drawing.Color.LimeGreen;
             this.UpdateBtnTag.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpdateBtnTag.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.UpdateBtnTag.Image = global::solution.Properties.Resources.update;
+            this.UpdateBtnTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UpdateBtnTag.Location = new System.Drawing.Point(776, 360);
             this.UpdateBtnTag.Name = "UpdateBtnTag";
             this.UpdateBtnTag.Size = new System.Drawing.Size(137, 44);

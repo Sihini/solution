@@ -12,7 +12,7 @@ namespace solution
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-FIL467M;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public string gid { get; set; }
         public string mid { get; set; }
         public string sid { get; set; }
@@ -166,6 +166,7 @@ namespace solution
             sub_gid.Text = (zidr);
         }
 
+
         private void addStudent_Load_1(object sender, EventArgs e)
         {
 
@@ -189,6 +190,10 @@ namespace solution
         }
 
         private void label1_Click(object sender, EventArgs e)
+        { }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+
         {
 
         }

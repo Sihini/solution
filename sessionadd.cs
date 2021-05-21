@@ -17,8 +17,7 @@ namespace solution
             fillcombox();
             filltagcombox();
         }
-       
-        
+
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
 
         private Form activeForm = null;
@@ -43,7 +42,7 @@ namespace solution
         }
         public void fillcombox()
         {
-            
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from LectureTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -69,8 +68,9 @@ namespace solution
         }
         public void filltagcombox()
         {
-            
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+
+            SqlConnection cons = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+
             string sqli = "SELECT * from TagTable ";
             SqlCommand cmds = new SqlCommand(sqli, cons);
             SqlDataReader myreaders;
