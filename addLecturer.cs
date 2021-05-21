@@ -12,6 +12,7 @@ namespace solution
             InitializeComponent();
         }
       
+        
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public string gid { get; set; }
         public string mid { get; set; }

@@ -201,13 +201,16 @@ namespace solution
 
         private void sesbtn3_Click(object sender, EventArgs e)
         {
+
             openChildForm(new ManageSessionRooms());
+
             //..
             hideSubMenu();
         }
 
         private void sesbtn4_Click(object sender, EventArgs e)
         {
+           
             //..
             hideSubMenu();
         }

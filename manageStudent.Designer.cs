@@ -30,6 +30,7 @@ namespace solution
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.stdGenId = new System.Windows.Forms.Button();
             this.sub_gno = new System.Windows.Forms.NumericUpDown();
             this.g_no = new System.Windows.Forms.NumericUpDown();
@@ -49,7 +50,6 @@ namespace solution
             this.UpdateBtnStd = new System.Windows.Forms.Button();
             this.SearchBtnStd = new System.Windows.Forms.Button();
             this.StudentdataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sub_gno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.g_no)).BeginInit();
@@ -58,7 +58,11 @@ namespace solution
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.stdGenId);
             this.panel1.Controls.Add(this.sub_gno);
             this.panel1.Controls.Add(this.g_no);
@@ -78,17 +82,30 @@ namespace solution
             this.panel1.Controls.Add(this.UpdateBtnStd);
             this.panel1.Controls.Add(this.SearchBtnStd);
             this.panel1.Controls.Add(this.StudentdataGridView);
-            this.panel1.Location = new System.Drawing.Point(35, 97);
+            this.panel1.Location = new System.Drawing.Point(12, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1172, 602);
+            this.panel1.Size = new System.Drawing.Size(1172, 691);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(274, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(454, 42);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Manage Student Group";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // stdGenId
             // 
             this.stdGenId.BackColor = System.Drawing.Color.DarkOrange;
             this.stdGenId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.stdGenId.ForeColor = System.Drawing.SystemColors.HighlightText;
+           // this.stdGenId.Image = global::solution.Properties.Resources.generate;
+            this.stdGenId.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.stdGenId.Location = new System.Drawing.Point(682, 498);
             this.stdGenId.Name = "stdGenId";
             this.stdGenId.Size = new System.Drawing.Size(214, 44);
@@ -101,7 +118,7 @@ namespace solution
             // 
             this.sub_gno.Location = new System.Drawing.Point(402, 528);
             this.sub_gno.Name = "sub_gno";
-            this.sub_gno.Size = new System.Drawing.Size(86, 37);
+            this.sub_gno.Size = new System.Drawing.Size(86, 32);
             this.sub_gno.TabIndex = 40;
             this.sub_gno.Value = new decimal(new int[] {
             1,
@@ -113,7 +130,7 @@ namespace solution
             // 
             this.g_no.Location = new System.Drawing.Point(402, 471);
             this.g_no.Name = "g_no";
-            this.g_no.Size = new System.Drawing.Size(86, 37);
+            this.g_no.Size = new System.Drawing.Size(86, 32);
             this.g_no.TabIndex = 39;
             this.g_no.Value = new decimal(new int[] {
             1,
@@ -123,9 +140,9 @@ namespace solution
             // 
             // textSearchBtn
             // 
-            this.textSearchBtn.Location = new System.Drawing.Point(752, 50);
+            this.textSearchBtn.Location = new System.Drawing.Point(759, 72);
             this.textSearchBtn.Name = "textSearchBtn";
-            this.textSearchBtn.Size = new System.Drawing.Size(231, 37);
+            this.textSearchBtn.Size = new System.Drawing.Size(231, 32);
             this.textSearchBtn.TabIndex = 38;
             this.textSearchBtn.TextChanged += new System.EventHandler(this.textSearchBtn_TextChanged);
             // 
@@ -133,7 +150,7 @@ namespace solution
             // 
             this.sub_gid.Location = new System.Drawing.Point(743, 419);
             this.sub_gid.Name = "sub_gid";
-            this.sub_gid.Size = new System.Drawing.Size(141, 37);
+            this.sub_gid.Size = new System.Drawing.Size(141, 32);
             this.sub_gid.TabIndex = 37;
             this.sub_gid.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -141,7 +158,7 @@ namespace solution
             // 
             this.g_id.Location = new System.Drawing.Point(743, 346);
             this.g_id.Name = "g_id";
-            this.g_id.Size = new System.Drawing.Size(141, 37);
+            this.g_id.Size = new System.Drawing.Size(141, 32);
             this.g_id.TabIndex = 36;
             // 
             // programme
@@ -157,7 +174,7 @@ namespace solution
             "IM"});
             this.programme.Location = new System.Drawing.Point(347, 412);
             this.programme.Name = "programme";
-            this.programme.Size = new System.Drawing.Size(141, 38);
+            this.programme.Size = new System.Drawing.Size(141, 31);
             this.programme.TabIndex = 33;
             this.programme.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -165,7 +182,7 @@ namespace solution
             // 
             this.a_year.Location = new System.Drawing.Point(347, 349);
             this.a_year.Name = "a_year";
-            this.a_year.Size = new System.Drawing.Size(141, 37);
+            this.a_year.Size = new System.Drawing.Size(141, 32);
             this.a_year.TabIndex = 32;
             this.a_year.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -175,7 +192,7 @@ namespace solution
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(551, 418);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 23);
+            this.label7.Size = new System.Drawing.Size(117, 19);
             this.label7.TabIndex = 31;
             this.label7.Text = "Sub Group ID";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -186,7 +203,7 @@ namespace solution
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(68, 536);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 23);
+            this.label5.Size = new System.Drawing.Size(124, 19);
             this.label5.TabIndex = 30;
             this.label5.Text = "Sub Group No";
             // 
@@ -196,7 +213,7 @@ namespace solution
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(68, 479);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 23);
+            this.label4.Size = new System.Drawing.Size(89, 19);
             this.label4.TabIndex = 29;
             this.label4.Text = "Group No";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -207,7 +224,7 @@ namespace solution
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(68, 412);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 23);
+            this.label3.Size = new System.Drawing.Size(105, 19);
             this.label3.TabIndex = 28;
             this.label3.Text = "Programme";
             // 
@@ -217,7 +234,7 @@ namespace solution
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(560, 360);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 23);
+            this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 27;
             this.label6.Text = "Group ID";
             // 
@@ -227,7 +244,7 @@ namespace solution
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(68, 358);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 23);
+            this.label2.Size = new System.Drawing.Size(220, 19);
             this.label2.TabIndex = 26;
             this.label2.Text = "Academic Year Semester";
             // 
@@ -236,6 +253,8 @@ namespace solution
             this.DeleteBtnStd.BackColor = System.Drawing.Color.Red;
             this.DeleteBtnStd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DeleteBtnStd.ForeColor = System.Drawing.SystemColors.HighlightText;
+           // this.DeleteBtnStd.Image = global::solution.Properties.Resources.delete;
+            this.DeleteBtnStd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteBtnStd.Location = new System.Drawing.Point(970, 397);
             this.DeleteBtnStd.Name = "DeleteBtnStd";
             this.DeleteBtnStd.Size = new System.Drawing.Size(137, 44);
@@ -249,6 +268,8 @@ namespace solution
             this.clearBtnStdMan.BackColor = System.Drawing.Color.DarkOrange;
             this.clearBtnStdMan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearBtnStdMan.ForeColor = System.Drawing.SystemColors.HighlightText;
+          //  this.clearBtnStdMan.Image = global::solution.Properties.Resources.clear;
+            this.clearBtnStdMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clearBtnStdMan.Location = new System.Drawing.Point(970, 347);
             this.clearBtnStdMan.Name = "clearBtnStdMan";
             this.clearBtnStdMan.Size = new System.Drawing.Size(137, 44);
@@ -262,6 +283,8 @@ namespace solution
             this.UpdateBtnStd.BackColor = System.Drawing.Color.LimeGreen;
             this.UpdateBtnStd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpdateBtnStd.ForeColor = System.Drawing.SystemColors.HighlightText;
+          //  this.UpdateBtnStd.Image = global::solution.Properties.Resources.update;
+            this.UpdateBtnStd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UpdateBtnStd.Location = new System.Drawing.Point(970, 449);
             this.UpdateBtnStd.Name = "UpdateBtnStd";
             this.UpdateBtnStd.Size = new System.Drawing.Size(137, 44);
@@ -275,7 +298,7 @@ namespace solution
             this.SearchBtnStd.BackColor = System.Drawing.Color.DodgerBlue;
             this.SearchBtnStd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SearchBtnStd.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.SearchBtnStd.Location = new System.Drawing.Point(1015, 46);
+            this.SearchBtnStd.Location = new System.Drawing.Point(996, 69);
             this.SearchBtnStd.Name = "SearchBtnStd";
             this.SearchBtnStd.Size = new System.Drawing.Size(137, 44);
             this.SearchBtnStd.TabIndex = 22;
@@ -292,28 +315,29 @@ namespace solution
             this.StudentdataGridView.RowHeadersWidth = 62;
             this.StudentdataGridView.RowTemplate.Height = 33;
             this.StudentdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.StudentdataGridView.Size = new System.Drawing.Size(1124, 199);
+            this.StudentdataGridView.Size = new System.Drawing.Size(1105, 199);
             this.StudentdataGridView.TabIndex = 0;
             this.StudentdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentdataGridView_CellContentClick);
             // 
+
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(425, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(454, 42);
+            this.label1.Size = new System.Drawing.Size(379, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Manage Student Group";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+
             // manageStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1219, 799);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -326,7 +350,6 @@ namespace solution
             ((System.ComponentModel.ISupportInitialize)(this.g_no)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StudentdataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

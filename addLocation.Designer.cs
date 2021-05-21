@@ -91,7 +91,14 @@ namespace solution
             this.btnsavelaction.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnsavelaction.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsavelaction.ForeColor = System.Drawing.SystemColors.HighlightText;
+
             this.btnsavelaction.Location = new System.Drawing.Point(653, 282);
+
+
+            this.btnsavelaction.Image = global::solution.Properties.Resources.save1;
+            this.btnsavelaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+
             this.btnsavelaction.Name = "btnsavelaction";
             this.btnsavelaction.Size = new System.Drawing.Size(128, 44);
             this.btnsavelaction.TabIndex = 34;
@@ -111,7 +118,13 @@ namespace solution
             this.btnclearlocation.BackColor = System.Drawing.Color.DarkOrange;
             this.btnclearlocation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnclearlocation.ForeColor = System.Drawing.SystemColors.HighlightText;
+
             this.btnclearlocation.Location = new System.Drawing.Point(467, 282);
+
+
+            this.btnclearlocation.Image = global::solution.Properties.Resources.clear;
+            this.btnclearlocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnclearlocation.Name = "btnclearlocation";
             this.btnclearlocation.Size = new System.Drawing.Size(137, 44);
             this.btnclearlocation.TabIndex = 33;

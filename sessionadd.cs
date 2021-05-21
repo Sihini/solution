@@ -17,7 +17,7 @@ namespace solution
             fillcombox();
             filltagcombox();
         }
-       
+
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
 
         private Form activeForm = null;
@@ -42,6 +42,7 @@ namespace solution
         }
         public void fillcombox()
         {
+
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
             string sql = "SELECT * from LectureTable ";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -67,7 +68,9 @@ namespace solution
         }
         public void filltagcombox()
         {
+
             SqlConnection cons = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+
             string sqli = "SELECT * from TagTable ";
             SqlCommand cmds = new SqlCommand(sqli, cons);
             SqlDataReader myreaders;
@@ -93,31 +96,81 @@ namespace solution
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO SessionTable (s_lecturer,ss_lecturer,s_Tag) VALUES (@s_lecturer, @ss_lecturer, @s_Tag )", con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@s_lecturer", selectLecturer.Text);
-            cmd.Parameters.AddWithValue("@ss_lecturer", selettextlect.Text);
-            cmd.Parameters.AddWithValue("@s_Tag", selecttags.Text);
-            /* cmd.Parameters.AddWithValue("@s_group", txtDepname.Text);
-             cmd.Parameters.AddWithValue("@sub_code", txtcent.Text);
-             cmd.Parameters.AddWithValue("@sub_name", txtbulin.Text);
-             cmd.Parameters.AddWithValue("@noofstudent", txtlevel.Text);
-             cmd.Parameters.AddWithValue("@duration", txtrank.Text);*/
+            if (IsValid())
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO SessionTable (s_lecturer,ss_lecturer,s_Tag) VALUES (@s_lecturer, @ss_lecturer, @s_Tag )", con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@s_lecturer", selectLecturer.Text);
+                cmd.Parameters.AddWithValue("@ss_lecturer", selettextlect.Text);
+                cmd.Parameters.AddWithValue("@s_Tag", selecttags.Text);
+               
 
-            con.Open();
+                con.Open();
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            con.Close();
+                con.Close();
 
 
-            openChildForm(new selectLandgroup());
+                openChildForm(new selectLandgroup());
+            }
+        }
+
+        private bool IsValid()
+        {
+            if (selectLecturer.Text == String.Empty)
+            {
+                MessageBox.Show("Selected Lecturer name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (selettextlect.Text == string.Empty)
+            {
+                MessageBox.Show("Selected Tag name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            else if (selecttags.Text == string.Empty)
+            {
+                MessageBox.Show("Selected lecturer Name is Required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+           
+            return true;
+
+        }
+
+        private void selectLecturer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearbtnsession_Click(object sender, EventArgs e)
+        {
+            ClearFormLect();
+
+        }
+
+        private void ClearFormLect()
+        {
+
+            selettextlect.Clear();
+
+            //cpmbo box clear
+            selectLecturer.SelectedIndex = -1;
+            selecttags.SelectedIndex = -1;
+
+
+            selettextlect.Focus();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+     
 
         private void selettextlect_TextChanged(object sender, EventArgs e)
         {

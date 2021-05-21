@@ -115,6 +115,10 @@ namespace solution
             this.Btnsujectadd.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btnsujectadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btnsujectadd.ForeColor = System.Drawing.SystemColors.HighlightText;
+
+            this.Btnsujectadd.Image = global::solution.Properties.Resources.save1;
+            this.Btnsujectadd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.Btnsujectadd.Location = new System.Drawing.Point(735, 397);
             this.Btnsujectadd.Name = "Btnsujectadd";
             this.Btnsujectadd.Size = new System.Drawing.Size(128, 44);
@@ -128,6 +132,10 @@ namespace solution
             this.btnclearsubectadd.BackColor = System.Drawing.Color.DarkOrange;
             this.btnclearsubectadd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnclearsubectadd.ForeColor = System.Drawing.SystemColors.HighlightText;
+
+            this.btnclearsubectadd.Image = global::solution.Properties.Resources.clear;
+            this.btnclearsubectadd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnclearsubectadd.Location = new System.Drawing.Point(578, 396);
             this.btnclearsubectadd.Name = "btnclearsubectadd";
             this.btnclearsubectadd.Size = new System.Drawing.Size(137, 44);

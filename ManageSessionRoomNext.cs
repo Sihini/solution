@@ -146,7 +146,7 @@ namespace solution
 
         private void consbtn_Click(object sender, EventArgs e)
         {
-            openChildForm(new Consecutive());
+           // openChildForm(new Consecutive());
         }
 
         private void btnaddRoom_Click_2(object sender, EventArgs e)

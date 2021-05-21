@@ -118,12 +118,18 @@ namespace solution
         {
             if (tid > 0)
             {
-                SqlCommand cmd = new SqlCommand("UPDATE TagTable SET t_name=@t_name,t_code=@t_code,related_tag=@related_tag WHERE t_id=@t_id", con);
+
+                SqlCommand cmd = new SqlCommand("UPDATE TagTable SET t_name=@t_name,t_code=@t_code,related_tag=@related_tag WHERE tid=@tid", con);
+
+                
+
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@t_name", t_name.Text);
                 cmd.Parameters.AddWithValue("@t_code", t_code.Text);
                 cmd.Parameters.AddWithValue("@related_tag", related_tag.Text);
-                cmd.Parameters.AddWithValue("@t_id", this.tid);
+
+                cmd.Parameters.AddWithValue("@tid", this.tid);
+
 
 
                 con.Open();

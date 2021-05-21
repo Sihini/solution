@@ -99,7 +99,7 @@ namespace solution
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Consecutive());
+            //openChildForm(new Consecutive());
 
         }
 
