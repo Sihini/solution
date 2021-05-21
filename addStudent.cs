@@ -64,10 +64,10 @@ namespace solution
                 {
 
 
-                    SqlCommand cmd = new SqlCommand("INSERT INTO StudentTable VALUES (@program, @a_year_sem, @g_no, @sub_gno, @g_id, @sub_gid)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO StudentTable VALUES (@a_year_sem, @program, @g_no, @sub_gno, @g_id, @sub_gid)", con);
                     cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@program", programme.Text);
                     cmd.Parameters.AddWithValue("@a_year_sem", a_year.Text);
+                    cmd.Parameters.AddWithValue("@program", programme.Text);
                     cmd.Parameters.AddWithValue("@g_no", g_no.Text);
                     cmd.Parameters.AddWithValue("@sub_gno", sub_gno.Text);
                     cmd.Parameters.AddWithValue("@g_id", g_id.Text);
@@ -81,7 +81,7 @@ namespace solution
 
 
                     MessageBox.Show("New Student is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    
                     //   GetStudentsRecord();
                 }
                 catch(Exception ey)
@@ -90,9 +90,9 @@ namespace solution
                 }
 
             }
-            manageStudent frm = new manageStudent();//open Attendance management form
-            frm.Show();
-
+            //manageStudent frm = new manageStudent();//open Attendance management form
+            //frm.Show();
+            openChildForm(new manageStudent());
         }
 
         private bool IsValid()
@@ -150,10 +150,7 @@ namespace solution
             sub_gno.Value = 1;
         }
 
-        private void addStudent_Load_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void stdGenId_Click(object sender, EventArgs e)
         {
@@ -169,7 +166,34 @@ namespace solution
             sub_gid.Text = (zidr);
         }
 
+
+        private void addStudent_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.None;
+            stdpanel.Controls.Add(childForm);
+            stdpanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        { }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
+
         {
 
         }

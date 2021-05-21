@@ -206,13 +206,16 @@ namespace solution
             this.btnTimetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimetable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTimetable.ForeColor = System.Drawing.Color.Black;
+
+        //    this.btnTimetable.Image = global::solution.Properties.Resources.worksheet;
+            this.btnTimetable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnTimetable.Location = new System.Drawing.Point(0, 1077);
             this.btnTimetable.Name = "btnTimetable";
             this.btnTimetable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnTimetable.Size = new System.Drawing.Size(249, 45);
             this.btnTimetable.TabIndex = 17;
             this.btnTimetable.Text = "Timetable";
-            this.btnTimetable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimetable.UseVisualStyleBackColor = false;
             this.btnTimetable.Click += new System.EventHandler(this.btnTimetable_Click);
             // 
@@ -224,13 +227,16 @@ namespace solution
             this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistical.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnStatistical.ForeColor = System.Drawing.Color.Black;
+
+           // this.btnStatistical.Image = global::solution.Properties.Resources.static_electricity;
+            this.btnStatistical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnStatistical.Location = new System.Drawing.Point(0, 1032);
             this.btnStatistical.Name = "btnStatistical";
             this.btnStatistical.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnStatistical.Size = new System.Drawing.Size(249, 45);
             this.btnStatistical.TabIndex = 16;
             this.btnStatistical.Text = "Statistical View";
-            this.btnStatistical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistical.UseVisualStyleBackColor = false;
             this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
             // 
@@ -292,13 +298,16 @@ namespace solution
             this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTag.ForeColor = System.Drawing.Color.Black;
+
+          //  this.btnTag.Image = global::solution.Properties.Resources.price_tag__1_;
+            this.btnTag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnTag.Location = new System.Drawing.Point(0, 917);
             this.btnTag.Name = "btnTag";
             this.btnTag.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnTag.Size = new System.Drawing.Size(249, 45);
             this.btnTag.TabIndex = 14;
             this.btnTag.Text = "Tag";
-            this.btnTag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTag.UseVisualStyleBackColor = false;
             this.btnTag.Click += new System.EventHandler(this.btnTag_Click);
             // 
@@ -400,13 +409,16 @@ namespace solution
             this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSession.ForeColor = System.Drawing.Color.Black;
+
+           // this.btnSession.Image = global::solution.Properties.Resources.clock;
+            this.btnSession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnSession.Location = new System.Drawing.Point(0, 732);
             this.btnSession.Name = "btnSession";
             this.btnSession.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnSession.Size = new System.Drawing.Size(249, 45);
             this.btnSession.TabIndex = 12;
             this.btnSession.Text = "Session";
-            this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSession.UseVisualStyleBackColor = false;
             this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
             // 
@@ -418,13 +430,14 @@ namespace solution
             this.btnWorkingdays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWorkingdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnWorkingdays.ForeColor = System.Drawing.Color.Black;
+           //this.btnWorkingdays.Image = global::solution.Properties.Resources.working_hours;
+            this.btnWorkingdays.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWorkingdays.Location = new System.Drawing.Point(0, 687);
             this.btnWorkingdays.Name = "btnWorkingdays";
             this.btnWorkingdays.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnWorkingdays.Size = new System.Drawing.Size(249, 45);
             this.btnWorkingdays.TabIndex = 10;
             this.btnWorkingdays.Text = "Working Days";
-            this.btnWorkingdays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWorkingdays.UseVisualStyleBackColor = false;
             this.btnWorkingdays.Click += new System.EventHandler(this.btnWorkingdays_Click);
             // 
@@ -486,13 +499,14 @@ namespace solution
             this.btnLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLocation.ForeColor = System.Drawing.Color.Black;
+          //  this.btnLocation.Image = global::solution.Properties.Resources.locations;
+            this.btnLocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocation.Location = new System.Drawing.Point(0, 572);
             this.btnLocation.Name = "btnLocation";
             this.btnLocation.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnLocation.Size = new System.Drawing.Size(249, 45);
             this.btnLocation.TabIndex = 8;
             this.btnLocation.Text = "Location";
-            this.btnLocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocation.UseVisualStyleBackColor = false;
             this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
             // 
@@ -554,13 +568,14 @@ namespace solution
             this.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubject.ForeColor = System.Drawing.Color.Black;
+           // this.btnSubject.Image = global::solution.Properties.Resources.book;
+            this.btnSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubject.Location = new System.Drawing.Point(0, 457);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnSubject.Size = new System.Drawing.Size(249, 45);
             this.btnSubject.TabIndex = 6;
             this.btnSubject.Text = "Subject";
-            this.btnSubject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubject.UseVisualStyleBackColor = false;
             this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click);
             // 
@@ -622,13 +637,14 @@ namespace solution
             this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnStudent.ForeColor = System.Drawing.Color.Black;
+           // this.btnStudent.Image = global::solution.Properties.Resources.graduation;
+            this.btnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudent.Location = new System.Drawing.Point(0, 342);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnStudent.Size = new System.Drawing.Size(249, 45);
             this.btnStudent.TabIndex = 4;
             this.btnStudent.Text = "Student";
-            this.btnStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudent.UseVisualStyleBackColor = false;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
@@ -690,13 +706,14 @@ namespace solution
             this.btnLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLecturer.ForeColor = System.Drawing.Color.Black;
+            //this.btnLecturer.Image = global::solution.Properties.Resources.lecture;
+            this.btnLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLecturer.Location = new System.Drawing.Point(0, 227);
             this.btnLecturer.Name = "btnLecturer";
             this.btnLecturer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnLecturer.Size = new System.Drawing.Size(249, 45);
             this.btnLecturer.TabIndex = 2;
             this.btnLecturer.Text = "Lecturer";
-            this.btnLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLecturer.UseVisualStyleBackColor = false;
             this.btnLecturer.Click += new System.EventHandler(this.btnLecturer_Click);
             // 
@@ -708,13 +725,14 @@ namespace solution
             this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnhome.ForeColor = System.Drawing.Color.Black;
+           // this.btnhome.Image = global::solution.Properties.Resources.home;
+            this.btnhome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnhome.Location = new System.Drawing.Point(0, 182);
             this.btnhome.Name = "btnhome";
             this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnhome.Size = new System.Drawing.Size(249, 45);
             this.btnhome.TabIndex = 1;
             this.btnhome.Text = "Home";
-            this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnhome.UseVisualStyleBackColor = false;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 

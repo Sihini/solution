@@ -17,6 +17,7 @@ namespace solution
             InitializeComponent();
         }
 
+        
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
         public int LecturerID;
         int count = 0;
@@ -27,11 +28,10 @@ namespace solution
         public string rid { get; set; }
 
 
+
+
         private void LectrerMandataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-
-
 
 
             SqlCommand cmd = new SqlCommand("Select * from LectureTable ", con);

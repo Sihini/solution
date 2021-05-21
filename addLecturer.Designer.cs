@@ -91,6 +91,8 @@ namespace solution
             this.lecSavebtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.lecSavebtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lecSavebtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lecSavebtn.Image = global::solution.Properties.Resources.save1;
+            this.lecSavebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lecSavebtn.Location = new System.Drawing.Point(764, 382);
             this.lecSavebtn.Name = "lecSavebtn";
             this.lecSavebtn.Size = new System.Drawing.Size(128, 44);
@@ -104,6 +106,8 @@ namespace solution
             this.clearbtnlec.BackColor = System.Drawing.Color.DarkOrange;
             this.clearbtnlec.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearbtnlec.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.clearbtnlec.Image = global::solution.Properties.Resources.clear;
+            this.clearbtnlec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clearbtnlec.Location = new System.Drawing.Point(607, 381);
             this.clearbtnlec.Name = "clearbtnlec";
             this.clearbtnlec.Size = new System.Drawing.Size(137, 44);
@@ -117,6 +121,8 @@ namespace solution
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Image = global::solution.Properties.Resources.generate;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(380, 381);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 44);

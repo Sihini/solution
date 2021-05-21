@@ -30,6 +30,9 @@ namespace solution
         private void InitializeComponent()
         {
             this.groupSubject = new System.Windows.Forms.Panel();
+
+            this.label10 = new System.Windows.Forms.Label();
+
             this.sybjectname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.noofstudent = new System.Windows.Forms.TextBox();
@@ -44,11 +47,16 @@ namespace solution
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.duration = new System.Windows.Forms.TextBox();
+
+            this.label10 = new System.Windows.Forms.Label();
+
             this.groupSubject.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupSubject
             // 
+            this.groupSubject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupSubject.Controls.Add(this.label10);
             this.groupSubject.Controls.Add(this.sybjectname);
             this.groupSubject.Controls.Add(this.label7);
             this.groupSubject.Controls.Add(this.noofstudent);
@@ -63,12 +71,24 @@ namespace solution
             this.groupSubject.Controls.Add(this.label1);
             this.groupSubject.Controls.Add(this.label6);
             this.groupSubject.Controls.Add(this.duration);
-            this.groupSubject.Location = new System.Drawing.Point(-11, 0);
+            this.groupSubject.Location = new System.Drawing.Point(3, 0);
             this.groupSubject.Name = "groupSubject";
             this.groupSubject.Size = new System.Drawing.Size(866, 349);
             this.groupSubject.TabIndex = 15;
             this.groupSubject.Paint += new System.Windows.Forms.PaintEventHandler(this.groupSubject_Paint);
             // 
+
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(293, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(204, 35);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Add Session";
+            // 
+
             // sybjectname
             // 
             this.sybjectname.Location = new System.Drawing.Point(259, 222);
@@ -102,6 +122,7 @@ namespace solution
             this.selectgroup.Name = "selectgroup";
             this.selectgroup.Size = new System.Drawing.Size(128, 28);
             this.selectgroup.TabIndex = 34;
+            //this.selectgroup.SelectedIndexChanged += new System.EventHandler(this.selectgroup_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -137,6 +158,10 @@ namespace solution
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+
+          //  this.button1.Image = global::solution.Properties.Resources.back;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.button1.Location = new System.Drawing.Point(213, 260);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 44);
@@ -150,6 +175,10 @@ namespace solution
             this.addnext.BackColor = System.Drawing.Color.DodgerBlue;
             this.addnext.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.addnext.ForeColor = System.Drawing.SystemColors.HighlightText;
+
+        //    this.addnext.Image = global::solution.Properties.Resources.next;
+            this.addnext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.addnext.Location = new System.Drawing.Point(523, 261);
             this.addnext.Name = "addnext";
             this.addnext.Size = new System.Drawing.Size(128, 44);
@@ -163,12 +192,16 @@ namespace solution
             this.clearbtnsession.BackColor = System.Drawing.Color.DarkOrange;
             this.clearbtnsession.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clearbtnsession.ForeColor = System.Drawing.SystemColors.HighlightText;
+ //   this.clearbtnsession.Image = global::solution.Properties.Resources.clear;
+            this.clearbtnsession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.clearbtnsession.Location = new System.Drawing.Point(366, 260);
             this.clearbtnsession.Name = "clearbtnsession";
             this.clearbtnsession.Size = new System.Drawing.Size(137, 44);
             this.clearbtnsession.TabIndex = 28;
             this.clearbtnsession.Text = "Clear";
             this.clearbtnsession.UseVisualStyleBackColor = false;
+           // this.clearbtnsession.Click += new System.EventHandler(this.clearbtnsession_Click);
             // 
             // label3
             // 
@@ -207,6 +240,7 @@ namespace solution
             this.duration.Size = new System.Drawing.Size(142, 27);
             this.duration.TabIndex = 21;
             // 
+
             // selectLandgroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -240,5 +274,6 @@ namespace solution
         private System.Windows.Forms.TextBox duration;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox sybjectname;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -201,13 +201,20 @@ namespace solution
 
         private void sesbtn3_Click(object sender, EventArgs e)
         {
-            openChildForm(new RoomsNotAvailableTimes());
+
+
+            openChildForm(new ManageSessionRooms());
+
+            //..
+
             hideSubMenu();
         }
 
         private void sesbtn4_Click(object sender, EventArgs e)
         {
+
             openChildForm(new SessionTimeAllocation1());
+
             hideSubMenu();
         }
 
@@ -232,7 +239,7 @@ namespace solution
 
         private void btnStatistical_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new StaticalView());
         }
 
         private void btnTimetable_Click(object sender, EventArgs e)
