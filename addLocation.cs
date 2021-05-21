@@ -16,7 +16,7 @@ namespace solution
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-58O0VLLG;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3CRQS4E;Initial Catalog=ITPMSOLUTION;Integrated Security=True");
          string roomtype;
 
         private void addLocation_Load(object sender, EventArgs e)
@@ -60,7 +60,42 @@ namespace solution
 
             }
         }
+        private void btnsavelaction_Click_1(object sender, EventArgs e)
+        {
+            if (IsValid())
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO LocationTable VALUES (@buildingname, @roomname, @roomtype, @capacity)", con);
+                cmd.CommandType = CommandType.Text;
 
+                /*Insert Building Name*/
+                cmd.Parameters.AddWithValue("@buildingname", txtBuildingname.Text);
+                /*Insert Room Name*/
+                cmd.Parameters.AddWithValue("@roomname", txtroomname.Text);
+                /*Insert Room Type*/
+                if (lecturradiobtn.Checked == true)
+                {
+                    roomtype = "Lecurer Hall";
+                }
+                else if (labradiobtn.Checked == true)
+                {
+                    roomtype = "laboratory";
+                }
+                cmd.Parameters.AddWithValue("@roomtype", roomtype);
+                /*Insert Capacity*/
+                cmd.Parameters.AddWithValue("@capacity", txtcapacity.Text);
+
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("New Lecturer is Successfully saved in the database", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //   GetStudentsRecord();
+
+
+            }
+        }
         private bool IsValid()
         {
             if (txtBuildingname.Text == String.Empty)
@@ -95,7 +130,10 @@ namespace solution
         {
             clearLocation();
         }
-
+        private void btnclearlocation_Click_1(object sender, EventArgs e)
+        {
+            clearLocation();
+        }
         private void clearLocation()
         {
             txtBuildingname.Clear();
@@ -116,5 +154,7 @@ namespace solution
         {
 
         }
+
+        
     }
 }

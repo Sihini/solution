@@ -119,6 +119,7 @@ namespace solution
             this.txtBuildingname.Size = new System.Drawing.Size(241, 27);
 
             this.txtBuildingname.TabIndex = 22;
+            this.txtBuildingname.TextChanged += new System.EventHandler(this.txtBuildingname_TextChanged);
             // 
             // label4
             // 
@@ -179,9 +180,11 @@ namespace solution
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(14, 384);
+
+            this.label5.Location = new System.Drawing.Point(10, 230);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 23);
+            this.label5.Size = new System.Drawing.Size(125, 19);
+
             this.label5.TabIndex = 55;
             this.label5.Text = "Building Name";
             // 

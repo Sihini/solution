@@ -169,5 +169,12 @@ namespace solution
         {
 
         }
+
+     
+
+        private void selettextlect_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
