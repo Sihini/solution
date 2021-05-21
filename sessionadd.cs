@@ -113,5 +113,10 @@ namespace solution
 
             openChildForm(new selectLandgroup());
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

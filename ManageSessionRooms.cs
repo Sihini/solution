@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace solution
 {
-    public partial class SessionTimeAllocation2 : Form
+    public partial class ManageSessionRooms : Form
     {
-        public SessionTimeAllocation2()
+        public ManageSessionRooms()
         {
             InitializeComponent();
+        }
+
+        private void ManageSessionRooms_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

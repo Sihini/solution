@@ -770,6 +770,8 @@ namespace solution
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelChildForm.BackColor = System.Drawing.SystemColors.Window;
+            this.panelChildForm.BackgroundImage = global::solution.Properties.Resources.IMG_8212;
+            this.panelChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelChildForm.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelChildForm.Location = new System.Drawing.Point(270, 32);
             this.panelChildForm.Name = "panelChildForm";
