@@ -39,11 +39,11 @@ namespace solution
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtsearchlocation = new System.Windows.Forms.TextBox();
             this.clearlocationtbtn = new System.Windows.Forms.Button();
             this.deleteLocationbtn = new System.Windows.Forms.Button();
             this.manageLocationbtn = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.LocationdataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -102,6 +102,7 @@ namespace solution
             this.txtBuildingname.Name = "txtBuildingname";
             this.txtBuildingname.Size = new System.Drawing.Size(169, 23);
             this.txtBuildingname.TabIndex = 22;
+            this.txtBuildingname.TextChanged += new System.EventHandler(this.txtBuildingname_TextChanged);
             // 
             // label4
             // 
@@ -157,6 +158,16 @@ namespace solution
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(10, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 19);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Building Name";
+            // 
             // txtsearchlocation
             // 
             this.txtsearchlocation.Location = new System.Drawing.Point(598, 13);
@@ -204,16 +215,6 @@ namespace solution
             this.manageLocationbtn.Text = "Update";
             this.manageLocationbtn.UseVisualStyleBackColor = false;
             this.manageLocationbtn.Click += new System.EventHandler(this.manageLocationbtn_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 19);
-            this.label5.TabIndex = 55;
-            this.label5.Text = "Building Name";
             // 
             // manageLocation
             // 

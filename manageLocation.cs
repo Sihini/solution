@@ -245,5 +245,10 @@ namespace solution
         {
 
         }
+
+        private void txtBuildingname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
