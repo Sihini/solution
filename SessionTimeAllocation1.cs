@@ -12,12 +12,6 @@ namespace solution
     public partial class SessionTimeAllocation1 : Form
     {
 
-<<<<<<< HEAD
-=======
-        }
-
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
->>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
 
         private Form activeForm = null;
 
@@ -114,26 +108,6 @@ namespace solution
             return true;
         }
 
-<<<<<<< HEAD
-=======
-        private void button2_Click(object sender, EventArgs e)
-        {
-            openChildForm(new SessionTimeAllocation2());
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-            //openChildForm(new parallelSt());
-         
-
-        }
-
-        private void selectLecturersession_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
->>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
         public void fillsesiontimeallo()
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-EB5SPN9;Initial Catalog=ITPMSOLUTION;Integrated Security=True;Connect Timeout=30");
@@ -239,7 +213,6 @@ namespace solution
 
         }
 
-<<<<<<< HEAD
         private void stNonOverlappingbtn_Click(object sender, EventArgs e)
         {
 
@@ -256,25 +229,10 @@ namespace solution
         }
 
         private void timeAllocationsubpannel_Paint(object sender, PaintEventArgs e)
-=======
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-              //openChildForm(new  consecutiveSt());
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-           // openChildForm(new nonOverlappingSt());
-        }
-
-        private void sessionavalibale_Paint(object sender, PaintEventArgs e)
->>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
         {
 
         }
 
-<<<<<<< HEAD
 
         /*
                 private void groupComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -298,7 +256,5 @@ namespace solution
                         MessageBox.Show(ex.Message);
                     }
                 }*/
-=======
->>>>>>> faa6b63ee8cb3e42e00707fe6d559ce084c16c29
     }
 }
